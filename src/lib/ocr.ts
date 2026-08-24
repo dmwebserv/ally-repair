@@ -6,8 +6,8 @@ export async function recognizeText(
   onProgress?: (pct: number) => void,
 ): Promise<string> {
   const worker = await createWorker('eng', undefined, {
-    workerPath: '/tesseract/worker.min.js',
-    corePath: '/tesseract/tesseract-core-lstm.wasm.js',
+    workerPath: `${import.meta.env.BASE_URL}tesseract/worker.min.js`,
+    corePath: `${import.meta.env.BASE_URL}tesseract/tesseract-core-lstm.wasm.js`,
     logger: (m) => {
       if (m.status === 'recognizing text' && onProgress) {
         onProgress(Math.round(m.progress * 100));
