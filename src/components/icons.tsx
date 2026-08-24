@@ -77,3 +77,10 @@ export const IconCheck = (props: SVGProps<SVGSVGElement>) => (
     <path d="M4.5 12.5 9 17l10.5-10.5" />
   </svg>
 );
+
+export const IconKeyboard = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...props}>
+    <rect x="3.5" y="6" width="17" height="12" rx="2.5" />
+    <path d="M7 10h.01M11 10h.01M15 10h.01M17 10h.01M7 13.5h.01M11 13.5h.01M15 13.5h.01M8.5 16.5h7" />
+  </svg>
+);
