@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { IconCheck, IconPencil, IconX } from './icons';
 
 interface Props {
   goal: number;
@@ -11,8 +12,16 @@ export default function GoalSetting({ goal, onSave }: Props) {
 
   if (!editing) {
     return (
-      <button type="button" className="link-btn" onClick={() => { setValue(String(goal)); setEditing(true); }}>
-        edit daily goal
+      <button
+        type="button"
+        className="goal-edit-trigger"
+        onClick={() => {
+          setValue(String(goal));
+          setEditing(true);
+        }}
+      >
+        <IconPencil width={14} height={14} />
+        Goal
       </button>
     );
   }
@@ -33,7 +42,6 @@ export default function GoalSetting({ goal, onSave }: Props) {
         submit();
       }}
     >
-      <label htmlFor="goal-input">Daily calorie goal</label>
       <input
         id="goal-input"
         type="number"
@@ -43,9 +51,11 @@ export default function GoalSetting({ goal, onSave }: Props) {
         onChange={(e) => setValue(e.target.value)}
         autoFocus
       />
-      <button type="submit">Save</button>
-      <button type="button" className="link-btn" onClick={() => setEditing(false)}>
-        cancel
+      <button type="submit" className="icon-btn confirm" aria-label="Save goal">
+        <IconCheck width={16} height={16} />
+      </button>
+      <button type="button" className="icon-btn" onClick={() => setEditing(false)} aria-label="Cancel">
+        <IconX width={16} height={16} />
       </button>
     </form>
   );

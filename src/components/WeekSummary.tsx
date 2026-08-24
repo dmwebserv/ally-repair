@@ -24,11 +24,11 @@ export default function WeekSummary({ goal, refreshKey }: Props) {
           const pct = goal > 0 ? Math.min(100, (totals.calories / goal) * 100) : 0;
           const over = totals.calories > goal;
           return (
-            <div className="week-bar-col" key={day}>
+            <div className={`week-bar-col ${day === today ? 'is-today' : ''}`} key={day}>
               <div className="week-bar-track">
                 <div
                   className={`week-bar-fill ${over ? 'over' : ''}`}
-                  style={{ height: `${pct}%` }}
+                  style={{ height: `${Math.max(pct, totals.calories > 0 ? 4 : 0)}%` }}
                   title={`${Math.round(totals.calories)} cal`}
                 />
               </div>

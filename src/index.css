@@ -1,32 +1,61 @@
 :root {
-  --text: #4b5563;
-  --text-h: #111827;
-  --bg: #f9fafb;
-  --card-bg: #ffffff;
-  --border: #e5e7eb;
-  --accent: #2563eb;
-  --accent-bg: rgba(37, 99, 235, 0.1);
-  --good: #16a34a;
-  --bad: #dc2626;
+  --font: 'Plus Jakarta Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
 
-  font: 16px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif;
+  --bg: #f3f4f7;
+  --card-bg: #ffffff;
+  --card-bg-soft: #f8f9fb;
+  --border: #e9eaef;
+  --text-h: #12141a;
+  --text: #676c76;
+  --text-soft: #9aa0ab;
+
+  --accent: #059669;
+  --accent-2: #34d399;
+  --accent-bg: rgba(5, 150, 105, 0.09);
+
+  --bad: #e11d48;
+  --bad-bg: rgba(225, 29, 72, 0.09);
+
+  --protein: #6366f1;
+  --carbs: #f59e0b;
+  --fat: #ec4899;
+
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.05);
+  --shadow-md: 0 8px 20px rgba(16, 24, 40, 0.07), 0 2px 6px rgba(16, 24, 40, 0.04);
+  --shadow-lg: 0 -8px 30px rgba(16, 24, 40, 0.12);
+
+  font: 16px/1.5 var(--font);
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #111318;
-    --card-bg: #1a1d24;
-    --border: #2e313a;
-    --accent: #60a5fa;
-    --accent-bg: rgba(96, 165, 250, 0.15);
-    --good: #4ade80;
-    --bad: #f87171;
+    --bg: #0a0b0d;
+    --card-bg: #17191f;
+    --card-bg-soft: #1d2028;
+    --border: #262932;
+    --text-h: #f5f6f8;
+    --text: #9aa0ab;
+    --text-soft: #676c76;
+
+    --accent: #34d399;
+    --accent-2: #6ee7b7;
+    --accent-bg: rgba(52, 211, 153, 0.14);
+
+    --bad: #fb7185;
+    --bad-bg: rgba(251, 113, 133, 0.14);
+
+    --protein: #818cf8;
+    --carbs: #fbbf24;
+    --fat: #f472b6;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 -8px 30px rgba(0, 0, 0, 0.45);
   }
 }
 
@@ -38,16 +67,22 @@ body {
   margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: var(--text-h);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 button {
   font: inherit;
   cursor: pointer;
+  color: inherit;
 }
 
 input {
   font: inherit;
+}
+
+::selection {
+  background: var(--accent-bg);
 }

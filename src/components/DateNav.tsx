@@ -1,4 +1,5 @@
 import { addDays, displayDate, todayKey } from '../lib/date';
+import { IconChevronLeft, IconChevronRight } from './icons';
 
 interface Props {
   date: string;
@@ -6,14 +7,21 @@ interface Props {
 }
 
 export default function DateNav({ date, onChange }: Props) {
+  const isToday = date === todayKey();
+
   return (
     <div className="date-nav">
-      <button type="button" onClick={() => onChange(addDays(date, -1))} aria-label="Previous day">
-        ‹
+      <button
+        type="button"
+        className="icon-btn round"
+        onClick={() => onChange(addDays(date, -1))}
+        aria-label="Previous day"
+      >
+        <IconChevronLeft />
       </button>
       <div className="date-label">
         <strong>{displayDate(date)}</strong>
-        {date !== todayKey() && (
+        {!isToday && (
           <button type="button" className="link-btn" onClick={() => onChange(todayKey())}>
             back to today
           </button>
@@ -21,11 +29,12 @@ export default function DateNav({ date, onChange }: Props) {
       </div>
       <button
         type="button"
+        className="icon-btn round"
         onClick={() => onChange(addDays(date, 1))}
         aria-label="Next day"
-        disabled={date === todayKey()}
+        disabled={isToday}
       >
-        ›
+        <IconChevronRight />
       </button>
     </div>
   );

@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
 import './App.css';
 import AddFoodPanel from './components/AddFoodPanel';
+import CalorieRing from './components/CalorieRing';
 import DateNav from './components/DateNav';
 import FoodLog from './components/FoodLog';
 import GoalSetting from './components/GoalSetting';
-import ProgressBar from './components/ProgressBar';
 import WeekSummary from './components/WeekSummary';
 import { todayKey } from './lib/date';
 import { addEntry, dayTotals, getDayLog, getSettings, removeEntry, saveSettings } from './lib/storage';
@@ -43,23 +43,41 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>NutriLog</h1>
+        <div className="brand">
+          <span className="brand-mark" />
+          <h1>NutriLog</h1>
+        </div>
         <GoalSetting goal={settings.calorieGoal} onSave={handleGoalSave} />
       </header>
 
       <DateNav date={date} onChange={setDate} />
 
-      <ProgressBar consumed={totals.calories} goal={settings.calorieGoal} />
+      <CalorieRing consumed={totals.calories} goal={settings.calorieGoal} />
 
       <div className="macro-row">
-        <span>{Math.round(totals.protein)}g protein</span>
-        <span>{Math.round(totals.carbs)}g carbs</span>
-        <span>{Math.round(totals.fat)}g fat</span>
+        <div className="macro-pill">
+          <span className="macro-dot protein" />
+          <span className="macro-value">{Math.round(totals.protein)}g</span>
+          <span className="macro-key">protein</span>
+        </div>
+        <div className="macro-pill">
+          <span className="macro-dot carbs" />
+          <span className="macro-value">{Math.round(totals.carbs)}g</span>
+          <span className="macro-key">carbs</span>
+        </div>
+        <div className="macro-pill">
+          <span className="macro-dot fat" />
+          <span className="macro-value">{Math.round(totals.fat)}g</span>
+          <span className="macro-key">fat</span>
+        </div>
       </div>
 
       <AddFoodPanel onAdd={handleAdd} />
 
-      <FoodLog entries={log.entries} onRemove={handleRemove} />
+      <section className="log-section">
+        <h2 className="section-title">Today's log</h2>
+        <FoodLog entries={log.entries} onRemove={handleRemove} />
+      </section>
 
       <WeekSummary goal={settings.calorieGoal} refreshKey={refreshKey} />
 
