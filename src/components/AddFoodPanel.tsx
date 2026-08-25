@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { FoodEntry } from '../lib/types';
 import { scanNutritionLabel, type ScanStatus } from '../lib/ocr';
+import { AI_SCAN_ENABLED, scanWithAI } from '../lib/aiScan';
 import { IconCamera, IconKeyboard, IconX } from './icons';
 
 interface Props {
@@ -65,18 +66,51 @@ export default function AddFoodPanel({ onAdd }: Props) {
     setOpen(true);
     setImagePreview(URL.createObjectURL(file));
     setScanning(true);
-    try {
-      const { parsed } = await scanNutritionLabel(file, setScanStatus);
-      if (!parsed.calories && !parsed.protein && !parsed.carbs && !parsed.fat) {
-        setScanError("Couldn't read this label. You can still fill it in below.");
-      }
+
+    const applyParsed = (parsed: { calories?: number; protein?: number; carbs?: number; fat?: number }, name?: string | null) => {
       setForm((f) => ({
         ...f,
+        name: name ? name : f.name,
         calories: parsed.calories !== undefined ? String(parsed.calories) : f.calories,
         protein: parsed.protein !== undefined ? String(parsed.protein) : f.protein,
         carbs: parsed.carbs !== undefined ? String(parsed.carbs) : f.carbs,
         fat: parsed.fat !== undefined ? String(parsed.fat) : f.fat,
       }));
+    };
+
+    if (AI_SCAN_ENABLED) {
+      setScanStatus({ attempt: 1, totalAttempts: 1, pct: 0 });
+      try {
+        const { parsed, name } = await scanWithAI(file);
+        if (parsed.calories === undefined && parsed.protein === undefined && parsed.carbs === undefined && parsed.fat === undefined) {
+          setScanError("Couldn't find nutrition info in that photo. You can still fill it in below.");
+        }
+        applyParsed(parsed, name);
+      } catch {
+        setScanError('AI scan failed, trying on-device scan…');
+        try {
+          const { parsed } = await scanNutritionLabel(file, setScanStatus);
+          if (!parsed.calories && !parsed.protein && !parsed.carbs && !parsed.fat) {
+            setScanError("Couldn't read this label. You can still fill it in below.");
+          } else {
+            setScanError(null);
+          }
+          applyParsed(parsed);
+        } catch {
+          setScanError('Scan failed. You can still enter the values manually below.');
+        }
+      } finally {
+        setScanning(false);
+      }
+      return;
+    }
+
+    try {
+      const { parsed } = await scanNutritionLabel(file, setScanStatus);
+      if (!parsed.calories && !parsed.protein && !parsed.carbs && !parsed.fat) {
+        setScanError("Couldn't read this label. You can still fill it in below.");
+      }
+      applyParsed(parsed);
     } catch {
       setScanError('Scan failed. You can still enter the values manually below.');
     } finally {
@@ -144,10 +178,13 @@ export default function AddFoodPanel({ onAdd }: Props) {
                   {scanning && (
                     <div className="scan-status">
                       <span className="scan-spinner" />
-                      Reading label
-                      {scanStatus && scanStatus.totalAttempts > 1 && scanStatus.attempt > 1
-                        ? ` (trying another angle, ${scanStatus.attempt}/${scanStatus.totalAttempts})…`
-                        : `… ${scanStatus?.pct ?? 0}%`}
+                      {AI_SCAN_ENABLED
+                        ? 'Reading label…'
+                        : `Reading label${
+                            scanStatus && scanStatus.totalAttempts > 1 && scanStatus.attempt > 1
+                              ? ` (trying another angle, ${scanStatus.attempt}/${scanStatus.totalAttempts})…`
+                              : `… ${scanStatus?.pct ?? 0}%`
+                          }`}
                     </div>
                   )}
                   {!scanning && scanError && <p className="scan-error">{scanError}</p>}
