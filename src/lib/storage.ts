@@ -1,4 +1,4 @@
-import type { DayLog, FoodEntry, UserSettings } from './types';
+import type { DayLog, EffectiveGoals, FoodEntry, UserSettings } from './types';
 
 const SETTINGS_KEY = 'nutrilog:settings';
 export const LOG_PREFIX = 'nutrilog:log:';
@@ -26,7 +26,7 @@ export function getDayLog(date: string): DayLog {
     const raw = localStorage.getItem(LOG_PREFIX + date);
     if (!raw) return { date, entries: [] };
     const parsed = JSON.parse(raw) as DayLog;
-    return { date, entries: parsed.entries ?? [] };
+    return { date, entries: parsed.entries ?? [], isGymDay: parsed.isGymDay };
   } catch {
     return { date, entries: [] };
   }
@@ -38,7 +38,7 @@ export function saveDayLog(log: DayLog): void {
 
 export function addEntry(date: string, entry: FoodEntry): DayLog {
   const log = getDayLog(date);
-  const updated: DayLog = { date, entries: [...log.entries, entry] };
+  const updated: DayLog = { ...log, entries: [...log.entries, entry] };
   saveDayLog(updated);
   return updated;
 }
@@ -46,7 +46,7 @@ export function addEntry(date: string, entry: FoodEntry): DayLog {
 export function removeEntry(date: string, entryId: string): DayLog {
   const log = getDayLog(date);
   const updated: DayLog = {
-    date,
+    ...log,
     entries: log.entries.filter((e) => e.id !== entryId),
   };
   saveDayLog(updated);
@@ -56,11 +56,35 @@ export function removeEntry(date: string, entryId: string): DayLog {
 export function updateEntry(date: string, entry: FoodEntry): DayLog {
   const log = getDayLog(date);
   const updated: DayLog = {
-    date,
+    ...log,
     entries: log.entries.map((e) => (e.id === entry.id ? entry : e)),
   };
   saveDayLog(updated);
   return updated;
+}
+
+export function setGymDay(date: string, isGymDay: boolean): DayLog {
+  const log = getDayLog(date);
+  const updated: DayLog = { ...log, isGymDay };
+  saveDayLog(updated);
+  return updated;
+}
+
+export function effectiveGoals(settings: UserSettings, isGymDay?: boolean): EffectiveGoals {
+  if (!isGymDay) {
+    return {
+      calorieGoal: settings.calorieGoal,
+      proteinGoal: settings.proteinGoal,
+      carbsGoal: settings.carbsGoal,
+      fatGoal: settings.fatGoal,
+    };
+  }
+  return {
+    calorieGoal: settings.gymCalorieGoal ?? settings.calorieGoal,
+    proteinGoal: settings.gymProteinGoal ?? settings.proteinGoal,
+    carbsGoal: settings.gymCarbsGoal ?? settings.carbsGoal,
+    fatGoal: settings.gymFatGoal ?? settings.fatGoal,
+  };
 }
 
 export function dayTotals(log: DayLog) {

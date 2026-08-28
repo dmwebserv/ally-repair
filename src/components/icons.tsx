@@ -98,6 +98,12 @@ export const IconUpload = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+export const IconDumbbell = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...props}>
+    <path d="M6.5 9v6M4 10.5v3M17.5 9v6M20 10.5v3M8.5 12h7" strokeWidth={2.2} />
+  </svg>
+);
+
 export const IconKeyboard = (props: SVGProps<SVGSVGElement>) => (
   <svg {...base} {...props}>
     <rect x="3.5" y="6" width="17" height="12" rx="2.5" />

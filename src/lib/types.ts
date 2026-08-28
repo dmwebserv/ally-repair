@@ -12,9 +12,21 @@ export interface FoodEntry {
 export interface DayLog {
   date: string;
   entries: FoodEntry[];
+  isGymDay?: boolean;
 }
 
 export interface UserSettings {
+  calorieGoal: number;
+  proteinGoal?: number;
+  carbsGoal?: number;
+  fatGoal?: number;
+  gymCalorieGoal?: number;
+  gymProteinGoal?: number;
+  gymCarbsGoal?: number;
+  gymFatGoal?: number;
+}
+
+export interface EffectiveGoals {
   calorieGoal: number;
   proteinGoal?: number;
   carbsGoal?: number;

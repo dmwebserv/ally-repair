@@ -7,18 +7,34 @@ interface Props {
   onSave: (settings: UserSettings) => void;
 }
 
+function toStr(v: number | undefined): string {
+  return v !== undefined ? String(v) : '';
+}
+
+function toNum(v: string): number | undefined {
+  return v ? parseFloat(v) : undefined;
+}
+
 export default function GoalSetting({ settings, onSave }: Props) {
   const [open, setOpen] = useState(false);
   const [calorieGoal, setCalorieGoal] = useState(String(settings.calorieGoal));
-  const [proteinGoal, setProteinGoal] = useState(settings.proteinGoal !== undefined ? String(settings.proteinGoal) : '');
-  const [carbsGoal, setCarbsGoal] = useState(settings.carbsGoal !== undefined ? String(settings.carbsGoal) : '');
-  const [fatGoal, setFatGoal] = useState(settings.fatGoal !== undefined ? String(settings.fatGoal) : '');
+  const [proteinGoal, setProteinGoal] = useState(toStr(settings.proteinGoal));
+  const [carbsGoal, setCarbsGoal] = useState(toStr(settings.carbsGoal));
+  const [fatGoal, setFatGoal] = useState(toStr(settings.fatGoal));
+  const [gymCalorieGoal, setGymCalorieGoal] = useState(toStr(settings.gymCalorieGoal));
+  const [gymProteinGoal, setGymProteinGoal] = useState(toStr(settings.gymProteinGoal));
+  const [gymCarbsGoal, setGymCarbsGoal] = useState(toStr(settings.gymCarbsGoal));
+  const [gymFatGoal, setGymFatGoal] = useState(toStr(settings.gymFatGoal));
 
   const openSheet = () => {
     setCalorieGoal(String(settings.calorieGoal));
-    setProteinGoal(settings.proteinGoal !== undefined ? String(settings.proteinGoal) : '');
-    setCarbsGoal(settings.carbsGoal !== undefined ? String(settings.carbsGoal) : '');
-    setFatGoal(settings.fatGoal !== undefined ? String(settings.fatGoal) : '');
+    setProteinGoal(toStr(settings.proteinGoal));
+    setCarbsGoal(toStr(settings.carbsGoal));
+    setFatGoal(toStr(settings.fatGoal));
+    setGymCalorieGoal(toStr(settings.gymCalorieGoal));
+    setGymProteinGoal(toStr(settings.gymProteinGoal));
+    setGymCarbsGoal(toStr(settings.gymCarbsGoal));
+    setGymFatGoal(toStr(settings.gymFatGoal));
     setOpen(true);
   };
 
@@ -28,9 +44,13 @@ export default function GoalSetting({ settings, onSave }: Props) {
     if (Number.isNaN(calories) || calories <= 0) return;
     onSave({
       calorieGoal: calories,
-      proteinGoal: proteinGoal ? parseFloat(proteinGoal) : undefined,
-      carbsGoal: carbsGoal ? parseFloat(carbsGoal) : undefined,
-      fatGoal: fatGoal ? parseFloat(fatGoal) : undefined,
+      proteinGoal: toNum(proteinGoal),
+      carbsGoal: toNum(carbsGoal),
+      fatGoal: toNum(fatGoal),
+      gymCalorieGoal: toNum(gymCalorieGoal),
+      gymProteinGoal: toNum(gymProteinGoal),
+      gymCarbsGoal: toNum(gymCarbsGoal),
+      gymFatGoal: toNum(gymFatGoal),
     });
     setOpen(false);
   };
@@ -103,6 +123,61 @@ export default function GoalSetting({ settings, onSave }: Props) {
                   />
                 </label>
               </div>
+
+              <div className="goals-divider">
+                <span>🏋️ Gym day overrides</span>
+                <span className="goals-divider-hint">leave blank to use the goal above</span>
+              </div>
+              <div className="form-grid">
+                <label>
+                  Calories
+                  <input
+                    type="number"
+                    inputMode="numeric"
+                    min={0}
+                    placeholder="same"
+                    value={gymCalorieGoal}
+                    onChange={(e) => setGymCalorieGoal(e.target.value)}
+                  />
+                </label>
+                <label>
+                  Protein (g)
+                  <input
+                    type="number"
+                    inputMode="decimal"
+                    step="any"
+                    min={0}
+                    placeholder="same"
+                    value={gymProteinGoal}
+                    onChange={(e) => setGymProteinGoal(e.target.value)}
+                  />
+                </label>
+                <label>
+                  Carbs (g)
+                  <input
+                    type="number"
+                    inputMode="decimal"
+                    step="any"
+                    min={0}
+                    placeholder="same"
+                    value={gymCarbsGoal}
+                    onChange={(e) => setGymCarbsGoal(e.target.value)}
+                  />
+                </label>
+                <label>
+                  Fat (g)
+                  <input
+                    type="number"
+                    inputMode="decimal"
+                    step="any"
+                    min={0}
+                    placeholder="same"
+                    value={gymFatGoal}
+                    onChange={(e) => setGymFatGoal(e.target.value)}
+                  />
+                </label>
+              </div>
+
               <button type="submit" className="save-btn">
                 Save goals
               </button>

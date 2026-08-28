@@ -32,12 +32,19 @@ export default function BackupPanel({ onClose, onImported, syncStatus, onSyncNow
 
   const applyImport = (text: string) => {
     const result = importBackup(text);
-    if (result.entriesAdded === 0 && result.favoritesAdded === 0) {
+    if (!result.changed) {
       setMessage('Nothing new to import — this data is already here.');
     } else {
-      setMessage(
-        `Added ${result.entriesAdded} entr${result.entriesAdded === 1 ? 'y' : 'ies'} across ${result.daysAffected} day${result.daysAffected === 1 ? '' : 's'}${result.favoritesAdded ? `, plus ${result.favoritesAdded} favorite${result.favoritesAdded === 1 ? '' : 's'}` : ''}.`,
-      );
+      const parts: string[] = [];
+      if (result.entriesAdded > 0) {
+        parts.push(
+          `${result.entriesAdded} entr${result.entriesAdded === 1 ? 'y' : 'ies'} across ${result.daysAffected} day${result.daysAffected === 1 ? '' : 's'}`,
+        );
+      }
+      if (result.favoritesAdded > 0) {
+        parts.push(`${result.favoritesAdded} favorite${result.favoritesAdded === 1 ? '' : 's'}`);
+      }
+      setMessage(parts.length > 0 ? `Added ${parts.join(', plus ')}.` : 'Restored.');
       onImported();
     }
   };

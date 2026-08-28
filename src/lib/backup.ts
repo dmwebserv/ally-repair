@@ -18,7 +18,7 @@ function getAllDayLogs(): DayLog[] {
     try {
       const parsed = JSON.parse(localStorage.getItem(key) ?? '');
       if (parsed && Array.isArray(parsed.entries)) {
-        logs.push({ date, entries: parsed.entries });
+        logs.push({ date, entries: parsed.entries, isGymDay: parsed.isGymDay });
       }
     } catch {
       // skip a corrupt entry rather than fail the whole export
@@ -53,6 +53,8 @@ export interface ImportResult {
   entriesAdded: number;
   daysAffected: number;
   favoritesAdded: number;
+  /** True if anything at all changed — entries, favorites, or a day's gym-day flag. */
+  changed: boolean;
 }
 
 /** Merges an imported backup into what's already stored — never overwrites or removes existing entries. */
@@ -69,20 +71,28 @@ export function importBackup(json: string): ImportResult {
 
   let entriesAdded = 0;
   let daysAffected = 0;
+  let anyChanged = false;
 
   for (const incoming of data.logs) {
     const raw = localStorage.getItem(LOG_PREFIX + incoming.date);
     const existing: DayLog = raw ? JSON.parse(raw) : { date: incoming.date, entries: [] };
     const existingIds = new Set(existing.entries.map((e) => e.id));
     const toAdd = (incoming.entries ?? []).filter((e) => !existingIds.has(e.id));
+    const isGymDay = existing.isGymDay !== undefined ? existing.isGymDay : incoming.isGymDay;
+    const gymDayChanged = isGymDay !== existing.isGymDay;
+
+    if (toAdd.length > 0 || gymDayChanged) {
+      saveDayLog({ date: incoming.date, entries: [...existing.entries, ...toAdd], isGymDay });
+      anyChanged = true;
+    }
     if (toAdd.length > 0) {
-      saveDayLog({ date: incoming.date, entries: [...existing.entries, ...toAdd] });
       entriesAdded += toAdd.length;
       daysAffected += 1;
     }
   }
 
   const favoritesAdded = Array.isArray(data.favorites) ? mergeFoodStats(data.favorites) : 0;
+  if (favoritesAdded > 0) anyChanged = true;
 
-  return { entriesAdded, daysAffected, favoritesAdded };
+  return { entriesAdded, daysAffected, favoritesAdded, changed: anyChanged };
 }

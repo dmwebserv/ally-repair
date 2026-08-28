@@ -8,17 +8,19 @@ import FavoritesRow from './components/FavoritesRow';
 import FoodLog from './components/FoodLog';
 import GoalSetting from './components/GoalSetting';
 import WeekSummary from './components/WeekSummary';
-import { IconCloudDown } from './components/icons';
+import { IconCloudDown, IconDumbbell } from './components/icons';
 import { CLOUD_SYNC_ENABLED, pushBackup } from './lib/cloudSync';
 import { todayKey } from './lib/date';
 import { pinByEntry, recordFoodUse } from './lib/favorites';
 import {
   addEntry,
   dayTotals,
+  effectiveGoals,
   getDayLog,
   getSettings,
   removeEntry,
   saveSettings,
+  setGymDay,
   updateEntry,
 } from './lib/storage';
 import type { FoodEntry, UserSettings } from './lib/types';
@@ -52,6 +54,7 @@ function App() {
   }, [date]);
 
   const totals = useMemo(() => dayTotals(log), [log]);
+  const goals = useMemo(() => effectiveGoals(settings, log.isGymDay), [settings, log.isGymDay]);
 
   const syncNow = () => {
     if (!CLOUD_SYNC_ENABLED) return;
@@ -150,6 +153,12 @@ function App() {
     scheduleSync();
   };
 
+  const handleToggleGymDay = () => {
+    const updated = setGymDay(date, !log.isGymDay);
+    setLog(updated);
+    scheduleSync();
+  };
+
   const handleImported = () => {
     setLog(getDayLog(date));
     setSettings(getSettings());
@@ -188,7 +197,16 @@ function App() {
 
       <DateNav date={date} onChange={setDate} />
 
-      <CalorieRing consumed={totals.calories} goal={settings.calorieGoal} />
+      <button
+        type="button"
+        className={`gym-day-toggle ${log.isGymDay ? 'active' : ''}`}
+        onClick={handleToggleGymDay}
+      >
+        <IconDumbbell width={15} height={15} />
+        Gym day
+      </button>
+
+      <CalorieRing consumed={totals.calories} goal={goals.calorieGoal} />
 
       <div className="macro-row">
         <div className="macro-pill">
@@ -196,10 +214,10 @@ function App() {
             <span className="macro-dot protein" />
             <span className="macro-value">{Math.round(totals.protein)}g</span>
           </div>
-          <span className="macro-key">protein{settings.proteinGoal ? ` / ${settings.proteinGoal}g` : ''}</span>
-          {macroPct(totals.protein, settings.proteinGoal) !== null && (
+          <span className="macro-key">protein{goals.proteinGoal ? ` / ${goals.proteinGoal}g` : ''}</span>
+          {macroPct(totals.protein, goals.proteinGoal) !== null && (
             <div className="macro-pill-track">
-              <div className="macro-pill-fill protein" style={{ width: `${macroPct(totals.protein, settings.proteinGoal)}%` }} />
+              <div className="macro-pill-fill protein" style={{ width: `${macroPct(totals.protein, goals.proteinGoal)}%` }} />
             </div>
           )}
         </div>
@@ -208,10 +226,10 @@ function App() {
             <span className="macro-dot carbs" />
             <span className="macro-value">{Math.round(totals.carbs)}g</span>
           </div>
-          <span className="macro-key">carbs{settings.carbsGoal ? ` / ${settings.carbsGoal}g` : ''}</span>
-          {macroPct(totals.carbs, settings.carbsGoal) !== null && (
+          <span className="macro-key">carbs{goals.carbsGoal ? ` / ${goals.carbsGoal}g` : ''}</span>
+          {macroPct(totals.carbs, goals.carbsGoal) !== null && (
             <div className="macro-pill-track">
-              <div className="macro-pill-fill carbs" style={{ width: `${macroPct(totals.carbs, settings.carbsGoal)}%` }} />
+              <div className="macro-pill-fill carbs" style={{ width: `${macroPct(totals.carbs, goals.carbsGoal)}%` }} />
             </div>
           )}
         </div>
@@ -220,10 +238,10 @@ function App() {
             <span className="macro-dot fat" />
             <span className="macro-value">{Math.round(totals.fat)}g</span>
           </div>
-          <span className="macro-key">fat{settings.fatGoal ? ` / ${settings.fatGoal}g` : ''}</span>
-          {macroPct(totals.fat, settings.fatGoal) !== null && (
+          <span className="macro-key">fat{goals.fatGoal ? ` / ${goals.fatGoal}g` : ''}</span>
+          {macroPct(totals.fat, goals.fatGoal) !== null && (
             <div className="macro-pill-track">
-              <div className="macro-pill-fill fat" style={{ width: `${macroPct(totals.fat, settings.fatGoal)}%` }} />
+              <div className="macro-pill-fill fat" style={{ width: `${macroPct(totals.fat, goals.fatGoal)}%` }} />
             </div>
           )}
         </div>
@@ -244,7 +262,7 @@ function App() {
         <FoodLog entries={log.entries} onRemove={(entry) => handleDelete(entry)} onEdit={setEditingEntry} />
       </section>
 
-      <WeekSummary goal={settings.calorieGoal} refreshKey={refreshKey} />
+      <WeekSummary settings={settings} refreshKey={refreshKey} />
 
       <footer className="app-footer">
         <p>
