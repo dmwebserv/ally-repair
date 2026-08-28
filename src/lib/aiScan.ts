@@ -9,12 +9,14 @@ interface AiScanResponse {
   carbs: number | null;
   fat: number | null;
   name: string | null;
+  estimated: boolean;
   error?: string;
 }
 
 export interface AiScanResult {
   parsed: ParsedNutrition;
   name: string | null;
+  estimated: boolean;
 }
 
 async function blobToDataUrl(blob: Blob): Promise<string> {
@@ -55,5 +57,6 @@ export async function scanWithAI(file: File | Blob): Promise<AiScanResult> {
       fat: data.fat ?? undefined,
     },
     name: data.name,
+    estimated: Boolean(data.estimated),
   };
 }

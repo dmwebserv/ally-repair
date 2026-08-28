@@ -16,6 +16,9 @@ export interface DayLog {
 
 export interface UserSettings {
   calorieGoal: number;
+  proteinGoal?: number;
+  carbsGoal?: number;
+  fatGoal?: number;
 }
 
 export interface ParsedNutrition {
@@ -23,4 +26,17 @@ export interface ParsedNutrition {
   protein?: number;
   carbs?: number;
   fat?: number;
+}
+
+export interface FoodStat {
+  id: string;
+  name: string;
+  calories: number;
+  protein?: number;
+  carbs?: number;
+  fat?: number;
+  servings: number;
+  useCount: number;
+  lastUsedAt: string;
+  pinned: boolean;
 }

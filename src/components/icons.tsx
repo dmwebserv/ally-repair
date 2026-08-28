@@ -78,6 +78,12 @@ export const IconCheck = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+export const IconBarcode = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...props}>
+    <path d="M4 5v14M8 5v14M11 5v14M14 5v14M16.5 5v14M20 5v14" strokeWidth={1.6} />
+  </svg>
+);
+
 export const IconKeyboard = (props: SVGProps<SVGSVGElement>) => (
   <svg {...base} {...props}>
     <rect x="3.5" y="6" width="17" height="12" rx="2.5" />

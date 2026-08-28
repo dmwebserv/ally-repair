@@ -1,13 +1,16 @@
-const SYSTEM_PROMPT = `You read nutrition facts labels from photos.
+const SYSTEM_PROMPT = `You extract nutrition info from a photo of food. The photo is one of two things:
+(a) A printed nutrition facts label, or
+(b) A plated meal / packaged food / restaurant dish with no legible label.
+
 Reply with strict JSON only, no other text:
-{"calories": number|null, "protein_g": number|null, "carbs_g": number|null, "fat_g": number|null, "food_name": string|null}
+{"calories": number|null, "protein_g": number|null, "carbs_g": number|null, "fat_g": number|null, "food_name": string|null, "estimated": boolean}
 
 Rules:
-- calories must be in kcal.
-- If the label shows multiple columns (e.g. "per 100g" and "per serving"/"per pouch"/"per portion"/"per pack"), use the per-serving/per-pouch/per-portion column, not per-100g.
-- food_name should be a short guess at the product name if visible (e.g. from a front-of-pack logo partially in frame), otherwise null.
-- If a field truly isn't visible or legible, use null for that field. Never guess wildly.
-- If the photo does not contain a nutrition label at all, return all fields as null.`;
+- If it's case (a), a real label: read the exact printed values. calories must be in kcal. If the label shows multiple columns (e.g. "per 100g" and "per serving"/"per pouch"/"per portion"/"per pack"), use the per-serving/per-pouch/per-portion column, not per-100g. Set "estimated": false.
+- If it's case (b), no label: identify the food and estimate calories and macros based on what's visible and typical portion sizes for that dish. Set "estimated": true.
+- food_name should be a short guess at the food or product name, otherwise null.
+- If you truly cannot make a reasonable read or estimate (image unclear, not food at all), use null for the numeric fields.
+- Never refuse to estimate case (b) just because it's not exact — a reasonable estimate is expected and useful; just mark it "estimated": true.`;
 
 function corsHeaders(origin) {
   return {
@@ -119,6 +122,7 @@ export default {
         carbs: numOrNull(parsed.carbs_g),
         fat: numOrNull(parsed.fat_g),
         name: typeof parsed.food_name === 'string' ? parsed.food_name : null,
+        estimated: Boolean(parsed.estimated),
       },
       200,
       origin,

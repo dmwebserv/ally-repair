@@ -53,6 +53,16 @@ export function removeEntry(date: string, entryId: string): DayLog {
   return updated;
 }
 
+export function updateEntry(date: string, entry: FoodEntry): DayLog {
+  const log = getDayLog(date);
+  const updated: DayLog = {
+    date,
+    entries: log.entries.map((e) => (e.id === entry.id ? entry : e)),
+  };
+  saveDayLog(updated);
+  return updated;
+}
+
 export function dayTotals(log: DayLog) {
   return log.entries.reduce(
     (acc, e) => {

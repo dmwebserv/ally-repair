@@ -1,0 +1,15 @@
+{
+  "name": "NutriLog",
+  "short_name": "NutriLog",
+  "description": "Log food by typing it in, scanning a label, or scanning a barcode — track your daily calories and macros, entirely on your device.",
+  "start_url": "/ally-repair/",
+  "scope": "/ally-repair/",
+  "display": "standalone",
+  "background_color": "#0a0b0d",
+  "theme_color": "#059669",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
