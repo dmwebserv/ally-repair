@@ -1,7 +1,7 @@
 import type { DayLog, FoodEntry, UserSettings } from './types';
 
 const SETTINGS_KEY = 'nutrilog:settings';
-const LOG_PREFIX = 'nutrilog:log:';
+export const LOG_PREFIX = 'nutrilog:log:';
 
 const DEFAULT_SETTINGS: UserSettings = {
   calorieGoal: 2000,

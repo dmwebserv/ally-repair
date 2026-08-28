@@ -101,6 +101,15 @@ export function pinByEntry(entry: FoodEntry): void {
   saveFoodStats(stats);
 }
 
+/** Merges in stats from an imported backup, keeping existing ones untouched on name conflicts. */
+export function mergeFoodStats(incoming: FoodStat[]): number {
+  const stats = getFoodStats();
+  const existingNames = new Set(stats.map((s) => normalizeName(s.name)));
+  const toAdd = incoming.filter((s) => !existingNames.has(normalizeName(s.name)));
+  if (toAdd.length > 0) saveFoodStats([...stats, ...toAdd]);
+  return toAdd.length;
+}
+
 export function addManualFavorite(input: Omit<FoodStat, 'id' | 'useCount' | 'lastUsedAt' | 'pinned'>): FoodStat[] {
   const stats = getFoodStats();
   stats.push({

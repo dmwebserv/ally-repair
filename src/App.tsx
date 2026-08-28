@@ -1,12 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import './App.css';
 import AddFoodPanel from './components/AddFoodPanel';
+import BackupPanel from './components/BackupPanel';
 import CalorieRing from './components/CalorieRing';
 import DateNav from './components/DateNav';
 import FavoritesRow from './components/FavoritesRow';
 import FoodLog from './components/FoodLog';
 import GoalSetting from './components/GoalSetting';
 import WeekSummary from './components/WeekSummary';
+import { IconCloudDown } from './components/icons';
 import { todayKey } from './lib/date';
 import { pinByEntry, recordFoodUse } from './lib/favorites';
 import {
@@ -37,6 +39,7 @@ function App() {
   const [refreshKey, setRefreshKey] = useState(0);
   const [editingEntry, setEditingEntry] = useState<FoodEntry | null>(null);
   const [toast, setToast] = useState<Toast | null>(null);
+  const [backupOpen, setBackupOpen] = useState(false);
   const toastTimeout = useRef<number | null>(null);
 
   useEffect(() => {
@@ -100,6 +103,12 @@ function App() {
     saveSettings(updated);
   };
 
+  const handleImported = () => {
+    setLog(getDayLog(date));
+    setSettings(getSettings());
+    setRefreshKey((k) => k + 1);
+  };
+
   return (
     <div className="app">
       <header className="app-header">
@@ -107,8 +116,15 @@ function App() {
           <img src={`${import.meta.env.BASE_URL}icon-192.png`} alt="" className="brand-mark" />
           <h1>NutriLog</h1>
         </div>
-        <GoalSetting settings={settings} onSave={handleSettingsSave} />
+        <div className="header-actions">
+          <button type="button" className="icon-btn" onClick={() => setBackupOpen(true)} aria-label="Backup and restore">
+            <IconCloudDown width={16} height={16} />
+          </button>
+          <GoalSetting settings={settings} onSave={handleSettingsSave} />
+        </div>
       </header>
+
+      {backupOpen && <BackupPanel onClose={() => setBackupOpen(false)} onImported={handleImported} />}
 
       <DateNav date={date} onChange={setDate} />
 

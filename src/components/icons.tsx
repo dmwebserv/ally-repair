@@ -84,6 +84,20 @@ export const IconBarcode = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+export const IconCloudDown = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...props}>
+    <path d="M7 17.5a4.5 4.5 0 0 1-1-8.9 5.5 5.5 0 0 1 10.7-1.9A4.25 4.25 0 0 1 17.5 17.5H7Z" />
+    <path d="M12 10.5v6M9.5 14l2.5 2.5L14.5 14" />
+  </svg>
+);
+
+export const IconUpload = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...props}>
+    <path d="M4.5 15v3a1.5 1.5 0 0 0 1.5 1.5h12a1.5 1.5 0 0 0 1.5-1.5v-3" />
+    <path d="M12 15V4M8 8l4-4 4 4" />
+  </svg>
+);
+
 export const IconKeyboard = (props: SVGProps<SVGSVGElement>) => (
   <svg {...base} {...props}>
     <rect x="3.5" y="6" width="17" height="12" rx="2.5" />
