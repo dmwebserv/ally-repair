@@ -22,9 +22,18 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       - name: Sync Worker secrets
         run: |
-          echo "${{ secrets.OPENAI_API_KEY }}" | npx wrangler secret put OPENAI_API_KEY
-          echo "${{ secrets.SCAN_SHARED_SECRET }}" | npx wrangler secret put APP_SHARED_SECRET
-          echo "${{ secrets.GH_BACKUP_TOKEN }}" | npx wrangler secret put GITHUB_BACKUP_TOKEN
+          put_secret() {
+            name="$1"
+            value="$2"
+            if [ -z "$value" ]; then
+              echo "::error::GitHub secret for $name is empty or missing — check Settings > Secrets and variables > Actions > Repository secrets (not an Environment)."
+              exit 1
+            fi
+            echo "$value" | npx wrangler secret put "$name"
+          }
+          put_secret OPENAI_API_KEY "${{ secrets.OPENAI_API_KEY }}"
+          put_secret APP_SHARED_SECRET "${{ secrets.SCAN_SHARED_SECRET }}"
+          put_secret GITHUB_BACKUP_TOKEN "${{ secrets.GH_BACKUP_TOKEN }}"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
