@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T13:52:15.848Z",
+  "exportedAt": "2026-08-28T13:52:59.948Z",
   "settings": {
     "calorieGoal": 2000
   },
@@ -39,6 +39,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-08-28T13:52:11.846Z",
       "pinned": true
+    },
+    {
+      "id": "3294afdc-d50d-405c-8adc-d9e1124101c5",
+      "name": "Protein Rice",
+      "calories": 188,
+      "protein": 14.4,
+      "carbs": 22.6,
+      "fat": 4.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-08-28T13:52:55.947Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -74,6 +86,16 @@
           "servings": 1,
           "id": "ed00fcbc-d272-4406-8c77-acd4361b9e02",
           "loggedAt": "2026-08-28T13:52:11.846Z"
+        },
+        {
+          "name": "Protein Rice",
+          "calories": 188,
+          "protein": 14.4,
+          "carbs": 22.6,
+          "fat": 4.5,
+          "servings": 1,
+          "id": "dced7ea7-964b-47c9-a1cc-2b3f5366f7d0",
+          "loggedAt": "2026-08-28T13:52:55.947Z"
         }
       ]
     }
