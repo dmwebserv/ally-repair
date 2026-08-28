@@ -79,8 +79,13 @@ button {
   color: inherit;
 }
 
-input {
+input,
+select,
+textarea {
   font: inherit;
+  /* iOS Safari auto-zooms the page on focus if an input's font-size is under 16px.
+     Force it everywhere so typing never triggers that "zoomed-in webpage" feeling. */
+  font-size: 16px !important;
 }
 
 ::selection {
