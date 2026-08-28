@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T13:51:28.872Z",
+  "exportedAt": "2026-08-28T13:52:15.848Z",
   "settings": {
     "calorieGoal": 2000
   },
@@ -27,6 +27,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-08-28T13:51:24.870Z",
       "pinned": false
+    },
+    {
+      "id": "20afe4b2-3ee1-4bff-a129-e75a1aca42be",
+      "name": "Southern Fried Flavour Snack",
+      "calories": 164,
+      "protein": 17.6,
+      "carbs": 0.9,
+      "fat": 9.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-08-28T13:52:11.846Z",
+      "pinned": true
     }
   ],
   "logs": [
@@ -52,6 +64,16 @@
           "servings": 1,
           "id": "83c6f75f-bdc6-47ad-94e3-d2b7303a946c",
           "loggedAt": "2026-08-28T13:51:24.870Z"
+        },
+        {
+          "name": "Southern Fried Flavour Snack",
+          "calories": 164,
+          "protein": 17.6,
+          "carbs": 0.9,
+          "fat": 9.6,
+          "servings": 1,
+          "id": "ed00fcbc-d272-4406-8c77-acd4361b9e02",
+          "loggedAt": "2026-08-28T13:52:11.846Z"
         }
       ]
     }
