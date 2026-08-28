@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T13:53:34.681Z",
+  "exportedAt": "2026-08-28T13:53:40.298Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -102,7 +102,8 @@
           "id": "dced7ea7-964b-47c9-a1cc-2b3f5366f7d0",
           "loggedAt": "2026-08-28T13:52:55.947Z"
         }
-      ]
+      ],
+      "isGymDay": true
     }
   ]
 }
