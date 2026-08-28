@@ -25,16 +25,37 @@ interface OffResponse {
   };
 }
 
-export async function lookupBarcode(code: string): Promise<BarcodeResult | null> {
+async function fetchProduct(code: string): Promise<OffResponse['product'] | null> {
   const res = await fetch(
     `https://world.openfoodfacts.org/api/v2/product/${encodeURIComponent(code)}.json?fields=product_name,nutriments`,
   );
   if (!res.ok) throw new Error(`Lookup failed (${res.status})`);
-
   const data: OffResponse = await res.json();
-  if (data.status !== 1 || !data.product) return null;
+  return data.status === 1 && data.product ? data.product : null;
+}
 
-  const n = data.product.nutriments ?? {};
+/**
+ * Barcode scanners disagree on whether a 12-digit UPC-A code gets a leading
+ * zero to become a 13-digit EAN — Open Food Facts is usually indexed by
+ * EAN-13, so try the raw scan first, then the other form as a fallback.
+ */
+function candidateCodes(code: string): string[] {
+  const trimmed = code.trim();
+  const candidates = [trimmed];
+  if (/^\d{12}$/.test(trimmed)) candidates.push(`0${trimmed}`);
+  if (/^0\d{12}$/.test(trimmed)) candidates.push(trimmed.slice(1));
+  return candidates;
+}
+
+export async function lookupBarcode(code: string): Promise<BarcodeResult | null> {
+  let product: OffResponse['product'] | null = null;
+  for (const candidate of candidateCodes(code)) {
+    product = await fetchProduct(candidate);
+    if (product) break;
+  }
+  if (!product) return null;
+
+  const n = product.nutriments ?? {};
   const hasServing = n['energy-kcal_serving'] !== undefined;
 
   const pick = (servingKey: keyof OffNutriments, hundredKey: keyof OffNutriments) =>
@@ -51,7 +72,7 @@ export async function lookupBarcode(code: string): Promise<BarcodeResult | null>
 
   return {
     parsed: { calories, protein, carbs, fat },
-    name: data.product.product_name || null,
+    name: product.product_name || null,
     perHundredGrams: !hasServing,
   };
 }
