@@ -1,7 +1,12 @@
 {
-  "exportedAt": "2026-08-28T13:52:59.948Z",
+  "exportedAt": "2026-08-28T13:53:34.681Z",
   "settings": {
-    "calorieGoal": 2000
+    "calorieGoal": 1850,
+    "proteinGoal": 170,
+    "carbsGoal": 150,
+    "fatGoal": 60,
+    "gymProteinGoal": 170,
+    "gymCarbsGoal": 250
   },
   "favorites": [
     {
