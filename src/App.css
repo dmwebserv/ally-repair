@@ -1013,3 +1013,66 @@
   color: var(--text);
   margin: 4px 0 4px;
 }
+
+.backup-note {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--text-soft);
+}
+
+.favorite-add-btn:disabled {
+  opacity: 0.6;
+}
+
+/* Sync status */
+.icon-btn.sync-synced {
+  color: var(--accent);
+}
+
+.icon-btn.sync-error {
+  color: var(--bad);
+}
+
+.icon-btn.sync-syncing {
+  color: var(--carbs);
+}
+
+.sync-status-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-h);
+  margin-bottom: 4px;
+}
+
+.sync-status-row .link-btn {
+  margin-left: auto;
+}
+
+.sync-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--text-soft);
+  flex-shrink: 0;
+}
+
+.sync-status-row.sync-synced .sync-dot {
+  background: var(--accent);
+}
+
+.sync-status-row.sync-error .sync-dot {
+  background: var(--bad);
+}
+
+.sync-status-row.sync-syncing .sync-dot {
+  background: var(--carbs);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}

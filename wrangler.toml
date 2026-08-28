@@ -6,3 +6,7 @@ compatibility_date = "2024-11-01"
 # Cheap, fast OpenAI vision model. Change if a newer/cheaper vision model
 # is available on your account by the time you read this.
 OPENAI_MODEL = "gpt-4o-mini"
+
+# Repo the cloud backup writes to. Not secret — just identifies where.
+GITHUB_BACKUP_OWNER = "dmwebserv"
+GITHUB_BACKUP_REPO = "ally-repair"

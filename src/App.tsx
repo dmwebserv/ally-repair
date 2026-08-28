@@ -9,6 +9,7 @@ import FoodLog from './components/FoodLog';
 import GoalSetting from './components/GoalSetting';
 import WeekSummary from './components/WeekSummary';
 import { IconCloudDown } from './components/icons';
+import { CLOUD_SYNC_ENABLED, pushBackup } from './lib/cloudSync';
 import { todayKey } from './lib/date';
 import { pinByEntry, recordFoodUse } from './lib/favorites';
 import {
@@ -27,6 +28,8 @@ interface Toast {
   date: string;
 }
 
+export type SyncStatus = 'idle' | 'syncing' | 'synced' | 'error';
+
 function macroPct(value: number, goal?: number): number | null {
   if (!goal) return null;
   return Math.min(100, (value / goal) * 100);
@@ -40,7 +43,9 @@ function App() {
   const [editingEntry, setEditingEntry] = useState<FoodEntry | null>(null);
   const [toast, setToast] = useState<Toast | null>(null);
   const [backupOpen, setBackupOpen] = useState(false);
+  const [syncStatus, setSyncStatus] = useState<SyncStatus>('idle');
   const toastTimeout = useRef<number | null>(null);
+  const syncTimeout = useRef<number | null>(null);
 
   useEffect(() => {
     setLog(getDayLog(date));
@@ -48,12 +53,48 @@ function App() {
 
   const totals = useMemo(() => dayTotals(log), [log]);
 
+  const syncNow = () => {
+    if (!CLOUD_SYNC_ENABLED) return;
+    if (syncTimeout.current !== null) {
+      window.clearTimeout(syncTimeout.current);
+      syncTimeout.current = null;
+    }
+    setSyncStatus('syncing');
+    pushBackup()
+      .then(() => setSyncStatus('synced'))
+      .catch(() => setSyncStatus('error'));
+  };
+
+  const scheduleSync = () => {
+    if (!CLOUD_SYNC_ENABLED) return;
+    if (syncTimeout.current !== null) window.clearTimeout(syncTimeout.current);
+    syncTimeout.current = window.setTimeout(() => {
+      syncTimeout.current = null;
+      syncNow();
+    }, 4000);
+  };
+
+  useEffect(() => {
+    if (!CLOUD_SYNC_ENABLED) return;
+    const flush = () => {
+      if (syncTimeout.current === null) return;
+      syncNow();
+    };
+    document.addEventListener('visibilitychange', flush);
+    window.addEventListener('pagehide', flush);
+    return () => {
+      document.removeEventListener('visibilitychange', flush);
+      window.removeEventListener('pagehide', flush);
+    };
+  }, []);
+
   const handleAdd = (entry: FoodEntry, favorite: boolean) => {
     const updated = addEntry(date, entry);
     setLog(updated);
     setRefreshKey((k) => k + 1);
     recordFoodUse(entry);
     if (favorite) pinByEntry(entry);
+    scheduleSync();
   };
 
   const handleQuickAdd = (entry: FoodEntry) => {
@@ -61,12 +102,14 @@ function App() {
     setLog(updated);
     setRefreshKey((k) => k + 1);
     recordFoodUse(entry);
+    scheduleSync();
   };
 
   const handleSaveEdit = (entry: FoodEntry) => {
     const updated = updateEntry(date, entry);
     setLog(updated);
     setRefreshKey((k) => k + 1);
+    scheduleSync();
   };
 
   const clearToastTimeout = () => {
@@ -83,9 +126,11 @@ function App() {
 
     clearToastTimeout();
     setToast({ entry, date: entryDate });
+    // Defer the sync until the undo window closes, so an "oops" doesn't cost a round trip.
     toastTimeout.current = window.setTimeout(() => {
       setToast(null);
       toastTimeout.current = null;
+      scheduleSync();
     }, 5000);
   };
 
@@ -96,17 +141,20 @@ function App() {
     if (toast.date === date) setLog(updated);
     setRefreshKey((k) => k + 1);
     setToast(null);
+    scheduleSync();
   };
 
   const handleSettingsSave = (updated: UserSettings) => {
     setSettings(updated);
     saveSettings(updated);
+    scheduleSync();
   };
 
   const handleImported = () => {
     setLog(getDayLog(date));
     setSettings(getSettings());
     setRefreshKey((k) => k + 1);
+    scheduleSync();
   };
 
   return (
@@ -117,14 +165,26 @@ function App() {
           <h1>NutriLog</h1>
         </div>
         <div className="header-actions">
-          <button type="button" className="icon-btn" onClick={() => setBackupOpen(true)} aria-label="Backup and restore">
+          <button
+            type="button"
+            className={`icon-btn sync-${syncStatus}`}
+            onClick={() => setBackupOpen(true)}
+            aria-label="Backup and restore"
+          >
             <IconCloudDown width={16} height={16} />
           </button>
           <GoalSetting settings={settings} onSave={handleSettingsSave} />
         </div>
       </header>
 
-      {backupOpen && <BackupPanel onClose={() => setBackupOpen(false)} onImported={handleImported} />}
+      {backupOpen && (
+        <BackupPanel
+          onClose={() => setBackupOpen(false)}
+          onImported={handleImported}
+          syncStatus={syncStatus}
+          onSyncNow={syncNow}
+        />
+      )}
 
       <DateNav date={date} onChange={setDate} />
 
@@ -187,7 +247,11 @@ function App() {
       <WeekSummary goal={settings.calorieGoal} refreshKey={refreshKey} />
 
       <footer className="app-footer">
-        <p>Everything stays on this device — no account, no server, no cost.</p>
+        <p>
+          {CLOUD_SYNC_ENABLED
+            ? 'Backed up automatically to your private GitHub repo.'
+            : 'Everything stays on this device — no account, no server, no cost.'}
+        </p>
       </footer>
 
       {toast && (
