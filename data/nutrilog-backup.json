@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-01T10:00:48.419Z",
+  "exportedAt": "2026-09-01T12:06:26.580Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -67,6 +67,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-01T10:00:22.756Z",
+      "pinned": false
+    },
+    {
+      "id": "ea3ff8ab-0e59-4384-9f48-3ba4c5ba3e39",
+      "name": "Soba Noodles",
+      "calories": 208,
+      "protein": 5.5,
+      "carbs": 27.3,
+      "fat": 7.9,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-01T12:06:22.577Z",
       "pinned": false
     }
   ],
@@ -139,6 +151,16 @@
           "servings": 1,
           "id": "1b0b5507-b97c-473a-a153-6ba0a68e320e",
           "loggedAt": "2026-09-01T10:00:22.756Z"
+        },
+        {
+          "name": "Soba Noodles",
+          "calories": 208,
+          "protein": 5.5,
+          "carbs": 27.3,
+          "fat": 7.9,
+          "servings": 1,
+          "id": "ca9186a4-970f-42be-a2f1-864788ae0e80",
+          "loggedAt": "2026-09-01T12:06:22.577Z"
         }
       ],
       "isGymDay": false
