@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-01T14:18:17.769Z",
+  "exportedAt": "2026-09-01T14:45:39.159Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -104,6 +104,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-01T14:17:54.351Z",
       "pinned": false
+    },
+    {
+      "id": "86b002c2-fb4a-4457-8b9d-e4886d7b58ed",
+      "name": "Tone Protein Bar Chocolate Brownie",
+      "calories": 141,
+      "protein": 15,
+      "carbs": 15,
+      "fat": 3.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-01T14:45:35.157Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -205,6 +217,16 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-09-01T14:18:10.631Z"
+        },
+        {
+          "name": "Tone Protein Bar Chocolate Brownie",
+          "calories": 141,
+          "protein": 15,
+          "carbs": 15,
+          "fat": 3.6,
+          "servings": 1,
+          "id": "6780de0f-6d4c-4c39-8f80-fb7b26565071",
+          "loggedAt": "2026-09-01T14:45:35.157Z"
         }
       ],
       "isGymDay": false
