@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-01T14:17:58.355Z",
+  "exportedAt": "2026-09-01T14:18:17.769Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -17,8 +17,8 @@
       "carbs": 7,
       "fat": 0.6,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-08-28T13:50:55.362Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-09-01T14:18:10.631Z",
       "pinned": true
     },
     {
@@ -167,16 +167,6 @@
       "date": "2026-09-01",
       "entries": [
         {
-          "name": "Strawberry with Sweetness",
-          "calories": 145,
-          "protein": 25,
-          "carbs": 9.3,
-          "fat": 0.7,
-          "servings": 1,
-          "id": "1b0b5507-b97c-473a-a153-6ba0a68e320e",
-          "loggedAt": "2026-09-01T10:00:22.756Z"
-        },
-        {
           "name": "Soba Noodles",
           "calories": 208,
           "protein": 5.5,
@@ -205,6 +195,16 @@
           "servings": 1,
           "id": "e0f2597e-4e19-49c6-8320-5bc8405cf13d",
           "loggedAt": "2026-09-01T14:17:54.351Z"
+        },
+        {
+          "id": "230b9ad5-8d53-445a-a9e8-49183e40c3c3",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-01T14:18:10.631Z"
         }
       ],
       "isGymDay": false
