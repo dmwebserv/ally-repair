@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T17:24:13.637Z",
+  "exportedAt": "2026-09-01T10:00:26.759Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -55,6 +55,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-08-28T13:52:55.947Z",
+      "pinned": false
+    },
+    {
+      "id": "fba783cc-9218-4512-a9cc-1ccc4eb28c3f",
+      "name": "Strawberry with Sweetness",
+      "calories": 145,
+      "protein": 25,
+      "carbs": 9.3,
+      "fat": 0.7,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-01T10:00:22.756Z",
       "pinned": false
     }
   ],
@@ -114,6 +126,21 @@
         }
       ],
       "isGymDay": true
+    },
+    {
+      "date": "2026-09-01",
+      "entries": [
+        {
+          "name": "Strawberry with Sweetness",
+          "calories": 145,
+          "protein": 25,
+          "carbs": 9.3,
+          "fat": 0.7,
+          "servings": 1,
+          "id": "1b0b5507-b97c-473a-a153-6ba0a68e320e",
+          "loggedAt": "2026-09-01T10:00:22.756Z"
+        }
+      ]
     }
   ]
 }
