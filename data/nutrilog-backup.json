@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-01T12:07:25.389Z",
+  "exportedAt": "2026-09-01T14:17:58.355Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -92,6 +92,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-01T12:07:21.386Z",
       "pinned": false
+    },
+    {
+      "id": "cfdbe289-263f-4dff-a36b-25107c4bdabd",
+      "name": "White Chocolate Flavour Protein Pudding",
+      "calories": 161,
+      "protein": 20.4,
+      "carbs": 9.6,
+      "fat": 4.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-01T14:17:54.351Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -183,6 +195,16 @@
           "servings": 3,
           "id": "603d7de8-9da2-4076-9a63-b7324bdd1ed7",
           "loggedAt": "2026-09-01T12:07:21.386Z"
+        },
+        {
+          "name": "White Chocolate Flavour Protein Pudding",
+          "calories": 161,
+          "protein": 20.4,
+          "carbs": 9.6,
+          "fat": 4.5,
+          "servings": 1,
+          "id": "e0f2597e-4e19-49c6-8320-5bc8405cf13d",
+          "loggedAt": "2026-09-01T14:17:54.351Z"
         }
       ],
       "isGymDay": false
