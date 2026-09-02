@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-02T08:40:17.979Z",
+  "exportedAt": "2026-09-02T08:40:52.925Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -128,6 +128,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-01T15:57:55.794Z",
       "pinned": true
+    },
+    {
+      "id": "0f5ba9fd-5076-415b-a1b4-9def2e84afb5",
+      "name": "HONEYCOMB",
+      "calories": 99,
+      "protein": 10,
+      "carbs": 11.8,
+      "fat": 3.2,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-02T08:40:50.943Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -265,6 +277,16 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-09-02T08:40:13.971Z"
+        },
+        {
+          "name": "HONEYCOMB",
+          "calories": 99,
+          "protein": 10,
+          "carbs": 11.8,
+          "fat": 3.2,
+          "servings": 1,
+          "id": "f19361e9-e008-4764-92cc-225043402464",
+          "loggedAt": "2026-09-02T08:40:50.943Z"
         }
       ]
     }
