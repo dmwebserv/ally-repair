@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-03T08:19:45.707Z",
+  "exportedAt": "2026-09-03T11:48:35.863Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -151,6 +151,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-03T06:54:41.185Z",
+      "pinned": false
+    },
+    {
+      "id": "40c559be-725a-4b99-9ed1-bd5a091dcb7e",
+      "name": "Slow Roasted Chicken Bites",
+      "calories": 95,
+      "protein": 9,
+      "carbs": 2.5,
+      "fat": 6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-03T11:48:31.860Z",
       "pinned": false
     }
   ],
@@ -324,6 +336,16 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-09-03T08:19:37.406Z"
+        },
+        {
+          "name": "Slow Roasted Chicken Bites",
+          "calories": 95,
+          "protein": 9,
+          "carbs": 2.5,
+          "fat": 6,
+          "servings": 1,
+          "id": "3886ffbf-63d6-489d-b08e-00cfc100bc88",
+          "loggedAt": "2026-09-03T11:48:31.860Z"
         }
       ],
       "isGymDay": true
