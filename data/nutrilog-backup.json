@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-02T08:40:52.925Z",
+  "exportedAt": "2026-09-03T06:54:45.187Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -139,6 +139,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-02T08:40:50.943Z",
+      "pinned": false
+    },
+    {
+      "id": "7686f466-2140-45cc-bf64-851611d076bc",
+      "name": "X-tone protein bar salted caramel flavour",
+      "calories": 142,
+      "protein": 15,
+      "carbs": 16,
+      "fat": 3.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-03T06:54:41.185Z",
       "pinned": false
     }
   ],
@@ -287,6 +299,21 @@
           "servings": 1,
           "id": "f19361e9-e008-4764-92cc-225043402464",
           "loggedAt": "2026-09-02T08:40:50.943Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "entries": [
+        {
+          "name": "X-tone protein bar salted caramel flavour",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.5,
+          "servings": 1,
+          "id": "2844ba36-a22a-4b2f-bee0-b8d286a379ce",
+          "loggedAt": "2026-09-03T06:54:41.185Z"
         }
       ]
     }
