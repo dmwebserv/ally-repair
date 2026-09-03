@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-03T11:48:35.863Z",
+  "exportedAt": "2026-09-03T11:49:03.223Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -163,6 +163,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-03T11:48:31.860Z",
+      "pinned": false
+    },
+    {
+      "id": "b2b6e2d5-bf92-4479-8cb2-53c8d87714bb",
+      "name": "High Protein Chicken Tikka No Mayo",
+      "calories": 395,
+      "protein": 26,
+      "carbs": 45,
+      "fat": 11.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-03T11:48:59.221Z",
       "pinned": false
     }
   ],
@@ -346,6 +358,16 @@
           "servings": 1,
           "id": "3886ffbf-63d6-489d-b08e-00cfc100bc88",
           "loggedAt": "2026-09-03T11:48:31.860Z"
+        },
+        {
+          "name": "High Protein Chicken Tikka No Mayo",
+          "calories": 395,
+          "protein": 26,
+          "carbs": 45,
+          "fat": 11.6,
+          "servings": 1,
+          "id": "a5d56936-0686-4a27-9b79-894d0eba1be5",
+          "loggedAt": "2026-09-03T11:48:59.221Z"
         }
       ],
       "isGymDay": true
