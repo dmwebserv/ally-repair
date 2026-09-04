@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-04T12:15:10.766Z",
+  "exportedAt": "2026-09-04T12:15:35.474Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -211,6 +211,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-04T12:14:58.608Z",
+      "pinned": false
+    },
+    {
+      "id": "3add06f5-a9f7-434a-87c5-c13d2a795b4d",
+      "name": "Roasted Chicken Breast Chunks",
+      "calories": 101,
+      "protein": 23.2,
+      "carbs": 0.8,
+      "fat": 0.4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-04T12:15:31.472Z",
       "pinned": false
     }
   ],
@@ -460,6 +472,16 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-09-04T12:15:06.765Z"
+        },
+        {
+          "name": "Roasted Chicken Breast Chunks",
+          "calories": 101,
+          "protein": 23.2,
+          "carbs": 0.8,
+          "fat": 0.4,
+          "servings": 1,
+          "id": "42920f10-b428-489f-86e3-292b341d0bbf",
+          "loggedAt": "2026-09-04T12:15:31.472Z"
         }
       ]
     }
