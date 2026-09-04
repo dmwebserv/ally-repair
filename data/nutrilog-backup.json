@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-03T12:07:28.592Z",
+  "exportedAt": "2026-09-04T07:03:20.652Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -187,6 +187,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-03T12:06:59.492Z",
+      "pinned": false
+    },
+    {
+      "id": "0504c53f-e0c5-4e17-9591-e91d66e15029",
+      "name": "Cookies And Cream Protein Bar",
+      "calories": 142,
+      "protein": 15,
+      "carbs": 16,
+      "fat": 3.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-04T07:03:16.650Z",
       "pinned": false
     }
   ],
@@ -403,6 +415,21 @@
         }
       ],
       "isGymDay": true
+    },
+    {
+      "date": "2026-09-04",
+      "entries": [
+        {
+          "name": "Cookies And Cream Protein Bar",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.6,
+          "servings": 1,
+          "id": "486be75a-afa0-4515-87bd-d78794c9ce0b",
+          "loggedAt": "2026-09-04T07:03:16.650Z"
+        }
+      ]
     }
   ]
 }
