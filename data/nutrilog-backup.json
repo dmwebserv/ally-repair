@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-04T12:16:24.932Z",
+  "exportedAt": "2026-09-04T12:17:31.906Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -235,6 +235,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-04T12:16:20.930Z",
+      "pinned": false
+    },
+    {
+      "id": "d15a3162-5fb8-41c1-978c-97073e493bbe",
+      "name": "CHOCOLATE FLAVOURED MILKSHAKE",
+      "calories": 206,
+      "protein": 25.7,
+      "carbs": 21.8,
+      "fat": 1.8,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-04T12:17:27.904Z",
       "pinned": false
     }
   ],
@@ -504,6 +516,16 @@
           "servings": 1,
           "id": "864d9ec8-1a74-4c3f-a3f5-45618df42749",
           "loggedAt": "2026-09-04T12:16:20.930Z"
+        },
+        {
+          "name": "CHOCOLATE FLAVOURED MILKSHAKE",
+          "calories": 206,
+          "protein": 25.7,
+          "carbs": 21.8,
+          "fat": 1.8,
+          "servings": 1,
+          "id": "373ef24f-7cfb-410b-bf12-1362214d1611",
+          "loggedAt": "2026-09-04T12:17:27.904Z"
         }
       ]
     }
