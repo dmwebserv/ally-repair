@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-04T12:15:35.474Z",
+  "exportedAt": "2026-09-04T12:16:24.932Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -223,6 +223,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-04T12:15:31.472Z",
+      "pinned": false
+    },
+    {
+      "id": "ea5e5fca-f871-4b6d-88bd-3232bf057b19",
+      "name": "S+P Chicken Teriyaki",
+      "calories": 195,
+      "protein": 5.5,
+      "carbs": 34.5,
+      "fat": 3.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-04T12:16:20.930Z",
       "pinned": false
     }
   ],
@@ -482,6 +494,16 @@
           "servings": 1,
           "id": "42920f10-b428-489f-86e3-292b341d0bbf",
           "loggedAt": "2026-09-04T12:15:31.472Z"
+        },
+        {
+          "name": "S+P Chicken Teriyaki",
+          "calories": 195,
+          "protein": 5.5,
+          "carbs": 34.5,
+          "fat": 3.6,
+          "servings": 1,
+          "id": "864d9ec8-1a74-4c3f-a3f5-45618df42749",
+          "loggedAt": "2026-09-04T12:16:20.930Z"
         }
       ]
     }
