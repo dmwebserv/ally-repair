@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T12:58:57.118Z",
+  "exportedAt": "2026-09-07T12:59:59.359Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -296,6 +296,16 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-07T12:58:53.113Z",
       "pinned": false
+    },
+    {
+      "id": "e54dfefd-cba8-4a0e-9db0-26c6079dc079",
+      "name": "Small Banana",
+      "calories": 90,
+      "carbs": 23,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-07T12:59:55.357Z",
+      "pinned": true
     }
   ],
   "logs": [
@@ -620,6 +630,14 @@
           "servings": 1,
           "id": "4ffc4867-0ae1-4358-b249-c6f7aeaa9ef5",
           "loggedAt": "2026-09-07T12:58:53.113Z"
+        },
+        {
+          "name": "Small Banana",
+          "calories": 90,
+          "carbs": 23,
+          "servings": 1,
+          "id": "ad73280a-746a-4f06-a9c2-b81efdc0fa90",
+          "loggedAt": "2026-09-07T12:59:55.357Z"
         }
       ]
     }
