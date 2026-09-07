@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T12:56:59.173Z",
+  "exportedAt": "2026-09-07T12:57:11.774Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -271,6 +271,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-07T12:56:55.171Z",
+      "pinned": false
+    },
+    {
+      "id": "648cf4c2-02f8-48c8-80d5-5148567a7f4b",
+      "name": "Chicken and smocked bacon sandwich",
+      "calories": 455,
+      "protein": 26.5,
+      "carbs": 53.8,
+      "fat": 14.4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-07T12:57:08.120Z",
       "pinned": false
     }
   ],
@@ -576,6 +588,16 @@
           "servings": 1,
           "id": "bc1399df-9e63-4fe7-8ffa-70a2d00df4c6",
           "loggedAt": "2026-09-07T12:56:55.171Z"
+        },
+        {
+          "name": "Chicken and smocked bacon sandwich",
+          "calories": 455,
+          "protein": 26.5,
+          "carbs": 53.8,
+          "fat": 14.4,
+          "servings": 1,
+          "id": "d34798fb-4172-46dd-a2b3-362123c498eb",
+          "loggedAt": "2026-09-07T12:57:08.120Z"
         }
       ]
     }
