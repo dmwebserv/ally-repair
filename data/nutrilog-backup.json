@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T13:01:07.737Z",
+  "exportedAt": "2026-09-07T13:02:37.753Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -317,6 +317,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-07T13:01:03.735Z",
+      "pinned": true
+    },
+    {
+      "id": "f115027b-a09a-4771-8a2c-2459d1de1e6d",
+      "name": "Biscoff Protein Shake",
+      "calories": 153,
+      "protein": 30,
+      "carbs": 3.8,
+      "fat": 2,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-07T13:02:33.750Z",
       "pinned": true
     }
   ],
@@ -660,6 +672,16 @@
           "servings": 1,
           "id": "a89a76e0-fb41-496c-99b8-e832266636c6",
           "loggedAt": "2026-09-07T13:01:03.735Z"
+        },
+        {
+          "name": "Biscoff Protein Shake",
+          "calories": 153,
+          "protein": 30,
+          "carbs": 3.8,
+          "fat": 2,
+          "servings": 1,
+          "id": "73695178-5528-4efd-9726-bdd58f9abd91",
+          "loggedAt": "2026-09-07T13:02:33.750Z"
         }
       ]
     }
