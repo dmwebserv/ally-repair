@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-04T14:13:45.156Z",
+  "exportedAt": "2026-09-07T12:56:59.173Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -260,6 +260,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-04T14:13:41.152Z",
       "pinned": true
+    },
+    {
+      "id": "573075d9-bebb-447c-b762-e146b76d6e2b",
+      "name": "EGG PROTEIN POT",
+      "calories": 121,
+      "protein": 11.3,
+      "carbs": 1.44,
+      "fat": 7.65,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-07T12:56:55.171Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -551,6 +563,21 @@
         }
       ],
       "isGymDay": true
+    },
+    {
+      "date": "2026-09-07",
+      "entries": [
+        {
+          "name": "EGG PROTEIN POT",
+          "calories": 121,
+          "protein": 11.3,
+          "carbs": 1.44,
+          "fat": 7.65,
+          "servings": 1,
+          "id": "bc1399df-9e63-4fe7-8ffa-70a2d00df4c6",
+          "loggedAt": "2026-09-07T12:56:55.171Z"
+        }
+      ]
     }
   ]
 }
