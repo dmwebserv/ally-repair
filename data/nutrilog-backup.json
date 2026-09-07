@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T15:31:47.232Z",
+  "exportedAt": "2026-09-07T15:32:23.815Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -692,42 +692,6 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-09-07T15:31:03.769Z"
-        },
-        {
-          "id": "215f8457-574a-45fe-b3f4-97a59c4e947e",
-          "name": "Small Banana",
-          "calories": 90,
-          "carbs": 23,
-          "servings": 1,
-          "loggedAt": "2026-09-07T15:31:18.454Z"
-        },
-        {
-          "id": "b0e4a56d-fb3f-4063-819a-816dbcac2988",
-          "name": "Babybel",
-          "calories": 60,
-          "protein": 4.8,
-          "carbs": 0.1,
-          "fat": 4.6,
-          "servings": 1,
-          "loggedAt": "2026-09-07T15:31:18.853Z"
-        },
-        {
-          "id": "91949f00-e14a-4475-bebc-6920e3fb8f58",
-          "name": "Biscoff Protein Shake",
-          "calories": 153,
-          "protein": 30,
-          "carbs": 3.8,
-          "fat": 2,
-          "servings": 1,
-          "loggedAt": "2026-09-07T15:31:26.960Z"
-        },
-        {
-          "id": "644bf6c7-94ae-41de-9aae-75670bcc0a2c",
-          "name": "Small Banana",
-          "calories": 90,
-          "carbs": 23,
-          "servings": 1,
-          "loggedAt": "2026-09-07T15:31:27.542Z"
         }
       ]
     }
