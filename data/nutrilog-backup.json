@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-08T11:58:36.435Z",
+  "exportedAt": "2026-09-08T13:09:01.714Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -353,6 +353,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-08T11:58:32.430Z",
+      "pinned": false
+    },
+    {
+      "id": "7f0ce81c-d12b-4482-b80a-d4c914d7b9c3",
+      "name": "Vanilla Protein Shake 35g",
+      "calories": 214,
+      "protein": 35,
+      "carbs": 17.5,
+      "fat": 0.66,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-08T13:08:57.711Z",
       "pinned": false
     }
   ],
@@ -761,6 +773,16 @@
           "servings": 1,
           "id": "5fce1a53-9110-4bd5-86eb-f22d1352cc60",
           "loggedAt": "2026-09-08T11:58:32.430Z"
+        },
+        {
+          "name": "Vanilla Protein Shake 35g",
+          "calories": 214,
+          "protein": 35,
+          "carbs": 17.5,
+          "fat": 0.66,
+          "servings": 1,
+          "id": "d7a91951-5beb-40a4-9b77-719a6a1a93b0",
+          "loggedAt": "2026-09-08T13:08:57.711Z"
         }
       ]
     }
