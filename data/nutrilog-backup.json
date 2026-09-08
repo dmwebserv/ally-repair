@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-08T08:05:13.833Z",
+  "exportedAt": "2026-09-08T11:37:20.438Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -330,6 +330,18 @@
       "useCount": 2,
       "lastUsedAt": "2026-09-07T15:31:26.960Z",
       "pinned": true
+    },
+    {
+      "id": "0c8e3d7f-de86-4c7b-832f-36b37a0b34ca",
+      "name": "Egg pot",
+      "calories": 120,
+      "protein": 10,
+      "carbs": 1.6,
+      "fat": 8.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-08T11:37:16.436Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -717,6 +729,16 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-09-08T08:05:09.827Z"
+        },
+        {
+          "name": "Egg pot",
+          "calories": 120,
+          "protein": 10,
+          "carbs": 1.6,
+          "fat": 8.5,
+          "servings": 1,
+          "id": "e9025b33-a226-41d1-9349-d8b6b7e3b3e6",
+          "loggedAt": "2026-09-08T11:37:16.436Z"
         }
       ]
     }
