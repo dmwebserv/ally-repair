@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-08T11:37:20.438Z",
+  "exportedAt": "2026-09-08T11:58:36.435Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -341,6 +341,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-08T11:37:16.436Z",
+      "pinned": false
+    },
+    {
+      "id": "198be546-341b-4c2c-aefa-c0862c57b6e9",
+      "name": "CORONATION CHICKEN WHITE BREAD",
+      "calories": 439,
+      "protein": 19,
+      "carbs": 45,
+      "fat": 20,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-08T11:58:32.430Z",
       "pinned": false
     }
   ],
@@ -739,6 +751,16 @@
           "servings": 1,
           "id": "e9025b33-a226-41d1-9349-d8b6b7e3b3e6",
           "loggedAt": "2026-09-08T11:37:16.436Z"
+        },
+        {
+          "name": "CORONATION CHICKEN WHITE BREAD",
+          "calories": 439,
+          "protein": 19,
+          "carbs": 45,
+          "fat": 20,
+          "servings": 1,
+          "id": "5fce1a53-9110-4bd5-86eb-f22d1352cc60",
+          "loggedAt": "2026-09-08T11:58:32.430Z"
         }
       ]
     }
