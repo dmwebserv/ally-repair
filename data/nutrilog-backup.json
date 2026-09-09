@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-09T20:03:12.990Z",
+  "exportedAt": "2026-09-09T20:04:55.709Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -401,6 +401,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-09T18:51:58.298Z",
+      "pinned": false
+    },
+    {
+      "id": "72eab50a-ceff-44f2-acab-287f20be5e48",
+      "name": "Chocolate Cookie",
+      "calories": 309,
+      "protein": 3.8,
+      "carbs": 39.8,
+      "fat": 14.6,
+      "servings": 2,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-09T20:04:51.707Z",
       "pinned": false
     }
   ],
@@ -922,6 +934,16 @@
           "servings": 3,
           "id": "b6e62731-ccc4-472a-98af-5977562bb7f8",
           "loggedAt": "2026-09-09T20:02:36.155Z"
+        },
+        {
+          "name": "Chocolate Cookie",
+          "calories": 309,
+          "protein": 3.8,
+          "carbs": 39.8,
+          "fat": 14.6,
+          "servings": 2,
+          "id": "4e06ca28-d5fb-47cd-973e-fc8dd5515e30",
+          "loggedAt": "2026-09-09T20:04:51.707Z"
         }
       ],
       "isGymDay": false
