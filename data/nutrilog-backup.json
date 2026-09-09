@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-09T12:08:26.179Z",
+  "exportedAt": "2026-09-09T13:31:23.182Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -303,8 +303,8 @@
       "calories": 90,
       "carbs": 23,
       "servings": 1,
-      "useCount": 3,
-      "lastUsedAt": "2026-09-07T15:31:27.542Z",
+      "useCount": 4,
+      "lastUsedAt": "2026-09-09T13:31:19.180Z",
       "pinned": true
     },
     {
@@ -882,6 +882,14 @@
           "fat": 3.6,
           "servings": 1,
           "loggedAt": "2026-09-09T12:08:22.176Z"
+        },
+        {
+          "id": "85478985-bf65-4153-be30-b7eead8b2345",
+          "name": "Small Banana",
+          "calories": 90,
+          "carbs": 23,
+          "servings": 1,
+          "loggedAt": "2026-09-09T13:31:19.180Z"
         }
       ],
       "isGymDay": false
