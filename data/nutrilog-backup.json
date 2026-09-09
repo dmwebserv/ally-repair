@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-09T07:44:03.522Z",
+  "exportedAt": "2026-09-09T07:44:41.000Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -365,6 +365,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-08T13:08:57.711Z",
+      "pinned": false
+    },
+    {
+      "id": "017d5a4c-f102-4730-ad58-861f165dda83",
+      "name": "White chocolate cereal balls",
+      "calories": 235,
+      "protein": 30.1,
+      "carbs": 17.5,
+      "fat": 4.86,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-09T07:44:36.998Z",
       "pinned": false
     }
   ],
@@ -808,6 +820,16 @@
           "servings": 1,
           "id": "60bc28e7-1a29-4591-95d4-f1ae67a8399c",
           "loggedAt": "2026-09-09T07:43:30.251Z"
+        },
+        {
+          "name": "White chocolate cereal balls",
+          "calories": 235,
+          "protein": 30.1,
+          "carbs": 17.5,
+          "fat": 4.86,
+          "servings": 1,
+          "id": "784f60f6-53af-4b2b-a0de-28aaec4592f5",
+          "loggedAt": "2026-09-09T07:44:36.998Z"
         }
       ],
       "isGymDay": false
