@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-09T07:44:41.000Z",
+  "exportedAt": "2026-09-09T12:06:27.946Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -377,6 +377,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-09T07:44:36.998Z",
+      "pinned": false
+    },
+    {
+      "id": "5a0694c7-b1b2-4990-8bc5-32aad1067e87",
+      "name": "Cheesy Garlic Pasta",
+      "calories": 400,
+      "protein": 13,
+      "carbs": 50,
+      "fat": 17,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-09T12:06:23.943Z",
       "pinned": false
     }
   ],
@@ -830,6 +842,16 @@
           "servings": 1,
           "id": "784f60f6-53af-4b2b-a0de-28aaec4592f5",
           "loggedAt": "2026-09-09T07:44:36.998Z"
+        },
+        {
+          "name": "Cheesy Garlic Pasta",
+          "calories": 400,
+          "protein": 13,
+          "carbs": 50,
+          "fat": 17,
+          "servings": 1,
+          "id": "06b97a33-f5d8-4212-93bf-7c35f6e8b24b",
+          "loggedAt": "2026-09-09T12:06:23.943Z"
         }
       ],
       "isGymDay": false
