@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-09T12:06:27.946Z",
+  "exportedAt": "2026-09-09T12:07:25.587Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -125,8 +125,8 @@
       "carbs": 17,
       "fat": 1.1,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-01T15:57:55.794Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-09-09T12:07:21.583Z",
       "pinned": true
     },
     {
@@ -852,6 +852,16 @@
           "servings": 1,
           "id": "06b97a33-f5d8-4212-93bf-7c35f6e8b24b",
           "loggedAt": "2026-09-09T12:06:23.943Z"
+        },
+        {
+          "id": "c55cbacc-bfe4-49c4-a7db-2287edab9772",
+          "name": "Chocolate Protein Shake",
+          "calories": 222,
+          "protein": 35,
+          "carbs": 17,
+          "fat": 1.1,
+          "servings": 1,
+          "loggedAt": "2026-09-09T12:07:21.583Z"
         }
       ],
       "isGymDay": false
