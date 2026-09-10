@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-10T11:38:12.369Z",
+  "exportedAt": "2026-09-10T11:39:00.771Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -413,6 +413,18 @@
       "servings": 2,
       "useCount": 1,
       "lastUsedAt": "2026-09-09T20:04:51.707Z",
+      "pinned": false
+    },
+    {
+      "id": "93b0da36-3e5c-4027-a718-e8a0f7ef7957",
+      "name": "High-Protein Milkshake White Choc",
+      "calories": 152,
+      "protein": 25.1,
+      "carbs": 11.9,
+      "fat": 0.33,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-10T11:38:56.769Z",
       "pinned": false
     }
   ],
@@ -998,6 +1010,16 @@
           "servings": 1,
           "id": "77ad868e-eb00-4b0d-84c4-f2f94db80592",
           "loggedAt": "2026-09-10T11:38:08.367Z"
+        },
+        {
+          "name": "High-Protein Milkshake White Choc",
+          "calories": 152,
+          "protein": 25.1,
+          "carbs": 11.9,
+          "fat": 0.33,
+          "servings": 1,
+          "id": "ab3089d8-2055-4e93-8fce-b900f67547c8",
+          "loggedAt": "2026-09-10T11:38:56.769Z"
         }
       ]
     }
