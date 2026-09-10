@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-10T07:23:23.232Z",
+  "exportedAt": "2026-09-10T08:10:38.886Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -315,8 +315,8 @@
       "carbs": 0.1,
       "fat": 4.6,
       "servings": 1,
-      "useCount": 4,
-      "lastUsedAt": "2026-09-09T07:43:30.251Z",
+      "useCount": 5,
+      "lastUsedAt": "2026-09-10T08:10:34.884Z",
       "pinned": true
     },
     {
@@ -960,6 +960,16 @@
           "servings": 1,
           "id": "373889b0-40ea-49aa-a6ae-a5602cf92059",
           "loggedAt": "2026-09-10T07:23:19.229Z"
+        },
+        {
+          "id": "bc864903-aa21-4603-a4a4-0e04e8c5ba9e",
+          "name": "Babybel",
+          "calories": 60,
+          "protein": 4.8,
+          "carbs": 0.1,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-09-10T08:10:34.884Z"
         }
       ]
     }
