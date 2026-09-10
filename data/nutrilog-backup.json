@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-10T11:39:00.771Z",
+  "exportedAt": "2026-09-10T12:07:52.009Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -425,6 +425,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-10T11:38:56.769Z",
+      "pinned": false
+    },
+    {
+      "id": "f621fb7e-9c27-49d5-98e4-38d000561593",
+      "name": "Salt & Pepper Chicken Dragon Rolls",
+      "calories": 297,
+      "protein": 8.52,
+      "carbs": 40.9,
+      "fat": 10.9,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-10T12:07:48.007Z",
       "pinned": false
     }
   ],
@@ -1020,6 +1032,16 @@
           "servings": 1,
           "id": "ab3089d8-2055-4e93-8fce-b900f67547c8",
           "loggedAt": "2026-09-10T11:38:56.769Z"
+        },
+        {
+          "name": "Salt & Pepper Chicken Dragon Rolls",
+          "calories": 297,
+          "protein": 8.52,
+          "carbs": 40.9,
+          "fat": 10.9,
+          "servings": 1,
+          "id": "831062ad-073c-48ea-bea8-850b1023fe02",
+          "loggedAt": "2026-09-10T12:07:48.007Z"
         }
       ]
     }
