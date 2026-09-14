@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-14T12:51:21.036Z",
+  "exportedAt": "2026-09-14T12:52:36.613Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -438,6 +438,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-10T12:07:48.007Z",
       "pinned": false
+    },
+    {
+      "id": "e0a8712d-cb8a-4113-b48b-510066b9d6df",
+      "name": "New York Everything Bagsl",
+      "calories": 233,
+      "protein": 8.8,
+      "carbs": 42.9,
+      "fat": 2.2,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-14T12:52:32.610Z",
+      "pinned": true
     }
   ],
   "logs": [
@@ -1087,6 +1099,16 @@
           "fat": 4,
           "servings": 3,
           "loggedAt": "2026-09-14T12:51:17.033Z"
+        },
+        {
+          "name": "New York Everything Bagsl",
+          "calories": 233,
+          "protein": 8.8,
+          "carbs": 42.9,
+          "fat": 2.2,
+          "servings": 1,
+          "id": "66e1fecf-614f-432b-bb34-ab29fc6c4b47",
+          "loggedAt": "2026-09-14T12:52:32.610Z"
         }
       ]
     }
