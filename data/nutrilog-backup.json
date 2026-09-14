@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-14T12:52:52.214Z",
+  "exportedAt": "2026-09-14T14:27:12.102Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -17,8 +17,8 @@
       "carbs": 7,
       "fat": 0.6,
       "servings": 1,
-      "useCount": 9,
-      "lastUsedAt": "2026-09-10T17:36:17.907Z",
+      "useCount": 10,
+      "lastUsedAt": "2026-09-14T14:27:08.094Z",
       "pinned": true
     },
     {
@@ -441,7 +441,7 @@
     },
     {
       "id": "e0a8712d-cb8a-4113-b48b-510066b9d6df",
-      "name": "New York Everything Bagsl",
+      "name": "New York Everything Bagel",
       "calories": 233,
       "protein": 8.8,
       "carbs": 42.9,
@@ -1109,6 +1109,16 @@
           "servings": 1,
           "id": "66e1fecf-614f-432b-bb34-ab29fc6c4b47",
           "loggedAt": "2026-09-14T12:52:32.610Z"
+        },
+        {
+          "id": "64ffb2e8-a9ca-4863-9d8a-2bd7a62ddffd",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-14T14:27:08.094Z"
         }
       ]
     }
