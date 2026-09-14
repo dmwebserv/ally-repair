@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-14T10:27:30.342Z",
+  "exportedAt": "2026-09-14T10:27:49.073Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -293,9 +293,9 @@
       "carbs": 16.4,
       "fat": 4.6,
       "servings": 1,
-      "useCount": 3,
-      "lastUsedAt": "2026-09-10T07:23:19.229Z",
-      "pinned": false
+      "useCount": 4,
+      "lastUsedAt": "2026-09-14T10:27:45.071Z",
+      "pinned": true
     },
     {
       "id": "e54dfefd-cba8-4a0e-9db0-26c6079dc079",
@@ -1067,6 +1067,16 @@
           "fat": 3.6,
           "servings": 1,
           "loggedAt": "2026-09-14T10:27:26.339Z"
+        },
+        {
+          "id": "8b971b12-5ce7-488e-a4bc-ff99fced9ada",
+          "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-09-14T10:27:45.071Z"
         }
       ]
     }
