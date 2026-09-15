@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-15T11:53:39.620Z",
+  "exportedAt": "2026-09-15T12:16:37.973Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -89,8 +89,8 @@
       "carbs": 0,
       "fat": 4,
       "servings": 3,
-      "useCount": 3,
-      "lastUsedAt": "2026-09-14T12:51:17.033Z",
+      "useCount": 4,
+      "lastUsedAt": "2026-09-15T12:16:33.971Z",
       "pinned": true
     },
     {
@@ -1156,6 +1156,16 @@
           "servings": 1,
           "id": "2700c72d-669f-4e41-8c02-8c264dd6ed3a",
           "loggedAt": "2026-09-15T11:53:35.619Z"
+        },
+        {
+          "id": "84adafbb-465b-4aef-8c59-5b1082ab3836",
+          "name": "Egg",
+          "calories": 60,
+          "protein": 6,
+          "carbs": 0,
+          "fat": 4,
+          "servings": 3,
+          "loggedAt": "2026-09-15T12:16:33.971Z"
         }
       ]
     }
