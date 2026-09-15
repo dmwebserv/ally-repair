@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-15T07:16:31.674Z",
+  "exportedAt": "2026-09-15T11:53:39.620Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -450,6 +450,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-14T12:52:32.610Z",
       "pinned": true
+    },
+    {
+      "id": "6d754aa7-39dd-40b5-be5c-7b54a4564db0",
+      "name": "SWEET CHILLI CHICKEN",
+      "calories": 353,
+      "protein": 17,
+      "carbs": 59.6,
+      "fat": 6.3,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-15T11:53:35.619Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -1134,6 +1146,16 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-09-15T07:16:27.671Z"
+        },
+        {
+          "name": "SWEET CHILLI CHICKEN",
+          "calories": 353,
+          "protein": 17,
+          "carbs": 59.6,
+          "fat": 6.3,
+          "servings": 1,
+          "id": "2700c72d-669f-4e41-8c02-8c264dd6ed3a",
+          "loggedAt": "2026-09-15T11:53:35.619Z"
         }
       ]
     }
