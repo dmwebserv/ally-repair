@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-15T12:16:37.973Z",
+  "exportedAt": "2026-09-15T12:17:13.471Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -447,8 +447,8 @@
       "carbs": 42.9,
       "fat": 2.2,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-14T12:52:32.610Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-09-15T12:17:09.469Z",
       "pinned": true
     },
     {
@@ -1166,6 +1166,16 @@
           "fat": 4,
           "servings": 3,
           "loggedAt": "2026-09-15T12:16:33.971Z"
+        },
+        {
+          "id": "de657d5e-d55b-4b85-a4f6-452a1eb6261d",
+          "name": "New York Everything Bagel",
+          "calories": 233,
+          "protein": 8.8,
+          "carbs": 42.9,
+          "fat": 2.2,
+          "servings": 1,
+          "loggedAt": "2026-09-15T12:17:09.469Z"
         }
       ]
     }
