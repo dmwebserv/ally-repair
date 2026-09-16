@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-16T12:34:56.109Z",
+  "exportedAt": "2026-09-16T12:35:16.943Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -484,6 +484,18 @@
       "fat": 1.75,
       "servings": 1,
       "useCount": 1,
+      "lastUsedAt": "2026-09-16T12:34:46.997Z",
+      "pinned": true
+    },
+    {
+      "id": "bd2968a5-a41b-4415-a2b1-71e9753279b3",
+      "name": "Protein LINDAHL Flavour Milk Drink",
+      "calories": 170,
+      "protein": 25,
+      "carbs": 12.5,
+      "fat": 1.75,
+      "servings": 1,
+      "useCount": 0,
       "lastUsedAt": "2026-09-16T12:34:46.997Z",
       "pinned": true
     }
@@ -1237,7 +1249,7 @@
           "loggedAt": "2026-09-16T12:31:12.931Z"
         },
         {
-          "name": "Protein Cocolate Flavour Milk Drink",
+          "name": "Protein LINDAHL Flavour Milk Drink",
           "calories": 170,
           "protein": 25,
           "carbs": 12.5,
