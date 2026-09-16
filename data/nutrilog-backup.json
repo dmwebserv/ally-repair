@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-16T12:35:16.943Z",
+  "exportedAt": "2026-09-16T15:17:46.259Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -476,18 +476,6 @@
       "pinned": true
     },
     {
-      "id": "7369a8e9-780b-4beb-b05c-bcd4fb03dfc0",
-      "name": "Protein Cocolate Flavour Milk Drink",
-      "calories": 170,
-      "protein": 25,
-      "carbs": 12.5,
-      "fat": 1.75,
-      "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-16T12:34:46.997Z",
-      "pinned": true
-    },
-    {
       "id": "bd2968a5-a41b-4415-a2b1-71e9753279b3",
       "name": "Protein LINDAHL Flavour Milk Drink",
       "calories": 170,
@@ -498,6 +486,18 @@
       "useCount": 0,
       "lastUsedAt": "2026-09-16T12:34:46.997Z",
       "pinned": true
+    },
+    {
+      "id": "1f4319a5-d7ac-4c76-b684-74969bb73946",
+      "name": "Vanilla Mousse",
+      "calories": 162,
+      "protein": 20,
+      "carbs": 12.4,
+      "fat": 3.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-16T15:17:42.256Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -1257,6 +1257,16 @@
           "servings": 1,
           "id": "03aab860-b1fa-4992-b0fe-9cca75c70d2f",
           "loggedAt": "2026-09-16T12:34:46.997Z"
+        },
+        {
+          "name": "Vanilla Mousse",
+          "calories": 162,
+          "protein": 20,
+          "carbs": 12.4,
+          "fat": 3.6,
+          "servings": 1,
+          "id": "6a03a9ae-1c18-47a9-9991-1a8355337aca",
+          "loggedAt": "2026-09-16T15:17:42.256Z"
         }
       ]
     }
