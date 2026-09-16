@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-16T12:34:51.000Z",
+  "exportedAt": "2026-09-16T12:34:56.109Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -473,7 +473,7 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-16T12:31:12.931Z",
-      "pinned": false
+      "pinned": true
     },
     {
       "id": "7369a8e9-780b-4beb-b05c-bcd4fb03dfc0",
