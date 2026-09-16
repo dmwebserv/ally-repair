@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-16T12:31:16.934Z",
+  "exportedAt": "2026-09-16T12:34:51.000Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -474,6 +474,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-16T12:31:12.931Z",
       "pinned": false
+    },
+    {
+      "id": "7369a8e9-780b-4beb-b05c-bcd4fb03dfc0",
+      "name": "Protein Cocolate Flavour Milk Drink",
+      "calories": 170,
+      "protein": 25,
+      "carbs": 12.5,
+      "fat": 1.75,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-16T12:34:46.997Z",
+      "pinned": true
     }
   ],
   "logs": [
@@ -1223,6 +1235,16 @@
           "servings": 1,
           "id": "24f8baa2-426a-401e-86c4-879be59a5f4f",
           "loggedAt": "2026-09-16T12:31:12.931Z"
+        },
+        {
+          "name": "Protein Cocolate Flavour Milk Drink",
+          "calories": 170,
+          "protein": 25,
+          "carbs": 12.5,
+          "fat": 1.75,
+          "servings": 1,
+          "id": "03aab860-b1fa-4992-b0fe-9cca75c70d2f",
+          "loggedAt": "2026-09-16T12:34:46.997Z"
         }
       ]
     }
