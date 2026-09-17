@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-16T15:17:46.259Z",
+  "exportedAt": "2026-09-17T07:32:49.667Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -471,8 +471,8 @@
       "carbs": 23.7,
       "fat": 9.9,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-16T12:31:12.931Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-09-17T07:32:45.663Z",
       "pinned": true
     },
     {
@@ -1267,6 +1267,21 @@
           "servings": 1,
           "id": "6a03a9ae-1c18-47a9-9991-1a8355337aca",
           "loggedAt": "2026-09-16T15:17:42.256Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "entries": [
+        {
+          "id": "5c7056ba-3b8e-4cb1-ad50-96efb3cdd44e",
+          "name": "Scismix Choc Chip Protein Brownie",
+          "calories": 246,
+          "protein": 20,
+          "carbs": 23.7,
+          "fat": 9.9,
+          "servings": 1,
+          "loggedAt": "2026-09-17T07:32:45.663Z"
         }
       ]
     }
