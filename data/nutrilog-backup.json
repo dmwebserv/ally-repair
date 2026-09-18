@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-18T12:02:59.547Z",
+  "exportedAt": "2026-09-18T13:04:06.125Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -253,12 +253,12 @@
       "id": "541405d4-545d-45d8-a09a-fe6beb1399ae",
       "name": "Chocolate Protein Pudding",
       "calories": 159,
-      "protein": 20,
+      "protein": 20.1,
       "carbs": 12.4,
       "fat": 3.2,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-04T14:13:41.152Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-09-18T13:04:02.117Z",
       "pinned": true
     },
     {
@@ -1339,6 +1339,16 @@
           "servings": 1,
           "id": "d4a6eaf3-fcc7-4034-a800-6dd116331786",
           "loggedAt": "2026-09-18T12:02:56.843Z"
+        },
+        {
+          "name": "Chocolate Protein Pudding",
+          "calories": 159,
+          "protein": 20.1,
+          "carbs": 12.4,
+          "fat": 3.2,
+          "servings": 1,
+          "id": "702da7aa-67fd-41df-a5a6-ee79a692a898",
+          "loggedAt": "2026-09-18T13:04:02.117Z"
         }
       ]
     }
