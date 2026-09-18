@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-18T12:02:46.564Z",
+  "exportedAt": "2026-09-18T12:02:59.547Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -497,6 +497,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-16T15:17:42.256Z",
+      "pinned": false
+    },
+    {
+      "id": "04dadd4b-f022-41e2-a1b9-49f933f7d0d1",
+      "name": "Chicken & Sweetcorn",
+      "calories": 326,
+      "protein": 20.4,
+      "carbs": 44.2,
+      "fat": 6.8,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-18T12:02:56.843Z",
       "pinned": false
     }
   ],
@@ -1317,6 +1329,16 @@
           "servings": 1,
           "id": "1c5b3c15-a6c2-4d71-ae28-7b0564c59a01",
           "loggedAt": "2026-09-18T12:02:42.561Z"
+        },
+        {
+          "name": "Chicken & Sweetcorn",
+          "calories": 326,
+          "protein": 20.4,
+          "carbs": 44.2,
+          "fat": 6.8,
+          "servings": 1,
+          "id": "d4a6eaf3-fcc7-4034-a800-6dd116331786",
+          "loggedAt": "2026-09-18T12:02:56.843Z"
         }
       ]
     }
