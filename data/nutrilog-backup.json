@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-17T07:32:49.667Z",
+  "exportedAt": "2026-09-18T07:24:56.052Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -483,8 +483,8 @@
       "carbs": 12.5,
       "fat": 1.75,
       "servings": 1,
-      "useCount": 0,
-      "lastUsedAt": "2026-09-16T12:34:46.997Z",
+      "useCount": 1,
+      "lastUsedAt": "2026-09-18T07:24:52.050Z",
       "pinned": true
     },
     {
@@ -1282,6 +1282,21 @@
           "fat": 9.9,
           "servings": 1,
           "loggedAt": "2026-09-17T07:32:45.663Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "entries": [
+        {
+          "id": "d2cce889-6b34-4d85-9b39-c59a8fb8dcc1",
+          "name": "Protein LINDAHL Flavour Milk Drink",
+          "calories": 170,
+          "protein": 25,
+          "carbs": 12.5,
+          "fat": 1.75,
+          "servings": 1,
+          "loggedAt": "2026-09-18T07:24:52.050Z"
         }
       ]
     }
