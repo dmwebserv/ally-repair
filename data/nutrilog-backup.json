@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-21T11:59:29.525Z",
+  "exportedAt": "2026-09-21T11:59:44.875Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -521,6 +521,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-21T11:59:25.523Z",
+      "pinned": false
+    },
+    {
+      "id": "0027a8c8-273c-443c-923e-7b6a02e0f5b2",
+      "name": "CHICKEN & BACON CAESAR SALAD",
+      "calories": 371,
+      "protein": 24.4,
+      "carbs": 39.5,
+      "fat": 12.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-21T11:59:40.873Z",
       "pinned": false
     }
   ],
@@ -1416,6 +1428,16 @@
           "servings": 1,
           "id": "d6f09b6d-1b4e-4b29-adad-846c1d9657ee",
           "loggedAt": "2026-09-21T11:59:25.523Z"
+        },
+        {
+          "name": "CHICKEN & BACON CAESAR SALAD",
+          "calories": 371,
+          "protein": 24.4,
+          "carbs": 39.5,
+          "fat": 12.5,
+          "servings": 1,
+          "id": "2e9ee6ed-b085-47db-9e94-c35d0bf090ff",
+          "loggedAt": "2026-09-21T11:59:40.873Z"
         }
       ]
     }
