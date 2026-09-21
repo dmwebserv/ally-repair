@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-21T11:59:19.544Z",
+  "exportedAt": "2026-09-21T11:59:29.525Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -509,6 +509,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-18T12:02:56.843Z",
+      "pinned": false
+    },
+    {
+      "id": "ccd82b80-ee36-4ea0-8d7e-d6e661129cd1",
+      "name": "For Goodness Shakes Protein Chocolate",
+      "calories": 218,
+      "protein": 35,
+      "carbs": 16.5,
+      "fat": 0.99,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-21T11:59:25.523Z",
       "pinned": false
     }
   ],
@@ -1394,6 +1406,16 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-09-21T11:55:40.518Z"
+        },
+        {
+          "name": "For Goodness Shakes Protein Chocolate",
+          "calories": 218,
+          "protein": 35,
+          "carbs": 16.5,
+          "fat": 0.99,
+          "servings": 1,
+          "id": "d6f09b6d-1b4e-4b29-adad-846c1d9657ee",
+          "loggedAt": "2026-09-21T11:59:25.523Z"
         }
       ]
     }
