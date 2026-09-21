@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-21T11:59:44.875Z",
+  "exportedAt": "2026-09-21T14:06:49.361Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -17,8 +17,8 @@
       "carbs": 7,
       "fat": 0.6,
       "servings": 1,
-      "useCount": 12,
-      "lastUsedAt": "2026-09-21T11:55:33.301Z",
+      "useCount": 13,
+      "lastUsedAt": "2026-09-21T14:06:45.359Z",
       "pinned": true
     },
     {
@@ -1438,6 +1438,16 @@
           "servings": 1,
           "id": "2e9ee6ed-b085-47db-9e94-c35d0bf090ff",
           "loggedAt": "2026-09-21T11:59:40.873Z"
+        },
+        {
+          "id": "bc1f4fc5-ecbd-4423-a942-fd90c2b0c470",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-21T14:06:45.359Z"
         }
       ]
     }
