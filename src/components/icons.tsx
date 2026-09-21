@@ -104,6 +104,13 @@ export const IconDumbbell = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+export const IconCalendar = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...props}>
+    <rect x="4" y="5.5" width="16" height="15" rx="2.5" />
+    <path d="M4 10.5h16M8.5 3.5v4M15.5 3.5v4" />
+  </svg>
+);
+
 export const IconKeyboard = (props: SVGProps<SVGSVGElement>) => (
   <svg {...base} {...props}>
     <rect x="3.5" y="6" width="17" height="12" rx="2.5" />

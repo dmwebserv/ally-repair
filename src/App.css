@@ -141,6 +141,21 @@
   font-size: 15px;
 }
 
+.date-title-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: none;
+  border: none;
+  color: var(--text-h);
+  padding: 2px 4px;
+}
+
+.date-title-btn svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
 .gym-day-toggle {
   display: flex;
   align-items: center;
@@ -1125,4 +1140,206 @@
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.35; }
+}
+
+/* Calendar / history */
+.cal-scroll {
+  padding-bottom: 24px;
+}
+
+.cal-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0 12px;
+}
+
+.cal-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: var(--text-h);
+}
+
+.cal-month strong {
+  font-size: 16px;
+}
+
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.cal-weekdays {
+  margin-bottom: 4px;
+}
+
+.cal-weekday {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-soft);
+  padding: 4px 0;
+}
+
+.cal-day {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  min-height: 52px;
+  padding: 5px 2px 6px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text);
+}
+
+.cal-day.blank {
+  visibility: hidden;
+}
+
+.cal-day:disabled {
+  opacity: 0.3;
+}
+
+.cal-day.has-data {
+  background: var(--card-bg-soft);
+  border-color: var(--border);
+}
+
+.cal-day-num {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-h);
+  line-height: 1.2;
+}
+
+.cal-day-cal {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.cal-day-cal.empty {
+  color: var(--text-soft);
+  font-weight: 400;
+}
+
+.cal-day.over .cal-day-cal {
+  color: var(--bad);
+}
+
+.cal-day.is-today .cal-day-num {
+  color: var(--accent);
+}
+
+.cal-day.is-selected {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.cal-day.is-selected .cal-day-num,
+.cal-day.is-selected .cal-day-cal {
+  color: #fff;
+}
+
+.cal-gym-dot {
+  position: absolute;
+  bottom: 3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--protein);
+}
+
+.cal-summary {
+  margin: 14px 0 2px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+/* Device profile card */
+.profile-card {
+  background: var(--card-bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-name-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-name-field input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card-bg);
+  color: var(--text-h);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-name-field input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-soft);
+  flex-shrink: 0;
+}
+
+.sync-code-btn {
+  margin-left: auto;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.sync-code-input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card-bg);
+  color: var(--text-h);
+  font-size: 13px;
+}
+
+.sync-code-input:focus {
+  outline: none;
+  border-color: var(--accent);
 }
