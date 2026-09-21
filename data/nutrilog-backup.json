@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-18T14:48:11.545Z",
+  "exportedAt": "2026-09-21T11:55:39.913Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -17,8 +17,8 @@
       "carbs": 7,
       "fat": 0.6,
       "servings": 1,
-      "useCount": 11,
-      "lastUsedAt": "2026-09-15T14:31:51.745Z",
+      "useCount": 12,
+      "lastUsedAt": "2026-09-21T11:55:33.301Z",
       "pinned": true
     },
     {
@@ -89,8 +89,8 @@
       "carbs": 0,
       "fat": 4,
       "servings": 3,
-      "useCount": 4,
-      "lastUsedAt": "2026-09-15T12:16:33.971Z",
+      "useCount": 5,
+      "lastUsedAt": "2026-09-21T11:55:35.911Z",
       "pinned": true
     },
     {
@@ -1369,6 +1369,31 @@
           "fat": 1.75,
           "servings": 1,
           "loggedAt": "2026-09-18T14:48:07.543Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "entries": [
+        {
+          "id": "b81144c0-417a-4ee7-a3da-12f63a80464f",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-21T11:55:33.301Z"
+        },
+        {
+          "id": "b9a3a911-5a1b-4e00-aa44-24cba1da1c66",
+          "name": "Egg",
+          "calories": 60,
+          "protein": 6,
+          "carbs": 0,
+          "fat": 4,
+          "servings": 3,
+          "loggedAt": "2026-09-21T11:55:35.911Z"
         }
       ]
     }
