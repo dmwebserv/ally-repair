@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-21T11:55:55.833Z",
+  "exportedAt": "2026-09-21T11:59:19.544Z",
   "settings": {
     "calorieGoal": 1850,
     "proteinGoal": 170,
@@ -1375,16 +1375,6 @@
     {
       "date": "2026-09-21",
       "entries": [
-        {
-          "id": "b81144c0-417a-4ee7-a3da-12f63a80464f",
-          "name": "Strawberry Protein Yoghurt",
-          "calories": 139,
-          "protein": 25,
-          "carbs": 7,
-          "fat": 0.6,
-          "servings": 1,
-          "loggedAt": "2026-09-21T11:55:33.301Z"
-        },
         {
           "name": "Egg",
           "calories": 60,
