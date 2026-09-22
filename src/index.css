@@ -32,6 +32,29 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Accent overrides for the per-device app colour picker (src/lib/theme.ts).
+   Green is the default and needs no override. */
+:root[data-theme='blue'] {
+  --accent: #2563eb;
+  --accent-2: #60a5fa;
+  --accent-bg: rgba(37, 99, 235, 0.09);
+}
+:root[data-theme='purple'] {
+  --accent: #7c3aed;
+  --accent-2: #a78bfa;
+  --accent-bg: rgba(124, 58, 237, 0.09);
+}
+:root[data-theme='orange'] {
+  --accent: #ea580c;
+  --accent-2: #fb923c;
+  --accent-bg: rgba(234, 88, 12, 0.09);
+}
+:root[data-theme='pink'] {
+  --accent: #db2777;
+  --accent-2: #f472b6;
+  --accent-bg: rgba(219, 39, 119, 0.09);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0a0b0d;
@@ -56,6 +79,28 @@
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.35);
     --shadow-lg: 0 -8px 30px rgba(0, 0, 0, 0.45);
+  }
+
+  /* Dark-mode accents for the app colour picker. */
+  :root[data-theme='blue'] {
+    --accent: #60a5fa;
+    --accent-2: #93c5fd;
+    --accent-bg: rgba(96, 165, 250, 0.14);
+  }
+  :root[data-theme='purple'] {
+    --accent: #a78bfa;
+    --accent-2: #c4b5fd;
+    --accent-bg: rgba(167, 139, 250, 0.14);
+  }
+  :root[data-theme='orange'] {
+    --accent: #fb923c;
+    --accent-2: #fdba74;
+    --accent-bg: rgba(251, 146, 60, 0.14);
+  }
+  :root[data-theme='pink'] {
+    --accent: #f472b6;
+    --accent-2: #f9a8d4;
+    --accent-bg: rgba(244, 114, 182, 0.14);
   }
 }
 

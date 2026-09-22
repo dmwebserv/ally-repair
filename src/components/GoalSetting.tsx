@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { THEME_PRESETS, getTheme, setTheme } from '../lib/theme';
 import type { UserSettings } from '../lib/types';
 import { IconPencil, IconX } from './icons';
 
@@ -25,6 +26,7 @@ export default function GoalSetting({ settings, onSave }: Props) {
   const [gymProteinGoal, setGymProteinGoal] = useState(toStr(settings.gymProteinGoal));
   const [gymCarbsGoal, setGymCarbsGoal] = useState(toStr(settings.gymCarbsGoal));
   const [gymFatGoal, setGymFatGoal] = useState(toStr(settings.gymFatGoal));
+  const [theme, setThemeId] = useState(getTheme());
 
   const openSheet = () => {
     setCalorieGoal(String(settings.calorieGoal));
@@ -35,6 +37,7 @@ export default function GoalSetting({ settings, onSave }: Props) {
     setGymProteinGoal(toStr(settings.gymProteinGoal));
     setGymCarbsGoal(toStr(settings.gymCarbsGoal));
     setGymFatGoal(toStr(settings.gymFatGoal));
+    setThemeId(getTheme());
     setOpen(true);
   };
 
@@ -176,6 +179,37 @@ export default function GoalSetting({ settings, onSave }: Props) {
                     onChange={(e) => setGymFatGoal(e.target.value)}
                   />
                 </label>
+              </div>
+
+              <div className="goals-divider">
+                <span>Appearance</span>
+                <span className="goals-divider-hint">this device only — never backed up</span>
+              </div>
+              <div className="theme-row">
+                <span className="theme-row-label">App colour</span>
+                <div className="theme-swatches" role="radiogroup" aria-label="App colour">
+                  {THEME_PRESETS.map((preset) => (
+                    <button
+                      key={preset.id}
+                      type="button"
+                      role="radio"
+                      aria-checked={theme === preset.id}
+                      aria-label={preset.label}
+                      title={preset.label}
+                      className={`theme-swatch ${theme === preset.id ? 'selected' : ''}`}
+                      style={
+                        {
+                          '--swatch-light': preset.light,
+                          '--swatch-dark': preset.dark,
+                        } as React.CSSProperties
+                      }
+                      onClick={() => {
+                        setTheme(preset.id);
+                        setThemeId(preset.id);
+                      }}
+                    />
+                  ))}
+                </div>
               </div>
 
               <button type="submit" className="save-btn">
