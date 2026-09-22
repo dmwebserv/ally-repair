@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T16:43:00.651Z",
+  "exportedAt": "2026-09-22T16:49:09.682Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -70,6 +70,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-22T16:42:51.913Z",
       "pinned": true
+    },
+    {
+      "id": "0f90f70f-7417-49ab-b507-8829529bed8f",
+      "name": "STRAIGHT TO WOK MEDIUM NOODLES",
+      "calories": 225,
+      "protein": 8.6,
+      "carbs": 40.5,
+      "fat": 2.3,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-22T16:49:05.680Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -125,6 +137,16 @@
           "servings": 1,
           "id": "d3054263-7cf5-4bcb-8188-9b037ef0427d",
           "loggedAt": "2026-09-22T16:42:51.913Z"
+        },
+        {
+          "name": "STRAIGHT TO WOK MEDIUM NOODLES",
+          "calories": 225,
+          "protein": 8.6,
+          "carbs": 40.5,
+          "fat": 2.3,
+          "servings": 1,
+          "id": "92fe72ee-f10e-4419-9b7a-499882c6c186",
+          "loggedAt": "2026-09-22T16:49:05.680Z"
         }
       ]
     }
