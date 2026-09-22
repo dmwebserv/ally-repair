@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T13:26:32.572Z",
+  "exportedAt": "2026-09-22T13:26:56.038Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -88,8 +88,8 @@
       "carbs": 0,
       "fat": 4,
       "servings": 3,
-      "useCount": 5,
-      "lastUsedAt": "2026-09-21T11:55:35.911Z",
+      "useCount": 6,
+      "lastUsedAt": "2026-09-22T13:26:52.037Z",
       "pinned": true
     },
     {
@@ -1450,6 +1450,21 @@
         }
       ],
       "isGymDay": false
+    },
+    {
+      "date": "2026-09-22",
+      "entries": [
+        {
+          "id": "4975cacb-bc2d-44e7-bf78-1cea8bdade38",
+          "name": "Egg",
+          "calories": 60,
+          "protein": 6,
+          "carbs": 0,
+          "fat": 4,
+          "servings": 3,
+          "loggedAt": "2026-09-22T13:26:52.037Z"
+        }
+      ]
     }
   ]
 }
