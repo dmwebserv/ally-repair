@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T16:42:55.916Z",
+  "exportedAt": "2026-09-22T16:43:00.651Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -69,7 +69,7 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-22T16:42:51.913Z",
-      "pinned": false
+      "pinned": true
     }
   ],
   "logs": [
