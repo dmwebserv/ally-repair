@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T16:30:00.761Z",
+  "exportedAt": "2026-09-22T16:31:32.420Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -10,6 +10,35 @@
     "carbsGoal": 215,
     "fatGoal": 48
   },
-  "favorites": [],
-  "logs": []
+  "favorites": [
+    {
+      "id": "e78a3655-59e5-4a0a-8573-3f9417c334d5",
+      "name": "Overnight oats",
+      "calories": 465,
+      "protein": 24,
+      "carbs": 67,
+      "fat": 6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-22T16:31:28.418Z",
+      "pinned": true
+    }
+  ],
+  "logs": [
+    {
+      "date": "2026-09-22",
+      "entries": [
+        {
+          "name": "Overnight oats",
+          "calories": 465,
+          "protein": 24,
+          "carbs": 67,
+          "fat": 6,
+          "servings": 1,
+          "id": "bd8e7550-cead-458a-811f-c640c12bc649",
+          "loggedAt": "2026-09-22T16:31:28.418Z"
+        }
+      ]
+    }
+  ]
 }
