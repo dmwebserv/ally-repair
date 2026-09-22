@@ -1,11 +1,15 @@
 {
-  "exportedAt": "2026-09-22T13:27:00.953Z",
+  "exportedAt": "2026-09-22T14:55:54.574Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
   },
   "settings": {
-    "calorieGoal": 2000
+    "calorieGoal": 1850,
+    "proteinGoal": 150,
+    "carbsGoal": 200,
+    "fatGoal": 60,
+    "gymCarbsGoal": 250
   },
   "favorites": [
     {
