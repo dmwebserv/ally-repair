@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T16:35:20.924Z",
+  "exportedAt": "2026-09-22T16:37:10.212Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -46,6 +46,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-22T16:35:16.922Z",
       "pinned": false
+    },
+    {
+      "id": "cbf13e3b-0cd8-49fd-8133-689f7ce0eb7a",
+      "name": "dates",
+      "calories": 170,
+      "protein": 1.5,
+      "carbs": 44,
+      "fat": 0,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-22T16:37:06.211Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -81,6 +93,16 @@
           "servings": 1,
           "id": "42212138-37b9-4be0-9f8f-75b1c191d7fe",
           "loggedAt": "2026-09-22T16:35:16.922Z"
+        },
+        {
+          "name": "dates",
+          "calories": 170,
+          "protein": 1.5,
+          "carbs": 44,
+          "fat": 0,
+          "servings": 1,
+          "id": "19528458-e712-4039-95ba-9067c4e30bf6",
+          "loggedAt": "2026-09-22T16:37:06.211Z"
         }
       ]
     }
