@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import type { SyncStatus } from '../App';
 import { downloadBackup, importBackup } from '../lib/backup';
 import { CLOUD_SYNC_ENABLED, pullBackup } from '../lib/cloudSync';
+import { saveProfile, shortId, type DeviceProfile } from '../lib/profile';
 import { IconCloudDown, IconUpload, IconX } from './icons';
 
 interface Props {
@@ -9,6 +10,8 @@ interface Props {
   onImported: () => void;
   syncStatus: SyncStatus;
   onSyncNow: () => void;
+  profile: DeviceProfile;
+  onProfileChange: (profile: DeviceProfile) => void;
 }
 
 const SYNC_LABEL: Record<SyncStatus, string> = {
@@ -18,10 +21,20 @@ const SYNC_LABEL: Record<SyncStatus, string> = {
   error: "Sync failed — tap 'Sync now' to retry",
 };
 
-export default function BackupPanel({ onClose, onImported, syncStatus, onSyncNow }: Props) {
+export default function BackupPanel({
+  onClose,
+  onImported,
+  syncStatus,
+  onSyncNow,
+  profile,
+  onProfileChange,
+}: Props) {
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [cloudLoading, setCloudLoading] = useState(false);
+  const [name, setName] = useState(profile.name);
+  const [code, setCode] = useState('');
+  const [copied, setCopied] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleExport = () => {
@@ -78,6 +91,65 @@ export default function BackupPanel({ onClose, onImported, syncStatus, onSyncNow
     }
   };
 
+  const handleSaveName = () => {
+    const trimmed = name.trim() || 'My log';
+    if (trimmed === profile.name) {
+      setName(trimmed);
+      return;
+    }
+    const updated = { ...profile, name: trimmed };
+    saveProfile(updated);
+    onProfileChange(updated);
+    setName(trimmed);
+    setError(null);
+    setMessage('Profile name saved.');
+  };
+
+  const handleCopyCode = async () => {
+    setError(null);
+    try {
+      await navigator.clipboard.writeText(profile.id);
+      setCopied(true);
+      setMessage('Sync code copied — paste it on your other device to link it.');
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setError('Could not copy automatically — the full code is in any backup file you download.');
+    }
+  };
+
+  const handleAdoptCode = async () => {
+    const id = code.trim();
+    setError(null);
+    setMessage(null);
+    if (!/^[A-Za-z0-9-]{8,64}$/.test(id)) {
+      setError('That code doesn’t look right — check it and try again.');
+      return;
+    }
+    if (id === profile.id) {
+      setMessage('This device is already linked to that sync code.');
+      return;
+    }
+    const updated = { ...profile, id, needsLegacyMerge: false };
+    saveProfile(updated);
+    onProfileChange(updated);
+    setCode('');
+    setCloudLoading(true);
+    try {
+      const content = await pullBackup();
+      if (!content) {
+        setMessage(
+          'Device linked. No cloud data under that code yet — your next change will back up to it.',
+        );
+      } else {
+        applyImport(content);
+      }
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Device linked, but the cloud backup could not be reached.');
+    } finally {
+      setCloudLoading(false);
+    }
+  };
+
   return (
     <div className="sheet-overlay visible" onClick={onClose}>
       <div className="sheet-panel" onClick={(e) => e.stopPropagation()}>
@@ -90,6 +162,56 @@ export default function BackupPanel({ onClose, onImported, syncStatus, onSyncNow
         </div>
 
         <div className="sheet-scroll backup-scroll">
+          <div className="profile-card">
+            <label className="profile-name-field">
+              <span className="profile-label">This device</span>
+              <input
+                type="text"
+                value={name}
+                maxLength={24}
+                onChange={(e) => setName(e.target.value)}
+                onBlur={handleSaveName}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') (e.target as HTMLInputElement).blur();
+                }}
+              />
+            </label>
+            {CLOUD_SYNC_ENABLED && (
+              <>
+                <div className="profile-row">
+                  <span className="profile-label">Sync code</span>
+                  <button type="button" className="sync-code-btn" onClick={handleCopyCode}>
+                    {shortId(profile.id)} · {copied ? 'copied!' : 'copy'}
+                  </button>
+                </div>
+                <div className="profile-row">
+                  <input
+                    className="sync-code-input"
+                    type="text"
+                    value={code}
+                    onChange={(e) => setCode(e.target.value)}
+                    placeholder="Paste a sync code…"
+                    autoCapitalize="off"
+                    autoCorrect="off"
+                    spellCheck={false}
+                  />
+                  <button
+                    type="button"
+                    className="link-btn"
+                    onClick={handleAdoptCode}
+                    disabled={cloudLoading || !code.trim()}
+                  >
+                    {cloudLoading ? 'Linking…' : 'Link device'}
+                  </button>
+                </div>
+                <p className="backup-explainer backup-note">
+                  Each device backs up to its own private file, so sharing the app never mixes data. To use a
+                  second phone, paste this device's sync code there.
+                </p>
+              </>
+            )}
+          </div>
+
           {CLOUD_SYNC_ENABLED ? (
             <>
               <div className={`sync-status-row sync-${syncStatus}`}>
@@ -100,9 +222,10 @@ export default function BackupPanel({ onClose, onImported, syncStatus, onSyncNow
                 </button>
               </div>
               <p className="backup-explainer">
-                Every change backs up automatically to a private file in your GitHub repo, a few seconds after you
-                make it — so clearing your browser's cache or switching devices can't lose it. Restoring from the
-                cloud pulls that back down and merges it in; it never overwrites or deletes what's already here.
+                Every change backs up automatically to this device's own private file in your GitHub repo, a few
+                seconds after you make it — so clearing your browser's cache or switching devices can't lose it.
+                Restoring from the cloud pulls that back down and merges it in; it never overwrites or deletes
+                what's already here.
               </p>
               <button
                 type="button"

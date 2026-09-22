@@ -12,7 +12,8 @@ Rules:
 - If you truly cannot make a reasonable read or estimate (image unclear, not food at all), use null for the numeric fields.
 - Never refuse to estimate case (b) just because it's not exact — a reasonable estimate is expected and useful; just mark it "estimated": true.`;
 
-const BACKUP_PATH = 'data/nutrilog-backup.json';
+const LEGACY_BACKUP_PATH = 'data/nutrilog-backup.json';
+const BACKUP_DIR = 'data/backups';
 const GITHUB_API = 'https://api.github.com';
 
 function corsHeaders(origin) {
@@ -128,16 +129,31 @@ function githubHeaders(env) {
   };
 }
 
-function repoContentsUrl(env) {
-  return `${GITHUB_API}/repos/${env.GITHUB_BACKUP_OWNER}/${env.GITHUB_BACKUP_REPO}/contents/${BACKUP_PATH}`;
+function repoContentsUrl(env, path) {
+  return `${GITHUB_API}/repos/${env.GITHUB_BACKUP_OWNER}/${env.GITHUB_BACKUP_REPO}/contents/${path}`;
 }
 
-async function handleBackupGet(_request, env, origin) {
+/**
+ * Each device profile gets its own backup file so people's data can never
+ * mix. Requests without a profile id use the original single file (legacy
+ * clients + the one-time migration read).
+ *
+ * Returns the repo path, or null if the profile id is invalid. The strict
+ * allowlist also prevents path traversal (no slashes/dots-allowed tricks).
+ */
+function backupPathFor(url) {
+  const profile = url.searchParams.get('profile');
+  if (!profile) return LEGACY_BACKUP_PATH;
+  if (!/^[A-Za-z0-9][A-Za-z0-9-]{6,62}$/.test(profile)) return null;
+  return `${BACKUP_DIR}/${profile}.json`;
+}
+
+async function handleBackupGet(_request, env, origin, path) {
   if (!env.GITHUB_BACKUP_TOKEN) {
     return json({ error: 'Server not configured: missing GITHUB_BACKUP_TOKEN' }, 500, origin);
   }
 
-  const res = await fetch(repoContentsUrl(env), { headers: githubHeaders(env) });
+  const res = await fetch(repoContentsUrl(env, path), { headers: githubHeaders(env) });
   if (res.status === 404) {
     return json({ exists: false }, 200, origin);
   }
@@ -150,7 +166,7 @@ async function handleBackupGet(_request, env, origin) {
   return json({ exists: true, content, updatedAt: file.sha }, 200, origin);
 }
 
-async function handleBackupPost(request, env, origin) {
+async function handleBackupPost(request, env, origin, path) {
   if (!env.GITHUB_BACKUP_TOKEN) {
     return json({ error: 'Server not configured: missing GITHUB_BACKUP_TOKEN' }, 500, origin);
   }
@@ -172,14 +188,14 @@ async function handleBackupPost(request, env, origin) {
 
   // Fetch current sha, if the file already exists, so we update rather than conflict.
   let sha;
-  const existing = await fetch(repoContentsUrl(env), { headers: githubHeaders(env) });
+  const existing = await fetch(repoContentsUrl(env, path), { headers: githubHeaders(env) });
   if (existing.ok) {
     const existingFile = await existing.json();
     sha = existingFile.sha;
   }
 
   const putOnce = () =>
-    fetch(repoContentsUrl(env), {
+    fetch(repoContentsUrl(env, path), {
       method: 'PUT',
       headers: { ...githubHeaders(env), 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -193,7 +209,7 @@ async function handleBackupPost(request, env, origin) {
 
   if (putRes.status === 409) {
     // Someone else updated it in between — refetch sha once and retry.
-    const retryExisting = await fetch(repoContentsUrl(env), { headers: githubHeaders(env) });
+    const retryExisting = await fetch(repoContentsUrl(env, path), { headers: githubHeaders(env) });
     if (retryExisting.ok) {
       sha = (await retryExisting.json()).sha;
       putRes = await putOnce();
@@ -210,7 +226,8 @@ async function handleBackupPost(request, env, origin) {
 export default {
   async fetch(request, env) {
     const origin = request.headers.get('Origin');
-    const { pathname } = new URL(request.url);
+    const url = new URL(request.url);
+    const { pathname } = url;
 
     if (request.method === 'OPTIONS') {
       return new Response(null, { headers: corsHeaders(origin) });
@@ -220,11 +237,15 @@ export default {
       return json({ error: 'Unauthorized' }, 401, origin);
     }
 
-    if (pathname === '/backup' && request.method === 'GET') {
-      return handleBackupGet(request, env, origin);
-    }
-    if (pathname === '/backup' && request.method === 'POST') {
-      return handleBackupPost(request, env, origin);
+    if (pathname === '/backup' && (request.method === 'GET' || request.method === 'POST')) {
+      const path = backupPathFor(url);
+      if (!path) {
+        return json({ error: 'Invalid profile id' }, 400, origin);
+      }
+      if (request.method === 'GET') {
+        return handleBackupGet(request, env, origin, path);
+      }
+      return handleBackupPost(request, env, origin, path);
     }
     if ((pathname === '/' || pathname === '/scan') && request.method === 'POST') {
       return handleScan(request, env, origin);

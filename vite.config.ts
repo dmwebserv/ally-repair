@@ -5,4 +5,8 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   base: '/ally-repair/',
   plugins: [react()],
+  server: {
+    host: '0.0.0.0',
+    allowedHosts: true,
+  },
 })

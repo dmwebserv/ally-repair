@@ -32,6 +32,34 @@ export function getDayLog(date: string): DayLog {
   }
 }
 
+/** Every stored day log, oldest first. Skips corrupt entries rather than failing. */
+export function listDayLogs(): DayLog[] {
+  const logs: DayLog[] = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (!key || !key.startsWith(LOG_PREFIX)) continue;
+    const date = key.slice(LOG_PREFIX.length);
+    try {
+      const parsed = JSON.parse(localStorage.getItem(key) ?? '');
+      if (parsed && Array.isArray(parsed.entries)) {
+        logs.push({ date, entries: parsed.entries ?? [], isGymDay: parsed.isGymDay });
+      }
+    } catch {
+      // skip a corrupt entry rather than fail the whole listing
+    }
+  }
+  return logs.sort((a, b) => a.date.localeCompare(b.date));
+}
+
+/** True if this device holds any day logs at all (used for one-time migration decisions). */
+export function hasAnyLogs(): boolean {
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key && key.startsWith(LOG_PREFIX)) return true;
+  }
+  return false;
+}
+
 export function saveDayLog(log: DayLog): void {
   localStorage.setItem(LOG_PREFIX + log.date, JSON.stringify(log));
 }

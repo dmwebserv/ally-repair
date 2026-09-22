@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import './App.css';
 import AddFoodPanel from './components/AddFoodPanel';
 import BackupPanel from './components/BackupPanel';
+import CalendarView from './components/CalendarView';
 import CalorieRing from './components/CalorieRing';
 import DateNav from './components/DateNav';
 import FavoritesRow from './components/FavoritesRow';
@@ -9,9 +10,11 @@ import FoodLog from './components/FoodLog';
 import GoalSetting from './components/GoalSetting';
 import WeekSummary from './components/WeekSummary';
 import { IconCloudDown, IconDumbbell } from './components/icons';
-import { CLOUD_SYNC_ENABLED, pushBackup } from './lib/cloudSync';
+import { importBackup } from './lib/backup';
+import { CLOUD_SYNC_ENABLED, pullLegacyBackup, pushBackup } from './lib/cloudSync';
 import { todayKey } from './lib/date';
 import { pinByEntry, recordFoodUse } from './lib/favorites';
+import { clearLegacyMergeFlag, ensureProfile, type DeviceProfile } from './lib/profile';
 import {
   addEntry,
   dayTotals,
@@ -45,9 +48,14 @@ function App() {
   const [editingEntry, setEditingEntry] = useState<FoodEntry | null>(null);
   const [toast, setToast] = useState<Toast | null>(null);
   const [backupOpen, setBackupOpen] = useState(false);
+  const [calendarOpen, setCalendarOpen] = useState(false);
+  const [profile, setProfile] = useState<DeviceProfile>(() => ensureProfile());
   const [syncStatus, setSyncStatus] = useState<SyncStatus>('idle');
   const toastTimeout = useRef<number | null>(null);
   const syncTimeout = useRef<number | null>(null);
+  const dateRef = useRef(date);
+  dateRef.current = date;
+  const migratedRef = useRef(false);
 
   useEffect(() => {
     setLog(getDayLog(date));
@@ -89,6 +97,39 @@ function App() {
       document.removeEventListener('visibilitychange', flush);
       window.removeEventListener('pagehide', flush);
     };
+  }, []);
+
+  // One-time migration onto per-device cloud backups. Only runs on installs
+  // that already held logs when profiles were introduced (i.e. the owner's
+  // device) — a friend opening the shared link starts with a fresh profile
+  // and never touches the legacy backup.
+  useEffect(() => {
+    if (!CLOUD_SYNC_ENABLED || migratedRef.current) return;
+    migratedRef.current = true;
+    if (!ensureProfile().needsLegacyMerge) return;
+    setSyncStatus('syncing');
+    pullLegacyBackup()
+      .then((content) => {
+        if (content) {
+          try {
+            importBackup(content);
+          } catch {
+            // Corrupt legacy backup: carry on with the intact local data.
+          }
+        }
+      })
+      .catch(() => {
+        // Offline or unreachable: local data is intact; normal sync covers it later.
+      })
+      .finally(() => {
+        setProfile(clearLegacyMergeFlag());
+        setLog(getDayLog(dateRef.current));
+        setSettings(getSettings());
+        setRefreshKey((k) => k + 1);
+        pushBackup()
+          .then(() => setSyncStatus('synced'))
+          .catch(() => setSyncStatus('error'));
+      });
   }, []);
 
   const handleAdd = (entry: FoodEntry, favorite: boolean) => {
@@ -192,10 +233,25 @@ function App() {
           onImported={handleImported}
           syncStatus={syncStatus}
           onSyncNow={syncNow}
+          profile={profile}
+          onProfileChange={setProfile}
         />
       )}
 
-      <DateNav date={date} onChange={setDate} />
+      {calendarOpen && (
+        <CalendarView
+          settings={settings}
+          selected={date}
+          refreshKey={refreshKey}
+          onSelect={(d) => {
+            setDate(d);
+            setCalendarOpen(false);
+          }}
+          onClose={() => setCalendarOpen(false)}
+        />
+      )}
+
+      <DateNav date={date} onChange={setDate} onOpenCalendar={() => setCalendarOpen(true)} />
 
       <button
         type="button"

@@ -1,38 +1,25 @@
-import { getSettings, LOG_PREFIX, saveDayLog } from './storage';
+import { getSettings, listDayLogs, LOG_PREFIX, saveDayLog } from './storage';
+import { ensureProfile } from './profile';
 import { getFoodStats, mergeFoodStats } from './favorites';
 import type { DayLog, FoodStat, UserSettings } from './types';
 
 export interface BackupData {
   exportedAt: string;
+  /** Which device profile produced this backup — informational only, ignored on import. */
+  profile?: { id: string; name: string };
   settings: UserSettings;
   favorites: FoodStat[];
   logs: DayLog[];
 }
 
-function getAllDayLogs(): DayLog[] {
-  const logs: DayLog[] = [];
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (!key || !key.startsWith(LOG_PREFIX)) continue;
-    const date = key.slice(LOG_PREFIX.length);
-    try {
-      const parsed = JSON.parse(localStorage.getItem(key) ?? '');
-      if (parsed && Array.isArray(parsed.entries)) {
-        logs.push({ date, entries: parsed.entries, isGymDay: parsed.isGymDay });
-      }
-    } catch {
-      // skip a corrupt entry rather than fail the whole export
-    }
-  }
-  return logs.sort((a, b) => a.date.localeCompare(b.date));
-}
-
 export function buildBackup(): BackupData {
+  const profile = ensureProfile();
   return {
     exportedAt: new Date().toISOString(),
+    profile: { id: profile.id, name: profile.name },
     settings: getSettings(),
     favorites: getFoodStats(),
-    logs: getAllDayLogs(),
+    logs: listDayLogs(),
   };
 }
 

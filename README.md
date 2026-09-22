@@ -13,7 +13,9 @@ via `localStorage`.
   (Tesseract.js) and the calorie/protein/carb/fat fields are pre-filled for
   you to review before saving
 - Browse previous days, see a 7-day calorie bar chart
-- No backend, no account, no cost — data never leaves your device
+- Month-view calendar with per-day totals vs goal — tap any day to jump back to it
+- No account, no cost — data lives on your device, with optional cloud backup
+  (see below)
 
 ## Running locally
 
@@ -44,3 +46,23 @@ the actual OCR runs on-device.
 Label parsing uses simple heuristics (regex over the recognized text), so
 always double-check the pre-filled numbers before saving — messy photos or
 unusual label layouts can produce wrong matches.
+
+## Sharing the app & per-device profiles
+
+Every install generates its own private profile id, and each profile backs
+up to its own file (`data/backups/<profile-id>.json` in the repo via the
+Cloudflare Worker). That means you can send the link to a friend and your
+data can never mix with theirs — goals, favorites, history, and cloud
+backups are all separate per device.
+
+- **Second phone?** Open Backup & restore on your first device, copy the
+  *sync code*, and paste it on the new device (*Link device*) to share one
+  backup across both.
+- **Upgrading?** Installs that already held logs automatically merge the
+  original single-file backup (`data/nutrilog-backup.json`) once, then
+  switch to their own per-profile file. The original file is left untouched
+  as an archive.
+
+Note: anyone you share the deployed link with also shares your Worker's
+OpenAI key for AI scans. For family use that's usually fine; for wider
+sharing, consider per-user limits or a separate deployment.
