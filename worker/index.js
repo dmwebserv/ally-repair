@@ -28,7 +28,13 @@ function corsHeaders(origin) {
 function json(obj, status, origin) {
   return new Response(JSON.stringify(obj), {
     status,
-    headers: { 'Content-Type': 'application/json', ...corsHeaders(origin) },
+    // no-store: responses can include personal backup data — never let
+    // intermediaries cache them.
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 'no-store',
+      ...corsHeaders(origin),
+    },
   });
 }
 
