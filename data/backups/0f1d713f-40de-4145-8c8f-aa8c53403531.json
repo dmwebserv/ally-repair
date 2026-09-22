@@ -1,0 +1,1455 @@
+{
+  "exportedAt": "2026-09-22T13:26:08.338Z",
+  "profile": {
+    "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
+    "name": "Danny iPhone"
+  },
+  "settings": {
+    "calorieGoal": 2000
+  },
+  "favorites": [
+    {
+      "id": "a854122b-26e2-43c3-92ee-7bdcc94c3c8d",
+      "name": "Strawberry Protein Yoghurt",
+      "calories": 139,
+      "protein": 25,
+      "carbs": 7,
+      "fat": 0.6,
+      "servings": 1,
+      "useCount": 13,
+      "lastUsedAt": "2026-09-21T14:06:45.359Z",
+      "pinned": true
+    },
+    {
+      "id": "f6d8bc1b-943d-4fe9-ae50-cd3714b3403a",
+      "name": "Meatball Pasta",
+      "calories": 524,
+      "protein": 32.5,
+      "carbs": 52.8,
+      "fat": 17.4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-08-28T13:51:24.870Z",
+      "pinned": false
+    },
+    {
+      "id": "20afe4b2-3ee1-4bff-a129-e75a1aca42be",
+      "name": "Southern Fried Flavour Snack",
+      "calories": 164,
+      "protein": 17.6,
+      "carbs": 0.9,
+      "fat": 9.6,
+      "servings": 1,
+      "useCount": 2,
+      "lastUsedAt": "2026-08-28T17:24:04.893Z",
+      "pinned": true
+    },
+    {
+      "id": "3294afdc-d50d-405c-8adc-d9e1124101c5",
+      "name": "Protein Rice",
+      "calories": 188,
+      "protein": 14.4,
+      "carbs": 22.6,
+      "fat": 4.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-08-28T13:52:55.947Z",
+      "pinned": false
+    },
+    {
+      "id": "fba783cc-9218-4512-a9cc-1ccc4eb28c3f",
+      "name": "Strawberry with Sweetness",
+      "calories": 145,
+      "protein": 25,
+      "carbs": 9.3,
+      "fat": 0.7,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-01T10:00:22.756Z",
+      "pinned": false
+    },
+    {
+      "id": "ea3ff8ab-0e59-4384-9f48-3ba4c5ba3e39",
+      "name": "Soba Noodles",
+      "calories": 208,
+      "protein": 5.5,
+      "carbs": 27.3,
+      "fat": 7.9,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-01T12:06:22.577Z",
+      "pinned": false
+    },
+    {
+      "id": "a39fae88-3bcf-4d4e-83b9-68fd444e8c64",
+      "name": "Egg",
+      "calories": 60,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 4,
+      "servings": 3,
+      "useCount": 5,
+      "lastUsedAt": "2026-09-21T11:55:35.911Z",
+      "pinned": true
+    },
+    {
+      "id": "cfdbe289-263f-4dff-a36b-25107c4bdabd",
+      "name": "White Chocolate Flavour Protein Pudding",
+      "calories": 161,
+      "protein": 20.4,
+      "carbs": 9.6,
+      "fat": 4.5,
+      "servings": 1,
+      "useCount": 2,
+      "lastUsedAt": "2026-09-03T12:07:24.590Z",
+      "pinned": false
+    },
+    {
+      "id": "86b002c2-fb4a-4457-8b9d-e4886d7b58ed",
+      "name": "Tone Protein Bar Chocolate Brownie",
+      "calories": 141,
+      "protein": 15,
+      "carbs": 15,
+      "fat": 3.6,
+      "servings": 1,
+      "useCount": 3,
+      "lastUsedAt": "2026-09-14T10:27:26.339Z",
+      "pinned": true
+    },
+    {
+      "id": "930e106d-bb7f-4723-ba0b-0a3cf527830c",
+      "name": "Chocolate Protein Shake",
+      "calories": 222,
+      "protein": 35,
+      "carbs": 17,
+      "fat": 1.1,
+      "servings": 1,
+      "useCount": 2,
+      "lastUsedAt": "2026-09-09T12:07:21.583Z",
+      "pinned": true
+    },
+    {
+      "id": "0f5ba9fd-5076-415b-a1b4-9def2e84afb5",
+      "name": "HONEYCOMB",
+      "calories": 99,
+      "protein": 10,
+      "carbs": 11.8,
+      "fat": 3.2,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-02T08:40:50.943Z",
+      "pinned": false
+    },
+    {
+      "id": "7686f466-2140-45cc-bf64-851611d076bc",
+      "name": "X-tone protein bar salted caramel flavour",
+      "calories": 142,
+      "protein": 15,
+      "carbs": 16,
+      "fat": 3.5,
+      "servings": 1,
+      "useCount": 5,
+      "lastUsedAt": "2026-09-18T14:47:59.511Z",
+      "pinned": true
+    },
+    {
+      "id": "40c559be-725a-4b99-9ed1-bd5a091dcb7e",
+      "name": "Slow Roasted Chicken Bites",
+      "calories": 95,
+      "protein": 9,
+      "carbs": 2.5,
+      "fat": 6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-03T11:48:31.860Z",
+      "pinned": false
+    },
+    {
+      "id": "b2b6e2d5-bf92-4479-8cb2-53c8d87714bb",
+      "name": "High Protein Chicken Tikka No Mayo",
+      "calories": 395,
+      "protein": 26,
+      "carbs": 45,
+      "fat": 11.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-03T11:48:59.221Z",
+      "pinned": false
+    },
+    {
+      "id": "d289f1e9-5d3e-415d-ac82-d9f2c18bcd8f",
+      "name": "HIGH PROTEIN SHAKE",
+      "calories": 185,
+      "protein": 25.1,
+      "carbs": 18,
+      "fat": 1,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-03T12:06:59.492Z",
+      "pinned": false
+    },
+    {
+      "id": "0504c53f-e0c5-4e17-9591-e91d66e15029",
+      "name": "Cookies And Cream Protein Bar",
+      "calories": 142,
+      "protein": 15,
+      "carbs": 16,
+      "fat": 3.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-04T07:03:16.650Z",
+      "pinned": false
+    },
+    {
+      "id": "a12eae0f-aae1-457c-aafd-7d809e7db30e",
+      "name": "PROTEIN EGG SNACK POT",
+      "calories": 114,
+      "protein": 11,
+      "carbs": 0,
+      "fat": 7.7,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-04T12:14:58.608Z",
+      "pinned": false
+    },
+    {
+      "id": "3add06f5-a9f7-434a-87c5-c13d2a795b4d",
+      "name": "Roasted Chicken Breast Chunks",
+      "calories": 101,
+      "protein": 23.2,
+      "carbs": 0.8,
+      "fat": 0.4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-04T12:15:31.472Z",
+      "pinned": false
+    },
+    {
+      "id": "ea5e5fca-f871-4b6d-88bd-3232bf057b19",
+      "name": "S+P Chicken Teriyaki",
+      "calories": 195,
+      "protein": 5.5,
+      "carbs": 34.5,
+      "fat": 3.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-04T12:16:20.930Z",
+      "pinned": false
+    },
+    {
+      "id": "d15a3162-5fb8-41c1-978c-97073e493bbe",
+      "name": "CHOCOLATE FLAVOURED MILKSHAKE",
+      "calories": 206,
+      "protein": 25.7,
+      "carbs": 21.8,
+      "fat": 1.8,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-04T12:17:27.904Z",
+      "pinned": false
+    },
+    {
+      "id": "541405d4-545d-45d8-a09a-fe6beb1399ae",
+      "name": "Chocolate Protein Pudding",
+      "calories": 159,
+      "protein": 20.1,
+      "carbs": 12.4,
+      "fat": 3.2,
+      "servings": 1,
+      "useCount": 2,
+      "lastUsedAt": "2026-09-18T13:04:02.117Z",
+      "pinned": true
+    },
+    {
+      "id": "573075d9-bebb-447c-b762-e146b76d6e2b",
+      "name": "EGG PROTEIN POT",
+      "calories": 121,
+      "protein": 11.3,
+      "carbs": 1.44,
+      "fat": 7.65,
+      "servings": 1,
+      "useCount": 3,
+      "lastUsedAt": "2026-09-18T12:02:42.561Z",
+      "pinned": false
+    },
+    {
+      "id": "648cf4c2-02f8-48c8-80d5-5148567a7f4b",
+      "name": "Chicken and smocked bacon sandwich",
+      "calories": 455,
+      "protein": 26.5,
+      "carbs": 53.8,
+      "fat": 14.4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-07T12:57:08.120Z",
+      "pinned": false
+    },
+    {
+      "id": "ab6798bd-92fb-4adf-9c9c-5bfab09e9064",
+      "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+      "calories": 229,
+      "protein": 30.1,
+      "carbs": 16.4,
+      "fat": 4.6,
+      "servings": 1,
+      "useCount": 6,
+      "lastUsedAt": "2026-09-21T11:55:40.518Z",
+      "pinned": true
+    },
+    {
+      "id": "e54dfefd-cba8-4a0e-9db0-26c6079dc079",
+      "name": "Small Banana",
+      "calories": 90,
+      "carbs": 23,
+      "servings": 1,
+      "useCount": 5,
+      "lastUsedAt": "2026-09-10T10:06:58.210Z",
+      "pinned": true
+    },
+    {
+      "id": "d73af627-f8ac-43e6-95cb-1e918a50d2c5",
+      "name": "Babybel",
+      "calories": 60,
+      "protein": 4.8,
+      "carbs": 0.1,
+      "fat": 4.6,
+      "servings": 1,
+      "useCount": 5,
+      "lastUsedAt": "2026-09-10T08:10:34.884Z",
+      "pinned": true
+    },
+    {
+      "id": "f115027b-a09a-4771-8a2c-2459d1de1e6d",
+      "name": "Biscoff Protein Shake",
+      "calories": 153,
+      "protein": 30,
+      "carbs": 3.8,
+      "fat": 2,
+      "servings": 1,
+      "useCount": 3,
+      "lastUsedAt": "2026-09-15T14:31:56.635Z",
+      "pinned": true
+    },
+    {
+      "id": "0c8e3d7f-de86-4c7b-832f-36b37a0b34ca",
+      "name": "Egg pot",
+      "calories": 120,
+      "protein": 10,
+      "carbs": 1.6,
+      "fat": 8.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-08T11:37:16.436Z",
+      "pinned": false
+    },
+    {
+      "id": "198be546-341b-4c2c-aefa-c0862c57b6e9",
+      "name": "CORONATION CHICKEN WHITE BREAD",
+      "calories": 439,
+      "protein": 19,
+      "carbs": 45,
+      "fat": 20,
+      "servings": 1,
+      "useCount": 2,
+      "lastUsedAt": "2026-09-16T12:30:26.159Z",
+      "pinned": false
+    },
+    {
+      "id": "7f0ce81c-d12b-4482-b80a-d4c914d7b9c3",
+      "name": "Vanilla Protein Shake 35g",
+      "calories": 214,
+      "protein": 35,
+      "carbs": 17.5,
+      "fat": 0.66,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-08T13:08:57.711Z",
+      "pinned": false
+    },
+    {
+      "id": "017d5a4c-f102-4730-ad58-861f165dda83",
+      "name": "White chocolate cereal balls",
+      "calories": 235,
+      "protein": 30.1,
+      "carbs": 17.5,
+      "fat": 4.86,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-09T07:44:36.998Z",
+      "pinned": false
+    },
+    {
+      "id": "5a0694c7-b1b2-4990-8bc5-32aad1067e87",
+      "name": "Cheesy Garlic Pasta",
+      "calories": 400,
+      "protein": 13,
+      "carbs": 50,
+      "fat": 17,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-09T12:06:23.943Z",
+      "pinned": false
+    },
+    {
+      "id": "b5c8ff8d-5de9-4e6e-a643-3e104a558eac",
+      "name": "Starbar",
+      "calories": 188,
+      "protein": 1.37,
+      "carbs": 7.4,
+      "fat": 3.7,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-09T18:51:58.298Z",
+      "pinned": false
+    },
+    {
+      "id": "72eab50a-ceff-44f2-acab-287f20be5e48",
+      "name": "Chocolate Cookie",
+      "calories": 309,
+      "protein": 3.8,
+      "carbs": 39.8,
+      "fat": 14.6,
+      "servings": 2,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-09T20:04:51.707Z",
+      "pinned": false
+    },
+    {
+      "id": "93b0da36-3e5c-4027-a718-e8a0f7ef7957",
+      "name": "High-Protein Milkshake White Choc",
+      "calories": 152,
+      "protein": 25.1,
+      "carbs": 11.9,
+      "fat": 0.33,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-10T11:38:56.769Z",
+      "pinned": false
+    },
+    {
+      "id": "f621fb7e-9c27-49d5-98e4-38d000561593",
+      "name": "Salt & Pepper Chicken Dragon Rolls",
+      "calories": 297,
+      "protein": 8.52,
+      "carbs": 40.9,
+      "fat": 10.9,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-10T12:07:48.007Z",
+      "pinned": false
+    },
+    {
+      "id": "e0a8712d-cb8a-4113-b48b-510066b9d6df",
+      "name": "New York Everything Bagel",
+      "calories": 233,
+      "protein": 8.8,
+      "carbs": 42.9,
+      "fat": 2.2,
+      "servings": 1,
+      "useCount": 2,
+      "lastUsedAt": "2026-09-15T12:17:09.469Z",
+      "pinned": true
+    },
+    {
+      "id": "6d754aa7-39dd-40b5-be5c-7b54a4564db0",
+      "name": "SWEET CHILLI CHICKEN",
+      "calories": 353,
+      "protein": 17,
+      "carbs": 59.6,
+      "fat": 6.3,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-15T11:53:35.619Z",
+      "pinned": false
+    },
+    {
+      "id": "608a8545-bafc-4710-9764-9fa278bf3bbe",
+      "name": "Scismix Choc Chip Protein Brownie",
+      "calories": 246,
+      "protein": 20,
+      "carbs": 23.7,
+      "fat": 9.9,
+      "servings": 1,
+      "useCount": 2,
+      "lastUsedAt": "2026-09-17T07:32:45.663Z",
+      "pinned": true
+    },
+    {
+      "id": "bd2968a5-a41b-4415-a2b1-71e9753279b3",
+      "name": "Protein LINDAHL Flavour Milk Drink",
+      "calories": 170,
+      "protein": 25,
+      "carbs": 12.5,
+      "fat": 1.75,
+      "servings": 1,
+      "useCount": 2,
+      "lastUsedAt": "2026-09-18T14:48:07.543Z",
+      "pinned": true
+    },
+    {
+      "id": "1f4319a5-d7ac-4c76-b684-74969bb73946",
+      "name": "Vanilla Mousse",
+      "calories": 162,
+      "protein": 20,
+      "carbs": 12.4,
+      "fat": 3.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-16T15:17:42.256Z",
+      "pinned": false
+    },
+    {
+      "id": "04dadd4b-f022-41e2-a1b9-49f933f7d0d1",
+      "name": "Chicken & Sweetcorn",
+      "calories": 326,
+      "protein": 20.4,
+      "carbs": 44.2,
+      "fat": 6.8,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-18T12:02:56.843Z",
+      "pinned": false
+    },
+    {
+      "id": "ccd82b80-ee36-4ea0-8d7e-d6e661129cd1",
+      "name": "For Goodness Shakes Protein Chocolate",
+      "calories": 218,
+      "protein": 35,
+      "carbs": 16.5,
+      "fat": 0.99,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-21T11:59:25.523Z",
+      "pinned": false
+    },
+    {
+      "id": "0027a8c8-273c-443c-923e-7b6a02e0f5b2",
+      "name": "CHICKEN & BACON CAESAR SALAD",
+      "calories": 371,
+      "protein": 24.4,
+      "carbs": 39.5,
+      "fat": 12.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-21T11:59:40.873Z",
+      "pinned": false
+    }
+  ],
+  "logs": [
+    {
+      "date": "2026-08-28",
+      "entries": [
+        {
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "id": "e3c6f09f-ebaa-411d-bd00-9c02ee88f3d3",
+          "loggedAt": "2026-08-28T13:50:55.362Z"
+        },
+        {
+          "name": "Meatball Pasta",
+          "calories": 524,
+          "protein": 32.5,
+          "carbs": 52.8,
+          "fat": 17.4,
+          "servings": 1,
+          "id": "83c6f75f-bdc6-47ad-94e3-d2b7303a946c",
+          "loggedAt": "2026-08-28T13:51:24.870Z"
+        },
+        {
+          "name": "Southern Fried Flavour Snack",
+          "calories": 164,
+          "protein": 17.6,
+          "carbs": 0.9,
+          "fat": 9.6,
+          "servings": 1,
+          "id": "ed00fcbc-d272-4406-8c77-acd4361b9e02",
+          "loggedAt": "2026-08-28T13:52:11.846Z"
+        },
+        {
+          "name": "Protein Rice",
+          "calories": 188,
+          "protein": 14.4,
+          "carbs": 22.6,
+          "fat": 4.5,
+          "servings": 1,
+          "id": "dced7ea7-964b-47c9-a1cc-2b3f5366f7d0",
+          "loggedAt": "2026-08-28T13:52:55.947Z"
+        },
+        {
+          "id": "111efd3e-ceb9-4592-a63a-52c274f80936",
+          "name": "Southern Fried Flavour Snack",
+          "calories": 164,
+          "protein": 17.6,
+          "carbs": 0.9,
+          "fat": 9.6,
+          "servings": 1,
+          "loggedAt": "2026-08-28T17:24:04.893Z"
+        }
+      ],
+      "isGymDay": true
+    },
+    {
+      "date": "2026-09-01",
+      "entries": [
+        {
+          "name": "Soba Noodles",
+          "calories": 208,
+          "protein": 5.5,
+          "carbs": 27.3,
+          "fat": 7.9,
+          "servings": 1,
+          "id": "ca9186a4-970f-42be-a2f1-864788ae0e80",
+          "loggedAt": "2026-09-01T12:06:22.577Z"
+        },
+        {
+          "name": "Egg",
+          "calories": 60,
+          "protein": 6,
+          "carbs": 0,
+          "fat": 4,
+          "servings": 3,
+          "id": "603d7de8-9da2-4076-9a63-b7324bdd1ed7",
+          "loggedAt": "2026-09-01T12:07:21.386Z"
+        },
+        {
+          "name": "White Chocolate Flavour Protein Pudding",
+          "calories": 161,
+          "protein": 20.4,
+          "carbs": 9.6,
+          "fat": 4.5,
+          "servings": 1,
+          "id": "e0f2597e-4e19-49c6-8320-5bc8405cf13d",
+          "loggedAt": "2026-09-01T14:17:54.351Z"
+        },
+        {
+          "id": "230b9ad5-8d53-445a-a9e8-49183e40c3c3",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-01T14:18:10.631Z"
+        },
+        {
+          "name": "Tone Protein Bar Chocolate Brownie",
+          "calories": 141,
+          "protein": 15,
+          "carbs": 15,
+          "fat": 3.6,
+          "servings": 1,
+          "id": "6780de0f-6d4c-4c39-8f80-fb7b26565071",
+          "loggedAt": "2026-09-01T14:45:35.157Z"
+        },
+        {
+          "name": "Chocolate Protein Shake",
+          "calories": 222,
+          "protein": 35,
+          "carbs": 17,
+          "fat": 1.1,
+          "servings": 1,
+          "id": "0fab3655-5c29-42c8-b638-b1ff982fc4a0",
+          "loggedAt": "2026-09-01T15:57:55.794Z"
+        }
+      ],
+      "isGymDay": false
+    },
+    {
+      "date": "2026-09-02",
+      "entries": [
+        {
+          "id": "e115a3e5-6a12-466d-9866-5ad12e0e9922",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-02T08:40:13.971Z"
+        },
+        {
+          "name": "HONEYCOMB",
+          "calories": 99,
+          "protein": 10,
+          "carbs": 11.8,
+          "fat": 3.2,
+          "servings": 1,
+          "id": "f19361e9-e008-4764-92cc-225043402464",
+          "loggedAt": "2026-09-02T08:40:50.943Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "entries": [
+        {
+          "name": "X-tone protein bar salted caramel flavour",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.5,
+          "servings": 1,
+          "id": "2844ba36-a22a-4b2f-bee0-b8d286a379ce",
+          "loggedAt": "2026-09-03T06:54:41.185Z"
+        },
+        {
+          "id": "115721b4-41dd-47d8-907a-0d74b71b2d0c",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-03T08:19:37.406Z"
+        },
+        {
+          "name": "Slow Roasted Chicken Bites",
+          "calories": 95,
+          "protein": 9,
+          "carbs": 2.5,
+          "fat": 6,
+          "servings": 1,
+          "id": "3886ffbf-63d6-489d-b08e-00cfc100bc88",
+          "loggedAt": "2026-09-03T11:48:31.860Z"
+        },
+        {
+          "name": "High Protein Chicken Tikka No Mayo",
+          "calories": 395,
+          "protein": 26,
+          "carbs": 45,
+          "fat": 11.6,
+          "servings": 1,
+          "id": "a5d56936-0686-4a27-9b79-894d0eba1be5",
+          "loggedAt": "2026-09-03T11:48:59.221Z"
+        },
+        {
+          "name": "HIGH PROTEIN SHAKE",
+          "calories": 185,
+          "protein": 25.1,
+          "carbs": 18,
+          "fat": 1,
+          "servings": 1,
+          "id": "1c5185c5-b639-4377-977e-5f8a561775ad",
+          "loggedAt": "2026-09-03T12:06:59.492Z"
+        },
+        {
+          "name": "White Chocolate Flavour Protein Pudding",
+          "calories": 161,
+          "protein": 20.4,
+          "carbs": 9.6,
+          "fat": 4.5,
+          "servings": 1,
+          "id": "ccd7f214-54cf-4dfb-89e6-71bc864fa03e",
+          "loggedAt": "2026-09-03T12:07:24.590Z"
+        }
+      ],
+      "isGymDay": true
+    },
+    {
+      "date": "2026-09-04",
+      "entries": [
+        {
+          "name": "Cookies And Cream Protein Bar",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.6,
+          "servings": 1,
+          "id": "486be75a-afa0-4515-87bd-d78794c9ce0b",
+          "loggedAt": "2026-09-04T07:03:16.650Z"
+        },
+        {
+          "name": "PROTEIN EGG SNACK POT",
+          "calories": 114,
+          "protein": 11,
+          "carbs": 0,
+          "fat": 7.7,
+          "servings": 1,
+          "id": "77ddf615-53dd-4b38-99b8-5fa9f0718969",
+          "loggedAt": "2026-09-04T12:14:58.608Z"
+        },
+        {
+          "id": "41a96843-8836-42cc-943d-5c26b037a32d",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-04T12:15:06.765Z"
+        },
+        {
+          "name": "Roasted Chicken Breast Chunks",
+          "calories": 101,
+          "protein": 23.2,
+          "carbs": 0.8,
+          "fat": 0.4,
+          "servings": 1,
+          "id": "42920f10-b428-489f-86e3-292b341d0bbf",
+          "loggedAt": "2026-09-04T12:15:31.472Z"
+        },
+        {
+          "name": "S+P Chicken Teriyaki",
+          "calories": 195,
+          "protein": 5.5,
+          "carbs": 34.5,
+          "fat": 3.6,
+          "servings": 1,
+          "id": "864d9ec8-1a74-4c3f-a3f5-45618df42749",
+          "loggedAt": "2026-09-04T12:16:20.930Z"
+        },
+        {
+          "name": "CHOCOLATE FLAVOURED MILKSHAKE",
+          "calories": 206,
+          "protein": 25.7,
+          "carbs": 21.8,
+          "fat": 1.8,
+          "servings": 1,
+          "id": "373ef24f-7cfb-410b-bf12-1362214d1611",
+          "loggedAt": "2026-09-04T12:17:27.904Z"
+        },
+        {
+          "name": "Chocolate Protein Pudding",
+          "calories": 159,
+          "protein": 20,
+          "carbs": 12.4,
+          "fat": 3.2,
+          "servings": 1,
+          "id": "d236b63d-b23a-4524-9a9a-3b4df26d5675",
+          "loggedAt": "2026-09-04T14:13:41.152Z"
+        }
+      ],
+      "isGymDay": true
+    },
+    {
+      "date": "2026-09-07",
+      "entries": [
+        {
+          "name": "EGG PROTEIN POT",
+          "calories": 121,
+          "protein": 11.3,
+          "carbs": 1.44,
+          "fat": 7.65,
+          "servings": 1,
+          "id": "bc1399df-9e63-4fe7-8ffa-70a2d00df4c6",
+          "loggedAt": "2026-09-07T12:56:55.171Z"
+        },
+        {
+          "name": "Chicken and smocked bacon sandwich",
+          "calories": 455,
+          "protein": 26.5,
+          "carbs": 53.8,
+          "fat": 14.4,
+          "servings": 1,
+          "id": "d34798fb-4172-46dd-a2b3-362123c498eb",
+          "loggedAt": "2026-09-07T12:57:08.120Z"
+        },
+        {
+          "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "id": "4ffc4867-0ae1-4358-b249-c6f7aeaa9ef5",
+          "loggedAt": "2026-09-07T12:58:53.113Z"
+        },
+        {
+          "name": "Small Banana",
+          "calories": 90,
+          "carbs": 23,
+          "servings": 1,
+          "id": "ad73280a-746a-4f06-a9c2-b81efdc0fa90",
+          "loggedAt": "2026-09-07T12:59:55.357Z"
+        },
+        {
+          "name": "Babybel",
+          "calories": 60,
+          "protein": 4.8,
+          "carbs": 0.1,
+          "fat": 4.6,
+          "servings": 1,
+          "id": "a89a76e0-fb41-496c-99b8-e832266636c6",
+          "loggedAt": "2026-09-07T13:01:03.735Z"
+        },
+        {
+          "name": "Biscoff Protein Shake",
+          "calories": 153,
+          "protein": 30,
+          "carbs": 3.8,
+          "fat": 2,
+          "servings": 1,
+          "id": "73695178-5528-4efd-9726-bdd58f9abd91",
+          "loggedAt": "2026-09-07T13:02:33.750Z"
+        },
+        {
+          "id": "b1bdb157-001a-47da-8763-3ec9d3f10151",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-07T15:31:03.769Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "entries": [
+        {
+          "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "id": "1e231018-5d3a-451c-ac5d-2759bd4bd4c9",
+          "loggedAt": "2026-09-08T07:50:05.253Z"
+        },
+        {
+          "id": "449857d3-8c5c-4fd1-a55b-bfc212238c01",
+          "name": "Babybel",
+          "calories": 60,
+          "protein": 4.8,
+          "carbs": 0.1,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-09-08T08:05:09.827Z"
+        },
+        {
+          "name": "Egg pot",
+          "calories": 120,
+          "protein": 10,
+          "carbs": 1.6,
+          "fat": 8.5,
+          "servings": 1,
+          "id": "e9025b33-a226-41d1-9349-d8b6b7e3b3e6",
+          "loggedAt": "2026-09-08T11:37:16.436Z"
+        },
+        {
+          "name": "CORONATION CHICKEN WHITE BREAD",
+          "calories": 439,
+          "protein": 19,
+          "carbs": 45,
+          "fat": 20,
+          "servings": 1,
+          "id": "5fce1a53-9110-4bd5-86eb-f22d1352cc60",
+          "loggedAt": "2026-09-08T11:58:32.430Z"
+        },
+        {
+          "name": "Vanilla Protein Shake 35g",
+          "calories": 214,
+          "protein": 35,
+          "carbs": 17.5,
+          "fat": 0.66,
+          "servings": 1,
+          "id": "d7a91951-5beb-40a4-9b77-719a6a1a93b0",
+          "loggedAt": "2026-09-08T13:08:57.711Z"
+        },
+        {
+          "name": "X-tone protein bar salted caramel flavour",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.5,
+          "servings": 1,
+          "id": "432b084b-bbdb-40c9-bc14-002066c18be9",
+          "loggedAt": "2026-09-08T13:09:18.691Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "entries": [
+        {
+          "name": "Babybel",
+          "calories": 70,
+          "protein": 4,
+          "carbs": 0,
+          "fat": 5,
+          "servings": 1,
+          "id": "60bc28e7-1a29-4591-95d4-f1ae67a8399c",
+          "loggedAt": "2026-09-09T07:43:30.251Z"
+        },
+        {
+          "name": "White chocolate cereal balls",
+          "calories": 235,
+          "protein": 30.1,
+          "carbs": 17.5,
+          "fat": 4.86,
+          "servings": 1,
+          "id": "784f60f6-53af-4b2b-a0de-28aaec4592f5",
+          "loggedAt": "2026-09-09T07:44:36.998Z"
+        },
+        {
+          "name": "Cheesy Garlic Pasta",
+          "calories": 400,
+          "protein": 13,
+          "carbs": 50,
+          "fat": 17,
+          "servings": 1,
+          "id": "06b97a33-f5d8-4212-93bf-7c35f6e8b24b",
+          "loggedAt": "2026-09-09T12:06:23.943Z"
+        },
+        {
+          "id": "c55cbacc-bfe4-49c4-a7db-2287edab9772",
+          "name": "Chocolate Protein Shake",
+          "calories": 222,
+          "protein": 35,
+          "carbs": 17,
+          "fat": 1.1,
+          "servings": 1,
+          "loggedAt": "2026-09-09T12:07:21.583Z"
+        },
+        {
+          "id": "b4874617-613e-4994-b102-82b0cc657856",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-09T12:07:46.245Z"
+        },
+        {
+          "id": "b129d17f-e7a8-40c9-ab7a-f73f46164ce7",
+          "name": "Tone Protein Bar Chocolate Brownie",
+          "calories": 141,
+          "protein": 15,
+          "carbs": 15,
+          "fat": 3.6,
+          "servings": 1,
+          "loggedAt": "2026-09-09T12:08:22.176Z"
+        },
+        {
+          "id": "85478985-bf65-4153-be30-b7eead8b2345",
+          "name": "Small Banana",
+          "calories": 90,
+          "carbs": 23,
+          "servings": 1,
+          "loggedAt": "2026-09-09T13:31:19.180Z"
+        },
+        {
+          "name": "Starbar",
+          "calories": 188,
+          "protein": 1.37,
+          "carbs": 7.4,
+          "fat": 3.7,
+          "servings": 1,
+          "id": "270d0c35-0de5-4526-9827-618b79a4d50b",
+          "loggedAt": "2026-09-09T18:51:58.298Z"
+        },
+        {
+          "name": "Egg",
+          "calories": 85,
+          "protein": 6.5,
+          "carbs": 0,
+          "fat": 5,
+          "servings": 3,
+          "id": "b6e62731-ccc4-472a-98af-5977562bb7f8",
+          "loggedAt": "2026-09-09T20:02:36.155Z"
+        },
+        {
+          "name": "Chocolate Cookie",
+          "calories": 309,
+          "protein": 3.8,
+          "carbs": 39.8,
+          "fat": 14.6,
+          "servings": 2,
+          "id": "4e06ca28-d5fb-47cd-973e-fc8dd5515e30",
+          "loggedAt": "2026-09-09T20:04:51.707Z"
+        }
+      ],
+      "isGymDay": false
+    },
+    {
+      "date": "2026-09-10",
+      "entries": [
+        {
+          "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "id": "373889b0-40ea-49aa-a6ae-a5602cf92059",
+          "loggedAt": "2026-09-10T07:23:19.229Z"
+        },
+        {
+          "id": "bc864903-aa21-4603-a4a4-0e04e8c5ba9e",
+          "name": "Babybel",
+          "calories": 60,
+          "protein": 4.8,
+          "carbs": 0.1,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-09-10T08:10:34.884Z"
+        },
+        {
+          "id": "e72ddfce-eab9-4cc9-a206-9ac50a11761a",
+          "name": "Small Banana",
+          "calories": 90,
+          "carbs": 23,
+          "servings": 1,
+          "loggedAt": "2026-09-10T10:06:58.210Z"
+        },
+        {
+          "id": "3d82a511-d4b0-4dca-9295-9d8d9ab0dd68",
+          "name": "X-tone protein bar salted caramel flavour",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.5,
+          "servings": 1,
+          "loggedAt": "2026-09-10T10:07:22.003Z"
+        },
+        {
+          "name": "EGG PROTEIN POT",
+          "calories": 121,
+          "protein": 11.3,
+          "carbs": 1.44,
+          "fat": 7.65,
+          "servings": 1,
+          "id": "77ad868e-eb00-4b0d-84c4-f2f94db80592",
+          "loggedAt": "2026-09-10T11:38:08.367Z"
+        },
+        {
+          "name": "High-Protein Milkshake White Choc",
+          "calories": 152,
+          "protein": 25.1,
+          "carbs": 11.9,
+          "fat": 0.33,
+          "servings": 1,
+          "id": "ab3089d8-2055-4e93-8fce-b900f67547c8",
+          "loggedAt": "2026-09-10T11:38:56.769Z"
+        },
+        {
+          "name": "Salt & Pepper Chicken Dragon Rolls",
+          "calories": 297,
+          "protein": 8.52,
+          "carbs": 40.9,
+          "fat": 10.9,
+          "servings": 1,
+          "id": "831062ad-073c-48ea-bea8-850b1023fe02",
+          "loggedAt": "2026-09-10T12:07:48.007Z"
+        },
+        {
+          "id": "5d5f1b63-da3c-40f5-8cc2-dde03f6987b2",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-10T17:36:17.907Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "entries": [
+        {
+          "id": "b75c2d56-3ad7-4553-a568-17352e666a0e",
+          "name": "Tone Protein Bar Chocolate Brownie",
+          "calories": 141,
+          "protein": 15,
+          "carbs": 15,
+          "fat": 3.6,
+          "servings": 1,
+          "loggedAt": "2026-09-14T10:27:26.339Z"
+        },
+        {
+          "id": "8b971b12-5ce7-488e-a4bc-ff99fced9ada",
+          "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-09-14T10:27:45.071Z"
+        },
+        {
+          "id": "1de15820-6b6b-4e68-b4f3-8e00e18487cd",
+          "name": "Egg",
+          "calories": 60,
+          "protein": 6,
+          "carbs": 0,
+          "fat": 4,
+          "servings": 3,
+          "loggedAt": "2026-09-14T12:51:17.033Z"
+        },
+        {
+          "name": "New York Everything Bagel",
+          "calories": 233,
+          "protein": 8.8,
+          "carbs": 42.9,
+          "fat": 2.2,
+          "servings": 1,
+          "id": "66e1fecf-614f-432b-bb34-ab29fc6c4b47",
+          "loggedAt": "2026-09-14T12:52:32.610Z"
+        },
+        {
+          "id": "64ffb2e8-a9ca-4863-9d8a-2bd7a62ddffd",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-14T14:27:08.094Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "entries": [
+        {
+          "id": "5c1269be-e40d-49df-8fc2-2b9bc1276af7",
+          "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-09-15T07:16:27.671Z"
+        },
+        {
+          "name": "SWEET CHILLI CHICKEN",
+          "calories": 353,
+          "protein": 17,
+          "carbs": 59.6,
+          "fat": 6.3,
+          "servings": 1,
+          "id": "2700c72d-669f-4e41-8c02-8c264dd6ed3a",
+          "loggedAt": "2026-09-15T11:53:35.619Z"
+        },
+        {
+          "id": "84adafbb-465b-4aef-8c59-5b1082ab3836",
+          "name": "Egg",
+          "calories": 60,
+          "protein": 6,
+          "carbs": 0,
+          "fat": 4,
+          "servings": 3,
+          "loggedAt": "2026-09-15T12:16:33.971Z"
+        },
+        {
+          "id": "edb10dd1-8ad5-4371-913a-12aad61eb464",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-15T14:31:51.745Z"
+        },
+        {
+          "id": "a4ece3e4-53c8-4d64-913c-28776619c169",
+          "name": "Biscoff Protein Shake",
+          "calories": 153,
+          "protein": 30,
+          "carbs": 3.8,
+          "fat": 2,
+          "servings": 1,
+          "loggedAt": "2026-09-15T14:31:56.635Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "entries": [
+        {
+          "name": "CORONATION CHICKEN WHITE BREAD",
+          "calories": 439,
+          "protein": 19,
+          "carbs": 45,
+          "fat": 20,
+          "servings": 1,
+          "id": "ae50f3ca-2f8a-47f7-a925-9e2025bd976c",
+          "loggedAt": "2026-09-16T12:30:26.159Z"
+        },
+        {
+          "name": "Scismix Choc Chip Protein Brownie",
+          "calories": 246,
+          "protein": 20,
+          "carbs": 23.7,
+          "fat": 9.9,
+          "servings": 1,
+          "id": "24f8baa2-426a-401e-86c4-879be59a5f4f",
+          "loggedAt": "2026-09-16T12:31:12.931Z"
+        },
+        {
+          "name": "Protein LINDAHL Flavour Milk Drink",
+          "calories": 170,
+          "protein": 25,
+          "carbs": 12.5,
+          "fat": 1.75,
+          "servings": 1,
+          "id": "03aab860-b1fa-4992-b0fe-9cca75c70d2f",
+          "loggedAt": "2026-09-16T12:34:46.997Z"
+        },
+        {
+          "name": "Vanilla Mousse",
+          "calories": 162,
+          "protein": 20,
+          "carbs": 12.4,
+          "fat": 3.6,
+          "servings": 1,
+          "id": "6a03a9ae-1c18-47a9-9991-1a8355337aca",
+          "loggedAt": "2026-09-16T15:17:42.256Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "entries": [
+        {
+          "id": "5c7056ba-3b8e-4cb1-ad50-96efb3cdd44e",
+          "name": "Scismix Choc Chip Protein Brownie",
+          "calories": 246,
+          "protein": 20,
+          "carbs": 23.7,
+          "fat": 9.9,
+          "servings": 1,
+          "loggedAt": "2026-09-17T07:32:45.663Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "entries": [
+        {
+          "id": "d2cce889-6b34-4d85-9b39-c59a8fb8dcc1",
+          "name": "Protein LINDAHL Flavour Milk Drink",
+          "calories": 170,
+          "protein": 25,
+          "carbs": 12.5,
+          "fat": 1.75,
+          "servings": 1,
+          "loggedAt": "2026-09-18T07:24:52.050Z"
+        },
+        {
+          "id": "c0edf605-4914-4b0a-a9e0-cff5cbf36021",
+          "name": "X-tone protein bar salted caramel flavour",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.5,
+          "servings": 1,
+          "loggedAt": "2026-09-18T07:24:58.371Z"
+        },
+        {
+          "name": "EGG PROTEIN POT",
+          "calories": 121,
+          "protein": 11.3,
+          "carbs": 1.44,
+          "fat": 7.65,
+          "servings": 1,
+          "id": "1c5b3c15-a6c2-4d71-ae28-7b0564c59a01",
+          "loggedAt": "2026-09-18T12:02:42.561Z"
+        },
+        {
+          "name": "Chicken & Sweetcorn",
+          "calories": 326,
+          "protein": 20.4,
+          "carbs": 44.2,
+          "fat": 6.8,
+          "servings": 1,
+          "id": "d4a6eaf3-fcc7-4034-a800-6dd116331786",
+          "loggedAt": "2026-09-18T12:02:56.843Z"
+        },
+        {
+          "name": "Chocolate Protein Pudding",
+          "calories": 159,
+          "protein": 20.1,
+          "carbs": 12.4,
+          "fat": 3.2,
+          "servings": 1,
+          "id": "702da7aa-67fd-41df-a5a6-ee79a692a898",
+          "loggedAt": "2026-09-18T13:04:02.117Z"
+        },
+        {
+          "id": "7d3fa9b1-ce55-4878-9de3-ea276c2f9853",
+          "name": "X-tone protein bar salted caramel flavour",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.5,
+          "servings": 1,
+          "loggedAt": "2026-09-18T14:47:59.511Z"
+        },
+        {
+          "id": "b66a1f17-2eb8-407f-976b-c8e1129ddc7d",
+          "name": "Protein LINDAHL Flavour Milk Drink",
+          "calories": 170,
+          "protein": 25,
+          "carbs": 12.5,
+          "fat": 1.75,
+          "servings": 1,
+          "loggedAt": "2026-09-18T14:48:07.543Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "entries": [
+        {
+          "name": "Egg",
+          "calories": 60,
+          "protein": 6,
+          "carbs": 0,
+          "fat": 4,
+          "servings": 2,
+          "id": "b9a3a911-5a1b-4e00-aa44-24cba1da1c66",
+          "loggedAt": "2026-09-21T11:55:35.911Z"
+        },
+        {
+          "id": "07171f0b-600d-4205-bac1-0a121bc1da64",
+          "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-09-21T11:55:40.518Z"
+        },
+        {
+          "name": "For Goodness Shakes Protein Chocolate",
+          "calories": 218,
+          "protein": 35,
+          "carbs": 16.5,
+          "fat": 0.99,
+          "servings": 1,
+          "id": "d6f09b6d-1b4e-4b29-adad-846c1d9657ee",
+          "loggedAt": "2026-09-21T11:59:25.523Z"
+        },
+        {
+          "name": "CHICKEN & BACON CAESAR SALAD",
+          "calories": 371,
+          "protein": 24.4,
+          "carbs": 39.5,
+          "fat": 12.5,
+          "servings": 1,
+          "id": "2e9ee6ed-b085-47db-9e94-c35d0bf090ff",
+          "loggedAt": "2026-09-21T11:59:40.873Z"
+        },
+        {
+          "id": "bc1f4fc5-ecbd-4423-a942-fd90c2b0c470",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-09-21T14:06:45.359Z"
+        }
+      ],
+      "isGymDay": false
+    }
+  ]
+}
