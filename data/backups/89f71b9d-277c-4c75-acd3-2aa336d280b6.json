@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T16:49:09.682Z",
+  "exportedAt": "2026-09-22T16:50:13.857Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -82,6 +82,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-22T16:49:05.680Z",
       "pinned": false
+    },
+    {
+      "id": "9225f746-5b4c-496b-afa8-cce81b5433d0",
+      "name": "Pepper stir fry",
+      "calories": 55,
+      "protein": 2.1,
+      "carbs": 5.1,
+      "fat": 2.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-22T16:50:09.855Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -147,6 +159,16 @@
           "servings": 1,
           "id": "92fe72ee-f10e-4419-9b7a-499882c6c186",
           "loggedAt": "2026-09-22T16:49:05.680Z"
+        },
+        {
+          "name": "Pepper stir fry",
+          "calories": 55,
+          "protein": 2.1,
+          "carbs": 5.1,
+          "fat": 2.5,
+          "servings": 1,
+          "id": "feeaa589-c463-48b3-b619-536c5d91ed96",
+          "loggedAt": "2026-09-22T16:50:09.855Z"
         }
       ]
     }
