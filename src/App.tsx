@@ -15,6 +15,7 @@ import { CLOUD_SYNC_ENABLED, pullLegacyBackup, pushBackup } from './lib/cloudSyn
 import { todayKey } from './lib/date';
 import { pinByEntry, recordFoodUse } from './lib/favorites';
 import { clearLegacyMergeFlag, ensureProfile, type DeviceProfile } from './lib/profile';
+import { applyTheme, getTheme } from './lib/theme';
 import {
   addEntry,
   dayTotals,
@@ -60,6 +61,16 @@ function App() {
   useEffect(() => {
     setLog(getDayLog(date));
   }, [date]);
+
+  // Per-device accent colour: apply on mount and keep the theme-color meta
+  // tinted correctly when the OS colour scheme flips.
+  useEffect(() => {
+    applyTheme(getTheme());
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    const onSchemeChange = () => applyTheme(getTheme());
+    mq.addEventListener('change', onSchemeChange);
+    return () => mq.removeEventListener('change', onSchemeChange);
+  }, []);
 
   const totals = useMemo(() => dayTotals(log), [log]);
   const goals = useMemo(() => effectiveGoals(settings, log.isGymDay), [settings, log.isGymDay]);
