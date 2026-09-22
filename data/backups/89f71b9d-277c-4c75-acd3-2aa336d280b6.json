@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T16:50:13.857Z",
+  "exportedAt": "2026-09-22T16:51:20.290Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -94,6 +94,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-22T16:50:09.855Z",
       "pinned": false
+    },
+    {
+      "id": "c1ce92e8-c725-498b-b521-761e74800a7b",
+      "name": "NAKED ORGANIC TOFU",
+      "calories": 102,
+      "protein": 11.6,
+      "carbs": 0.77,
+      "fat": 5.46,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-22T16:51:16.288Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -169,6 +181,16 @@
           "servings": 1,
           "id": "feeaa589-c463-48b3-b619-536c5d91ed96",
           "loggedAt": "2026-09-22T16:50:09.855Z"
+        },
+        {
+          "name": "NAKED ORGANIC TOFU",
+          "calories": 102,
+          "protein": 11.6,
+          "carbs": 0.77,
+          "fat": 5.46,
+          "servings": 1,
+          "id": "493e0039-e1d2-4331-aa85-ba6ac94301ae",
+          "loggedAt": "2026-09-22T16:51:16.288Z"
         }
       ]
     }
