@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T16:51:20.290Z",
+  "exportedAt": "2026-09-22T16:52:21.255Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -106,6 +106,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-22T16:51:16.288Z",
       "pinned": false
+    },
+    {
+      "id": "a5fbc990-6afe-4d91-9c8c-3cbba9c16378",
+      "name": "Prawn Crackers",
+      "calories": 104,
+      "protein": 0.16,
+      "carbs": 13.3,
+      "fat": 5.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-22T16:52:17.254Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -191,6 +203,16 @@
           "servings": 1,
           "id": "493e0039-e1d2-4331-aa85-ba6ac94301ae",
           "loggedAt": "2026-09-22T16:51:16.288Z"
+        },
+        {
+          "name": "Prawn Crackers",
+          "calories": 104,
+          "protein": 0.16,
+          "carbs": 13.3,
+          "fat": 5.5,
+          "servings": 1,
+          "id": "cb4427b0-8d89-4175-989a-66b827f09442",
+          "loggedAt": "2026-09-22T16:52:17.254Z"
         }
       ]
     }
