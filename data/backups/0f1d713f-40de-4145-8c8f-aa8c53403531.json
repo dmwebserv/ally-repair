@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T14:56:18.117Z",
+  "exportedAt": "2026-09-22T14:56:29.270Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -510,8 +510,8 @@
       "carbs": 44.2,
       "fat": 6.8,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-18T12:02:56.843Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-09-22T14:56:25.263Z",
       "pinned": false
     },
     {
@@ -1499,6 +1499,16 @@
           "servings": 1,
           "id": "632a27a9-457e-4c12-a8d6-aa3628fd61a7",
           "loggedAt": "2026-09-22T14:56:14.115Z"
+        },
+        {
+          "name": "Chicken & Sweetcorn",
+          "calories": 326,
+          "protein": 20.4,
+          "carbs": 44.2,
+          "fat": 6.8,
+          "servings": 1,
+          "id": "36f42967-43fa-4ff2-895e-322de4167217",
+          "loggedAt": "2026-09-22T14:56:25.263Z"
         }
       ]
     }
