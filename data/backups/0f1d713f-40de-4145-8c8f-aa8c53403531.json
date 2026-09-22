@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T13:26:56.038Z",
+  "exportedAt": "2026-09-22T13:27:00.953Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -1455,13 +1455,13 @@
       "date": "2026-09-22",
       "entries": [
         {
-          "id": "4975cacb-bc2d-44e7-bf78-1cea8bdade38",
           "name": "Egg",
           "calories": 60,
           "protein": 6,
           "carbs": 0,
           "fat": 4,
-          "servings": 3,
+          "servings": 2,
+          "id": "4975cacb-bc2d-44e7-bf78-1cea8bdade38",
           "loggedAt": "2026-09-22T13:26:52.037Z"
         }
       ]
