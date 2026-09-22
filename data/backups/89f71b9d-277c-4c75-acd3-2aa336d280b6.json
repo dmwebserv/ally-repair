@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T16:31:32.420Z",
+  "exportedAt": "2026-09-22T16:34:20.522Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -22,6 +22,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-22T16:31:28.418Z",
       "pinned": true
+    },
+    {
+      "id": "cab5449f-f8f3-4b14-a0b2-e311c638d926",
+      "name": "fajita",
+      "calories": 450,
+      "protein": 28,
+      "carbs": 50,
+      "fat": 12,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-22T16:34:16.520Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -37,6 +49,16 @@
           "servings": 1,
           "id": "bd8e7550-cead-458a-811f-c640c12bc649",
           "loggedAt": "2026-09-22T16:31:28.418Z"
+        },
+        {
+          "name": "fajita",
+          "calories": 450,
+          "protein": 28,
+          "carbs": 50,
+          "fat": 12,
+          "servings": 1,
+          "id": "f55b3d52-f80e-4309-8c9c-b5804781dd6d",
+          "loggedAt": "2026-09-22T16:34:16.520Z"
         }
       ]
     }
