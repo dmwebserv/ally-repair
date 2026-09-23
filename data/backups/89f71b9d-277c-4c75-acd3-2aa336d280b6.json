@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T09:02:45.359Z",
+  "exportedAt": "2026-09-23T14:47:37.053Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -117,6 +117,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-22T16:52:17.254Z",
+      "pinned": false
+    },
+    {
+      "id": "be1fadfd-cf2a-4e74-a539-6acd03807469",
+      "name": "NO CHICKEN SALAD",
+      "calories": 323,
+      "protein": 9.3,
+      "carbs": 24,
+      "fat": 3.1,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-23T14:47:33.046Z",
       "pinned": false
     }
   ],
@@ -239,6 +251,16 @@
           "fat": 0,
           "servings": 1,
           "loggedAt": "2026-09-23T09:02:42.394Z"
+        },
+        {
+          "name": "NO CHICKEN SALAD",
+          "calories": 323,
+          "protein": 9.3,
+          "carbs": 24,
+          "fat": 3.1,
+          "servings": 1,
+          "id": "53535dce-ad2b-4291-aa6c-256a12e3b461",
+          "loggedAt": "2026-09-23T14:47:33.046Z"
         }
       ]
     }
