@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T14:47:37.053Z",
+  "exportedAt": "2026-09-23T14:48:59.417Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -129,6 +129,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-23T14:47:33.046Z",
+      "pinned": false
+    },
+    {
+      "id": "44391ec4-8e1d-4107-83d6-4e183ec22d05",
+      "name": "Clusters Yogurt Oats Double Choc",
+      "calories": 185,
+      "protein": 5.1,
+      "carbs": 27,
+      "fat": 6.7,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-23T14:48:55.415Z",
       "pinned": false
     }
   ],
@@ -261,6 +273,16 @@
           "servings": 1,
           "id": "53535dce-ad2b-4291-aa6c-256a12e3b461",
           "loggedAt": "2026-09-23T14:47:33.046Z"
+        },
+        {
+          "name": "Clusters Yogurt Oats Double Choc",
+          "calories": 185,
+          "protein": 5.1,
+          "carbs": 27,
+          "fat": 6.7,
+          "servings": 1,
+          "id": "c3b3cdb6-4b1b-498c-8507-d0865f1d2d76",
+          "loggedAt": "2026-09-23T14:48:55.415Z"
         }
       ]
     }
