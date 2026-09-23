@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T19:02:12.403Z",
+  "exportedAt": "2026-09-23T19:02:35.265Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -154,6 +154,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-23T19:02:08.400Z",
       "pinned": false
+    },
+    {
+      "id": "3e60a3f0-ffbf-4a54-8e92-71be22d94a09",
+      "name": "Spring onions",
+      "calories": 5,
+      "protein": 0.3,
+      "carbs": 1,
+      "fat": 0,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-23T19:02:31.263Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -305,6 +317,16 @@
           "servings": 1,
           "id": "52852970-50b3-489c-aee6-fecf5d5ed8c4",
           "loggedAt": "2026-09-23T19:02:08.400Z"
+        },
+        {
+          "name": "Spring onions",
+          "calories": 5,
+          "protein": 0.3,
+          "carbs": 1,
+          "fat": 0,
+          "servings": 1,
+          "id": "a3a22c6a-2141-4b01-b8a4-97c05d517a3d",
+          "loggedAt": "2026-09-23T19:02:31.263Z"
         }
       ]
     }
