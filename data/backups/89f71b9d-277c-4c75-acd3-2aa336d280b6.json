@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T19:06:03.363Z",
+  "exportedAt": "2026-09-23T19:08:04.490Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -190,6 +190,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-23T19:05:59.360Z",
       "pinned": false
+    },
+    {
+      "id": "8945edd2-3f26-4449-aa59-0d165668ec8b",
+      "name": "Pizza dough",
+      "calories": 267,
+      "protein": 16.4,
+      "carbs": 110.6,
+      "fat": 6.8,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-23T19:08:00.488Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -371,6 +383,16 @@
           "servings": 1,
           "id": "ed6a580d-3e4d-4a30-a2b0-9c278c292ce3",
           "loggedAt": "2026-09-23T19:05:59.360Z"
+        },
+        {
+          "name": "Pizza dough",
+          "calories": 267,
+          "protein": 16.4,
+          "carbs": 110.6,
+          "fat": 6.8,
+          "servings": 1,
+          "id": "51b3f85d-52a5-4f9e-88e0-b37ee06e68b3",
+          "loggedAt": "2026-09-23T19:08:00.488Z"
         }
       ]
     }
