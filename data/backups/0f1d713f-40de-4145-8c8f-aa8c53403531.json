@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T12:22:12.121Z",
+  "exportedAt": "2026-09-23T14:44:36.542Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -560,6 +560,18 @@
       "servings": 2,
       "useCount": 1,
       "lastUsedAt": "2026-09-23T12:21:24.870Z",
+      "pinned": false
+    },
+    {
+      "id": "c7978a7c-2e98-4780-93d6-256d043ed751",
+      "name": "Protein Mouse Chocolate",
+      "calories": 166,
+      "protein": 20,
+      "carbs": 11.4,
+      "fat": 4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-23T14:44:32.539Z",
       "pinned": false
     }
   ],
@@ -1556,6 +1568,16 @@
           "fat": 9.9,
           "servings": 1,
           "loggedAt": "2026-09-23T12:22:08.119Z"
+        },
+        {
+          "name": "Protein Mouse Chocolate",
+          "calories": 166,
+          "protein": 20,
+          "carbs": 11.4,
+          "fat": 4,
+          "servings": 1,
+          "id": "e74bc7ac-6c36-4b3b-8b6b-36d0784c2550",
+          "loggedAt": "2026-09-23T14:44:32.539Z"
         }
       ]
     }
