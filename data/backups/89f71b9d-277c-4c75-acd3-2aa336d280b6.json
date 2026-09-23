@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T19:08:04.490Z",
+  "exportedAt": "2026-09-23T19:10:58.002Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -202,6 +202,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-23T19:08:00.488Z",
       "pinned": false
+    },
+    {
+      "id": "d7dc448a-9854-41a2-8463-0d608e491d27",
+      "name": "Mozzarella Sticks",
+      "calories": 318,
+      "protein": 13.8,
+      "carbs": 27.6,
+      "fat": 16.2,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-23T19:10:53.999Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -393,6 +405,16 @@
           "servings": 1,
           "id": "51b3f85d-52a5-4f9e-88e0-b37ee06e68b3",
           "loggedAt": "2026-09-23T19:08:00.488Z"
+        },
+        {
+          "name": "Mozzarella Sticks",
+          "calories": 318,
+          "protein": 13.8,
+          "carbs": 27.6,
+          "fat": 16.2,
+          "servings": 1,
+          "id": "dfd6b4aa-505e-49db-86c1-580f05203a87",
+          "loggedAt": "2026-09-23T19:10:53.999Z"
         }
       ]
     }
