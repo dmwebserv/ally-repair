@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T19:05:31.490Z",
+  "exportedAt": "2026-09-23T19:06:03.363Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -178,6 +178,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-23T19:05:27.489Z",
       "pinned": false
+    },
+    {
+      "id": "bdcf5386-96f6-478d-a720-d525437f8fc4",
+      "name": "mozzarella",
+      "calories": 137,
+      "protein": 10.9,
+      "carbs": 1,
+      "fat": 9.3,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-23T19:05:59.360Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -349,6 +361,16 @@
           "servings": 1,
           "id": "4f098679-c88c-44bc-9501-94869fbce944",
           "loggedAt": "2026-09-23T19:05:27.489Z"
+        },
+        {
+          "name": "mozzarella",
+          "calories": 137,
+          "protein": 10.9,
+          "carbs": 1,
+          "fat": 9.3,
+          "servings": 1,
+          "id": "ed6a580d-3e4d-4a30-a2b0-9c278c292ce3",
+          "loggedAt": "2026-09-23T19:05:59.360Z"
         }
       ]
     }
