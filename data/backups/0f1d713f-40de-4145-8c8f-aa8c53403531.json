@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T18:26:03.221Z",
+  "exportedAt": "2026-09-23T18:26:53.708Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -560,6 +560,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-23T14:44:32.539Z",
+      "pinned": false
+    },
+    {
+      "id": "7859bcdd-6913-4d92-9ff3-7ea4ffd4a7d0",
+      "name": "PERI PERI CHICKEN PIZZA",
+      "calories": 494,
+      "protein": 30,
+      "carbs": 60.5,
+      "fat": 13,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-23T18:26:49.706Z",
       "pinned": false
     }
   ],
@@ -1574,6 +1586,16 @@
           "carbs": 23,
           "servings": 1,
           "loggedAt": "2026-09-23T18:25:59.218Z"
+        },
+        {
+          "name": "PERI PERI CHICKEN PIZZA",
+          "calories": 494,
+          "protein": 30,
+          "carbs": 60.5,
+          "fat": 13,
+          "servings": 1,
+          "id": "0ce04bd8-5ef7-48e5-a2ee-8802d58b3633",
+          "loggedAt": "2026-09-23T18:26:49.706Z"
         }
       ]
     }
