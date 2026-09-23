@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T09:02:36.399Z",
+  "exportedAt": "2026-09-23T09:02:45.359Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -67,8 +67,8 @@
       "carbs": 0,
       "fat": 0,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-22T16:42:51.913Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-09-23T09:02:42.394Z",
       "pinned": true
     },
     {
@@ -229,6 +229,16 @@
           "fat": 6,
           "servings": 1,
           "loggedAt": "2026-09-23T09:02:32.397Z"
+        },
+        {
+          "id": "04644a6d-389e-40f4-b820-382f91f94647",
+          "name": "Decaffeinated coffee",
+          "calories": 50,
+          "protein": 12.6,
+          "carbs": 0,
+          "fat": 0,
+          "servings": 1,
+          "loggedAt": "2026-09-23T09:02:42.394Z"
         }
       ]
     }
