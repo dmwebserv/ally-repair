@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T14:48:59.417Z",
+  "exportedAt": "2026-09-23T19:02:12.403Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -142,6 +142,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-23T14:48:55.415Z",
       "pinned": false
+    },
+    {
+      "id": "3f4aba47-896f-4c92-a5a6-34f90f1dd3da",
+      "name": "Olives",
+      "calories": 39,
+      "protein": 0.3,
+      "carbs": 1,
+      "fat": 4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-23T19:02:08.400Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -283,6 +295,16 @@
           "servings": 1,
           "id": "c3b3cdb6-4b1b-498c-8507-d0865f1d2d76",
           "loggedAt": "2026-09-23T14:48:55.415Z"
+        },
+        {
+          "name": "Olives",
+          "calories": 39,
+          "protein": 0.3,
+          "carbs": 1,
+          "fat": 4,
+          "servings": 1,
+          "id": "52852970-50b3-489c-aee6-fecf5d5ed8c4",
+          "loggedAt": "2026-09-23T19:02:08.400Z"
         }
       ]
     }
