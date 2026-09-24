@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-24T16:54:58.527Z",
+  "exportedAt": "2026-09-24T18:08:51.261Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -238,6 +238,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-24T14:18:41.944Z",
       "pinned": false
+    },
+    {
+      "id": "f1dd14c3-30df-471f-8ccf-03931d44d6b5",
+      "name": "Avocado Toast with Eggs",
+      "calories": 300,
+      "protein": 12,
+      "carbs": 28,
+      "fat": 15,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-24T18:08:47.317Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -474,6 +486,16 @@
           "servings": 1,
           "id": "40627880-ffb6-4d26-8e12-b13cf2eb9f87",
           "loggedAt": "2026-09-24T14:18:41.944Z"
+        },
+        {
+          "name": "Avocado Toast with Eggs",
+          "calories": 300,
+          "protein": 12,
+          "carbs": 28,
+          "fat": 15,
+          "servings": 1,
+          "id": "d9dea91d-447e-46f8-8079-62178a223d7a",
+          "loggedAt": "2026-09-24T18:08:47.317Z"
         }
       ]
     }
