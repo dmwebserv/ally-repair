@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T19:54:48.939Z",
+  "exportedAt": "2026-09-24T12:29:27.657Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -572,7 +572,7 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-23T18:26:49.706Z",
-      "pinned": false
+      "pinned": true
     },
     {
       "id": "d5d33b2c-7d16-4488-9bd4-2251dbb9ebbc",
