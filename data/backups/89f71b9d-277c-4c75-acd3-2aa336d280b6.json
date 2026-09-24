@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-24T10:31:26.174Z",
+  "exportedAt": "2026-09-24T14:18:45.946Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -225,6 +225,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-24T10:31:22.172Z",
+      "pinned": false
+    },
+    {
+      "id": "3856e994-33ae-427e-8ad3-1e70040c202e",
+      "name": "apple slices with peanut butter",
+      "calories": 260,
+      "protein": 7.5,
+      "carbs": 30,
+      "fat": 15,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-24T14:18:41.944Z",
       "pinned": false
     }
   ],
@@ -462,6 +474,16 @@
           "servings": 1,
           "id": "d2a41264-6060-4fee-87d5-c262a145aedc",
           "loggedAt": "2026-09-24T10:31:22.172Z"
+        },
+        {
+          "name": "apple slices with peanut butter",
+          "calories": 260,
+          "protein": 7.5,
+          "carbs": 30,
+          "fat": 15,
+          "servings": 1,
+          "id": "40627880-ffb6-4d26-8e12-b13cf2eb9f87",
+          "loggedAt": "2026-09-24T14:18:41.944Z"
         }
       ]
     }
