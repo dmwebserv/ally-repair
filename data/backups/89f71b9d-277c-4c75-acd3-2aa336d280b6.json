@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-24T07:54:14.235Z",
+  "exportedAt": "2026-09-24T10:31:26.174Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -213,6 +213,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-23T19:10:53.999Z",
+      "pinned": false
+    },
+    {
+      "id": "8b86e34e-a2c8-40af-ad43-f322290d396c",
+      "name": "tuna wrap",
+      "calories": 400,
+      "protein": 25,
+      "carbs": 30,
+      "fat": 18,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-24T10:31:22.172Z",
       "pinned": false
     }
   ],
@@ -440,6 +452,16 @@
           "fat": 0,
           "servings": 1,
           "loggedAt": "2026-09-24T07:54:13.024Z"
+        },
+        {
+          "name": "tuna wrap",
+          "calories": 400,
+          "protein": 25,
+          "carbs": 30,
+          "fat": 18,
+          "servings": 1,
+          "id": "d2a41264-6060-4fee-87d5-c262a145aedc",
+          "loggedAt": "2026-09-24T10:31:22.172Z"
         }
       ]
     }
