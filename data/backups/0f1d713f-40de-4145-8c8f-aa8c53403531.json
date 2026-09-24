@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-24T12:29:27.657Z",
+  "exportedAt": "2026-09-24T12:29:34.184Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -294,8 +294,8 @@
       "calories": 90,
       "carbs": 23,
       "servings": 1,
-      "useCount": 6,
-      "lastUsedAt": "2026-09-23T18:25:59.218Z",
+      "useCount": 7,
+      "lastUsedAt": "2026-09-24T12:29:28.936Z",
       "pinned": true
     },
     {
@@ -570,8 +570,8 @@
       "carbs": 60.5,
       "fat": 13,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-23T18:26:49.706Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-09-24T12:29:30.183Z",
       "pinned": true
     },
     {
@@ -1618,6 +1618,29 @@
           "servings": 1,
           "id": "0d4a89bb-b453-4c79-9ca4-f8cdf1c074e6",
           "loggedAt": "2026-09-23T19:54:44.935Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "entries": [
+        {
+          "id": "b7321baf-5146-4300-90d9-74a78a59ca25",
+          "name": "Small Banana",
+          "calories": 90,
+          "carbs": 23,
+          "servings": 1,
+          "loggedAt": "2026-09-24T12:29:28.936Z"
+        },
+        {
+          "id": "4abca40b-883f-46c2-af58-5da9362f5163",
+          "name": "PERI PERI CHICKEN PIZZA",
+          "calories": 494,
+          "protein": 30,
+          "carbs": 60.5,
+          "fat": 13,
+          "servings": 1,
+          "loggedAt": "2026-09-24T12:29:30.183Z"
         }
       ]
     }
