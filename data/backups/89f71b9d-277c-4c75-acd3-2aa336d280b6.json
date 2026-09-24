@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-24T18:08:51.261Z",
+  "exportedAt": "2026-09-24T18:54:51.221Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -250,6 +250,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-24T18:08:47.317Z",
       "pinned": false
+    },
+    {
+      "id": "b24f243d-dd48-433e-bb31-04481443558c",
+      "name": "nutella icecream",
+      "calories": 325,
+      "protein": 3.9,
+      "carbs": 28.3,
+      "fat": 21.9,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-24T18:54:47.218Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -496,6 +508,16 @@
           "servings": 1,
           "id": "d9dea91d-447e-46f8-8079-62178a223d7a",
           "loggedAt": "2026-09-24T18:08:47.317Z"
+        },
+        {
+          "name": "nutella icecream",
+          "calories": 325,
+          "protein": 3.9,
+          "carbs": 28.3,
+          "fat": 21.9,
+          "servings": 1,
+          "id": "86f4166e-050e-4e15-8afe-a7f214191bdf",
+          "loggedAt": "2026-09-24T18:54:47.218Z"
         }
       ]
     }
