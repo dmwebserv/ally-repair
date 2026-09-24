@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-24T12:30:45.267Z",
+  "exportedAt": "2026-09-24T12:30:58.847Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -474,8 +474,8 @@
       "carbs": 12.5,
       "fat": 1.75,
       "servings": 1,
-      "useCount": 3,
-      "lastUsedAt": "2026-09-23T12:20:27.226Z",
+      "useCount": 4,
+      "lastUsedAt": "2026-09-24T12:30:54.845Z",
       "pinned": true
     },
     {
@@ -1651,6 +1651,16 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-09-24T12:30:41.265Z"
+        },
+        {
+          "id": "628aa0e2-fa3e-401f-adac-89da606a52f8",
+          "name": "Protein LINDAHL Flavour Milk Drink",
+          "calories": 170,
+          "protein": 25,
+          "carbs": 12.5,
+          "fat": 1.75,
+          "servings": 1,
+          "loggedAt": "2026-09-24T12:30:54.845Z"
         }
       ]
     }
