@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-24T12:31:02.890Z",
+  "exportedAt": "2026-09-24T15:03:43.716Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -95,18 +95,6 @@
       "useCount": 2,
       "lastUsedAt": "2026-09-03T12:07:24.590Z",
       "pinned": false
-    },
-    {
-      "id": "86b002c2-fb4a-4457-8b9d-e4886d7b58ed",
-      "name": "Tone Protein Bar Chocolate Brownie",
-      "calories": 141,
-      "protein": 15,
-      "carbs": 15,
-      "fat": 3.6,
-      "servings": 1,
-      "useCount": 3,
-      "lastUsedAt": "2026-09-14T10:27:26.339Z",
-      "pinned": true
     },
     {
       "id": "930e106d-bb7f-4723-ba0b-0a3cf527830c",
@@ -584,6 +572,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-23T19:54:44.935Z",
+      "pinned": false
+    },
+    {
+      "id": "b208f1f0-f720-4a46-aef7-d0aa1fd0156a",
+      "name": "Tone Protein Bar Chocolate Brownie",
+      "calories": 141,
+      "protein": 15,
+      "carbs": 15,
+      "fat": 3.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-24T15:03:39.714Z",
       "pinned": false
     }
   ],
@@ -1671,6 +1671,16 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-09-24T12:30:58.889Z"
+        },
+        {
+          "name": "Tone Protein Bar Chocolate Brownie",
+          "calories": 141,
+          "protein": 15,
+          "carbs": 15,
+          "fat": 3.6,
+          "servings": 1,
+          "id": "e58dd396-cd89-4791-9e4d-4b1146f2f89c",
+          "loggedAt": "2026-09-24T15:03:39.714Z"
         }
       ]
     }
