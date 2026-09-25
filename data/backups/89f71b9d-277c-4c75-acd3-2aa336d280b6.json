@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T07:11:19.669Z",
+  "exportedAt": "2026-09-25T07:18:00.463Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -548,10 +548,10 @@
         },
         {
           "name": "peanut butter toast",
-          "calories": 385,
-          "protein": 15,
-          "carbs": 42,
-          "fat": 17,
+          "calories": 335,
+          "protein": 13,
+          "carbs": 33,
+          "fat": 16.5,
           "servings": 1,
           "id": "5dea5454-c437-495f-8720-c7681c5ae1e3",
           "loggedAt": "2026-09-25T07:11:15.666Z"
