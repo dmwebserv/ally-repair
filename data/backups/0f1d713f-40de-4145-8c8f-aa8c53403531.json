@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T09:04:26.349Z",
+  "exportedAt": "2026-09-25T09:04:50.745Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -1696,26 +1696,6 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-09-25T09:01:49.530Z"
-        },
-        {
-          "id": "96a42225-8a99-4db3-8c17-9d70e8d386b3",
-          "name": "X-tone protein bar salted caramel flavour",
-          "calories": 142,
-          "protein": 15,
-          "carbs": 16,
-          "fat": 3.5,
-          "servings": 1,
-          "loggedAt": "2026-09-25T09:02:26.778Z"
-        },
-        {
-          "id": "bf0fac64-0534-4f40-b4ca-d2630379ae99",
-          "name": "Strawberry Protein Yoghurt",
-          "calories": 139,
-          "protein": 25,
-          "carbs": 7,
-          "fat": 0.6,
-          "servings": 1,
-          "loggedAt": "2026-09-25T09:04:22.345Z"
         }
       ]
     }
