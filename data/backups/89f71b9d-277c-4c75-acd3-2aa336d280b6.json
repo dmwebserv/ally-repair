@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T07:10:02.305Z",
+  "exportedAt": "2026-09-25T07:11:19.669Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -261,6 +261,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-24T18:54:47.218Z",
+      "pinned": false
+    },
+    {
+      "id": "9f82907e-48e1-4532-b598-c4aa0f1a8d04",
+      "name": "peanut butter toast",
+      "calories": 385,
+      "protein": 15,
+      "carbs": 42,
+      "fat": 17,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-25T07:11:15.666Z",
       "pinned": false
     }
   ],
@@ -533,6 +545,16 @@
           "fat": 0,
           "servings": 1,
           "loggedAt": "2026-09-25T07:09:54.517Z"
+        },
+        {
+          "name": "peanut butter toast",
+          "calories": 385,
+          "protein": 15,
+          "carbs": 42,
+          "fat": 17,
+          "servings": 1,
+          "id": "5dea5454-c437-495f-8720-c7681c5ae1e3",
+          "loggedAt": "2026-09-25T07:11:15.666Z"
         }
       ]
     }
