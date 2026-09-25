@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T09:01:53.532Z",
+  "exportedAt": "2026-09-25T09:02:30.780Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -128,8 +128,8 @@
       "carbs": 16,
       "fat": 3.5,
       "servings": 1,
-      "useCount": 5,
-      "lastUsedAt": "2026-09-18T14:47:59.511Z",
+      "useCount": 6,
+      "lastUsedAt": "2026-09-25T09:02:26.778Z",
       "pinned": true
     },
     {
@@ -1696,6 +1696,16 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-09-25T09:01:49.530Z"
+        },
+        {
+          "id": "96a42225-8a99-4db3-8c17-9d70e8d386b3",
+          "name": "X-tone protein bar salted caramel flavour",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.5,
+          "servings": 1,
+          "loggedAt": "2026-09-25T09:02:26.778Z"
         }
       ]
     }
