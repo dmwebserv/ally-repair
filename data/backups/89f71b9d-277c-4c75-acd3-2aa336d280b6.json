@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T11:17:30.962Z",
+  "exportedAt": "2026-09-25T18:39:05.357Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -273,6 +273,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-25T07:11:15.666Z",
+      "pinned": false
+    },
+    {
+      "id": "f2c32b2b-6a8a-4a8d-9368-3f2bbe08f500",
+      "name": "Mc Plant Burger",
+      "calories": 426,
+      "protein": 19,
+      "carbs": 45,
+      "fat": 17,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-25T18:39:01.354Z",
       "pinned": false
     }
   ],
@@ -565,6 +577,16 @@
           "servings": 1,
           "id": "20290bfe-c686-45d7-87df-ca7041c2c559",
           "loggedAt": "2026-09-25T11:17:26.954Z"
+        },
+        {
+          "name": "Mc Plant Burger",
+          "calories": 426,
+          "protein": 19,
+          "carbs": 45,
+          "fat": 17,
+          "servings": 1,
+          "id": "3f20d28e-7e61-490a-9363-cda29f76ec33",
+          "loggedAt": "2026-09-25T18:39:01.354Z"
         }
       ]
     }
