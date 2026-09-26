@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-26T11:06:18.784Z",
+  "exportedAt": "2026-09-26T11:13:51.155Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -297,6 +297,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-26T11:06:14.781Z",
+      "pinned": false
+    },
+    {
+      "id": "dddcedcd-183a-4c1f-8873-edab99062797",
+      "name": "apple slices",
+      "calories": 95,
+      "protein": 0.5,
+      "carbs": 25,
+      "fat": 0.3,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-26T11:13:47.153Z",
       "pinned": false
     }
   ],
@@ -634,6 +646,16 @@
           "servings": 1,
           "id": "c82a4657-8deb-4a92-819c-22b6d247f761",
           "loggedAt": "2026-09-26T11:06:14.781Z"
+        },
+        {
+          "name": "apple slices",
+          "calories": 95,
+          "protein": 0.5,
+          "carbs": 25,
+          "fat": 0.3,
+          "servings": 1,
+          "id": "a31838b1-f422-4309-9841-e32b3bbc4dec",
+          "loggedAt": "2026-09-26T11:13:47.153Z"
         }
       ]
     }
