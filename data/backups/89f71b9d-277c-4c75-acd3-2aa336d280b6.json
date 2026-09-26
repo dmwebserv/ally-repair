@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-26T07:03:55.173Z",
+  "exportedAt": "2026-09-26T11:06:18.784Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -285,6 +285,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-25T18:39:01.354Z",
+      "pinned": false
+    },
+    {
+      "id": "0dd693d8-d366-406c-8e7a-b5d2ec538d00",
+      "name": "cucumbers with hummus",
+      "calories": 185,
+      "protein": 4.5,
+      "carbs": 15,
+      "fat": 12.5,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-26T11:06:14.781Z",
       "pinned": false
     }
   ],
@@ -612,6 +624,16 @@
           "fat": 0,
           "servings": 1,
           "loggedAt": "2026-09-26T07:03:53.090Z"
+        },
+        {
+          "name": "cucumbers with hummus",
+          "calories": 185,
+          "protein": 4.5,
+          "carbs": 15,
+          "fat": 12.5,
+          "servings": 1,
+          "id": "c82a4657-8deb-4a92-819c-22b6d247f761",
+          "loggedAt": "2026-09-26T11:06:14.781Z"
         }
       ]
     }
