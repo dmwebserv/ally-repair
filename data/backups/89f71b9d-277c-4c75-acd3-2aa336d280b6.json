@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-26T07:03:49.046Z",
+  "exportedAt": "2026-09-26T07:03:55.173Z",
   "profile": {
     "id": "89f71b9d-277c-4c75-acd3-2aa336d280b6",
     "name": "My log"
@@ -67,8 +67,8 @@
       "carbs": 0,
       "fat": 0,
       "servings": 1,
-      "useCount": 4,
-      "lastUsedAt": "2026-09-25T07:09:54.517Z",
+      "useCount": 5,
+      "lastUsedAt": "2026-09-26T07:03:53.090Z",
       "pinned": true
     },
     {
@@ -604,14 +604,14 @@
           "loggedAt": "2026-09-26T07:03:43.943Z"
         },
         {
-          "id": "5ee5d130-f883-4032-8d24-98ebfc46fa07",
-          "name": "Overnight oats",
-          "calories": 465,
-          "protein": 24,
-          "carbs": 67,
-          "fat": 6,
+          "id": "fb0d9fc0-f8e3-4747-ad6b-cc40d3538f3f",
+          "name": "Decaffeinated coffee",
+          "calories": 50,
+          "protein": 12.6,
+          "carbs": 0,
+          "fat": 0,
           "servings": 1,
-          "loggedAt": "2026-09-26T07:03:45.043Z"
+          "loggedAt": "2026-09-26T07:03:53.090Z"
         }
       ]
     }
