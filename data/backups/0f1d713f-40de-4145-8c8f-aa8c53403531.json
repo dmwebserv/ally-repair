@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-28T13:49:53.598Z",
+  "exportedAt": "2026-09-28T19:21:38.273Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -608,6 +608,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-28T13:49:49.596Z",
+      "pinned": true
+    },
+    {
+      "id": "a68a7954-0700-4591-be1d-2f2b417debb5",
+      "name": "Beans on Toast",
+      "calories": 463,
+      "protein": 20,
+      "carbs": 49,
+      "fat": 19,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-28T19:21:34.270Z",
       "pinned": true
     }
   ],
@@ -1765,6 +1777,16 @@
           "servings": 1,
           "id": "e6414c31-e418-4694-9b34-d294b63ddd80",
           "loggedAt": "2026-09-28T13:49:49.596Z"
+        },
+        {
+          "name": "Beans on Toast",
+          "calories": 463,
+          "protein": 20,
+          "carbs": 49,
+          "fat": 19,
+          "servings": 1,
+          "id": "f105f996-41c8-4d94-b425-d2c82cc941f3",
+          "loggedAt": "2026-09-28T19:21:34.270Z"
         }
       ]
     }
