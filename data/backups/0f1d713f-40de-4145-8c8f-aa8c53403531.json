@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T09:04:50.745Z",
+  "exportedAt": "2026-09-28T11:31:19.163Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -584,6 +584,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-24T15:03:39.714Z",
+      "pinned": false
+    },
+    {
+      "id": "762d06b5-39bf-4c3b-9185-f37e31e0eae8",
+      "name": "Meat Feast Pasta",
+      "calories": 405,
+      "protein": 33.8,
+      "carbs": 38.4,
+      "fat": 11.3,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-28T11:31:15.160Z",
       "pinned": false
     }
   ],
@@ -1696,6 +1708,21 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-09-25T09:01:49.530Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "entries": [
+        {
+          "name": "Meat Feast Pasta",
+          "calories": 405,
+          "protein": 33.8,
+          "carbs": 38.4,
+          "fat": 11.3,
+          "servings": 1,
+          "id": "2268a2d2-608b-47ee-b7dd-cd74bb57d406",
+          "loggedAt": "2026-09-28T11:31:15.160Z"
         }
       ]
     }
