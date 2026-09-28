@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-28T11:31:25.936Z",
+  "exportedAt": "2026-09-28T13:48:27.822Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -92,8 +92,8 @@
       "carbs": 9.6,
       "fat": 4.5,
       "servings": 1,
-      "useCount": 2,
-      "lastUsedAt": "2026-09-03T12:07:24.590Z",
+      "useCount": 3,
+      "lastUsedAt": "2026-09-28T13:48:23.818Z",
       "pinned": false
     },
     {
@@ -1733,6 +1733,16 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-09-28T11:31:21.934Z"
+        },
+        {
+          "name": "White Chocolate Flavour Protein Pudding",
+          "calories": 161,
+          "protein": 20.4,
+          "carbs": 9.6,
+          "fat": 4.5,
+          "servings": 1,
+          "id": "9c13a098-3db9-45d2-a1ad-b8640bb89cfd",
+          "loggedAt": "2026-09-28T13:48:23.818Z"
         }
       ]
     }
