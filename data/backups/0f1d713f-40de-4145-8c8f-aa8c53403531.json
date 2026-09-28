@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-28T13:48:27.822Z",
+  "exportedAt": "2026-09-28T13:49:53.598Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -597,6 +597,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-28T11:31:15.160Z",
       "pinned": false
+    },
+    {
+      "id": "412e365f-5dc8-45ff-915a-5e8fbee42023",
+      "name": "Large Banana",
+      "calories": 111,
+      "protein": 1.4,
+      "carbs": 28.5,
+      "fat": 0.4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-28T13:49:49.596Z",
+      "pinned": true
     }
   ],
   "logs": [
@@ -1743,6 +1755,16 @@
           "servings": 1,
           "id": "9c13a098-3db9-45d2-a1ad-b8640bb89cfd",
           "loggedAt": "2026-09-28T13:48:23.818Z"
+        },
+        {
+          "name": "Large Banana",
+          "calories": 111,
+          "protein": 1.4,
+          "carbs": 28.5,
+          "fat": 0.4,
+          "servings": 1,
+          "id": "e6414c31-e418-4694-9b34-d294b63ddd80",
+          "loggedAt": "2026-09-28T13:49:49.596Z"
         }
       ]
     }
