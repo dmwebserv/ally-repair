@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-29T10:44:37.817Z",
+  "exportedAt": "2026-09-29T12:54:24.992Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -621,6 +621,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-09-28T19:21:34.270Z",
       "pinned": true
+    },
+    {
+      "id": "631b01a1-3822-4e22-a986-cc932018bdfa",
+      "name": "Smoky Cajun Chicken with Charred Sweetcorn",
+      "calories": 455,
+      "protein": 20.2,
+      "carbs": 48.4,
+      "fat": 19.3,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-29T12:54:20.989Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -1812,6 +1824,16 @@
           "servings": 1,
           "id": "550b803b-e722-41f4-96c7-cb6f5763f048",
           "loggedAt": "2026-09-29T10:44:33.816Z"
+        },
+        {
+          "name": "Smoky Cajun Chicken with Charred Sweetcorn",
+          "calories": 455,
+          "protein": 20.2,
+          "carbs": 48.4,
+          "fat": 19.3,
+          "servings": 1,
+          "id": "fc1a4090-c90b-46e8-a2f3-e257b0bcce4a",
+          "loggedAt": "2026-09-29T12:54:20.989Z"
         }
       ]
     }
