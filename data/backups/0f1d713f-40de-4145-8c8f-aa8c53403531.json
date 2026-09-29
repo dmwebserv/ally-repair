@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-29T12:54:38.419Z",
+  "exportedAt": "2026-09-29T13:51:38.685Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -498,8 +498,8 @@
       "carbs": 16.5,
       "fat": 0.99,
       "servings": 1,
-      "useCount": 2,
-      "lastUsedAt": "2026-09-22T14:56:14.115Z",
+      "useCount": 3,
+      "lastUsedAt": "2026-09-29T13:51:34.753Z",
       "pinned": false
     },
     {
@@ -1844,6 +1844,16 @@
           "servings": 1,
           "id": "c92ca5b1-dc64-4488-ab83-7e6dc02c46b2",
           "loggedAt": "2026-09-29T12:54:34.417Z"
+        },
+        {
+          "name": "For Goodness Shakes Protein Chocolate",
+          "calories": 218,
+          "protein": 35,
+          "carbs": 16.5,
+          "fat": 0.99,
+          "servings": 1,
+          "id": "8af48bd0-830e-48b3-8d1e-7183dd2f65af",
+          "loggedAt": "2026-09-29T13:51:34.753Z"
         }
       ]
     }
