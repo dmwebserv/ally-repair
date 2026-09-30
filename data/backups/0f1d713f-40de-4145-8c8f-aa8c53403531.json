@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-30T12:33:47.659Z",
+  "exportedAt": "2026-09-30T12:35:34.017Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -330,8 +330,8 @@
       "carbs": 45,
       "fat": 20,
       "servings": 1,
-      "useCount": 2,
-      "lastUsedAt": "2026-09-16T12:30:26.159Z",
+      "useCount": 3,
+      "lastUsedAt": "2026-09-30T12:35:30.014Z",
       "pinned": false
     },
     {
@@ -1881,6 +1881,16 @@
           "servings": 11,
           "id": "5867c973-4293-4d4f-a365-ab1d56f636cd",
           "loggedAt": "2026-09-30T12:33:43.656Z"
+        },
+        {
+          "name": "CORONATION CHICKEN WHITE BREAD",
+          "calories": 439,
+          "protein": 19,
+          "carbs": 45,
+          "fat": 20,
+          "servings": 1,
+          "id": "f3f807d2-b33a-46dc-9d3f-81c7f7568b59",
+          "loggedAt": "2026-09-30T12:35:30.014Z"
         }
       ]
     }
