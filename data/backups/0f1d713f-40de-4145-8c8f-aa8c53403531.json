@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-30T15:18:06.484Z",
+  "exportedAt": "2026-09-30T20:18:38.601Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -644,6 +644,18 @@
       "servings": 11,
       "useCount": 1,
       "lastUsedAt": "2026-09-30T12:33:43.656Z",
+      "pinned": false
+    },
+    {
+      "id": "ce54ca54-71db-4e17-8636-16072f5ac330",
+      "name": "Fish & Chips",
+      "calories": 700,
+      "protein": 27,
+      "carbs": 53,
+      "fat": 35,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-30T20:18:34.598Z",
       "pinned": false
     }
   ],
@@ -1911,6 +1923,16 @@
           "fat": 3.5,
           "servings": 1,
           "loggedAt": "2026-09-30T15:17:52.664Z"
+        },
+        {
+          "name": "Fish & Chips",
+          "calories": 700,
+          "protein": 27,
+          "carbs": 53,
+          "fat": 35,
+          "servings": 1,
+          "id": "2c3c4285-0b86-4450-b86a-5a12635581a2",
+          "loggedAt": "2026-09-30T20:18:34.598Z"
         }
       ],
       "isGymDay": false
