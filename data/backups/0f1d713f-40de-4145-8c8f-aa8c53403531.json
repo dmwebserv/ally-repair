@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-30T12:35:34.017Z",
+  "exportedAt": "2026-09-30T12:39:58.176Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -342,8 +342,8 @@
       "carbs": 17.5,
       "fat": 0.66,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-08T13:08:57.711Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-09-30T12:39:54.172Z",
       "pinned": false
     },
     {
@@ -1891,6 +1891,16 @@
           "servings": 1,
           "id": "f3f807d2-b33a-46dc-9d3f-81c7f7568b59",
           "loggedAt": "2026-09-30T12:35:30.014Z"
+        },
+        {
+          "name": "Vanilla Protein Shake 35g",
+          "calories": 214,
+          "protein": 35,
+          "carbs": 17.5,
+          "fat": 0.66,
+          "servings": 1,
+          "id": "a48e6654-1bfd-4f6b-92f1-06e2cef77e31",
+          "loggedAt": "2026-09-30T12:39:54.172Z"
         }
       ]
     }
