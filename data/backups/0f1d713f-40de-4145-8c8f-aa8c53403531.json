@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-29T13:51:38.685Z",
+  "exportedAt": "2026-09-30T12:33:47.659Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -632,6 +632,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-29T12:54:20.989Z",
+      "pinned": false
+    },
+    {
+      "id": "bbb9d79a-8b69-4b42-8efe-b2b17eb09e3a",
+      "name": "Chicken Tikka Skewers",
+      "calories": 23,
+      "protein": 1.9,
+      "carbs": 0.8,
+      "fat": 1.4,
+      "servings": 11,
+      "useCount": 1,
+      "lastUsedAt": "2026-09-30T12:33:43.656Z",
       "pinned": false
     }
   ],
@@ -1854,6 +1866,21 @@
           "servings": 1,
           "id": "8af48bd0-830e-48b3-8d1e-7183dd2f65af",
           "loggedAt": "2026-09-29T13:51:34.753Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "entries": [
+        {
+          "name": "Chicken Tikka Skewers",
+          "calories": 23,
+          "protein": 1.9,
+          "carbs": 0.8,
+          "fat": 1.4,
+          "servings": 11,
+          "id": "5867c973-4293-4d4f-a365-ab1d56f636cd",
+          "loggedAt": "2026-09-30T12:33:43.656Z"
         }
       ]
     }
