@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T14:46:41.976Z",
+  "exportedAt": "2026-10-01T18:43:47.401Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -669,6 +669,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-10-01T14:46:37.974Z",
       "pinned": true
+    },
+    {
+      "id": "d96b3eed-1787-4035-a611-f18b667468e6",
+      "name": "Chilli Con Carne",
+      "calories": 600,
+      "protein": 35,
+      "carbs": 70,
+      "fat": 22,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-01T18:43:43.394Z",
+      "pinned": false
     }
   ],
   "logs": [
@@ -2011,6 +2023,16 @@
           "servings": 1,
           "id": "4dad854b-742c-4501-92e5-4d3ef43058e3",
           "loggedAt": "2026-10-01T14:46:37.974Z"
+        },
+        {
+          "name": "Chilli Con Carne",
+          "calories": 600,
+          "protein": 35,
+          "carbs": 70,
+          "fat": 22,
+          "servings": 1,
+          "id": "5fd6547b-594b-4c80-9cda-ce69ef1f3f6f",
+          "loggedAt": "2026-10-01T18:43:43.394Z"
         }
       ]
     }
