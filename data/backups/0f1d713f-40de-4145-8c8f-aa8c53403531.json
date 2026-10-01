@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-30T20:18:38.601Z",
+  "exportedAt": "2026-10-01T11:55:04.615Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -656,6 +656,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-09-30T20:18:34.598Z",
+      "pinned": false
+    },
+    {
+      "id": "51f23292-bb9e-4f64-ac5d-41b89c11a382",
+      "name": "Katsu Noodles",
+      "calories": 415,
+      "protein": 35.3,
+      "carbs": 39.9,
+      "fat": 10.7,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-01T11:55:00.612Z",
       "pinned": false
     }
   ],
@@ -1936,6 +1948,21 @@
         }
       ],
       "isGymDay": false
+    },
+    {
+      "date": "2026-10-01",
+      "entries": [
+        {
+          "name": "Katsu Noodles",
+          "calories": 415,
+          "protein": 35.3,
+          "carbs": 39.9,
+          "fat": 10.7,
+          "servings": 1,
+          "id": "06a69ffe-b0ad-441f-ba06-29e2ea966fdd",
+          "loggedAt": "2026-10-01T11:55:00.612Z"
+        }
+      ]
     }
   ]
 }
