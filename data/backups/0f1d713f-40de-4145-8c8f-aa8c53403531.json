@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T14:45:10.156Z",
+  "exportedAt": "2026-10-01T14:46:41.976Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -296,18 +296,6 @@
       "servings": 1,
       "useCount": 5,
       "lastUsedAt": "2026-09-10T08:10:34.884Z",
-      "pinned": true
-    },
-    {
-      "id": "f115027b-a09a-4771-8a2c-2459d1de1e6d",
-      "name": "Biscoff Protein Shake",
-      "calories": 153,
-      "protein": 30,
-      "carbs": 3.8,
-      "fat": 2,
-      "servings": 1,
-      "useCount": 3,
-      "lastUsedAt": "2026-09-15T14:31:56.635Z",
       "pinned": true
     },
     {
@@ -669,6 +657,18 @@
       "useCount": 1,
       "lastUsedAt": "2026-10-01T11:55:00.612Z",
       "pinned": false
+    },
+    {
+      "id": "8ede125b-3ae3-4c51-9821-90533ed177e8",
+      "name": "Caramelised Biscuit Shake",
+      "calories": 153,
+      "protein": 30,
+      "carbs": 4,
+      "fat": 2,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-01T14:46:37.974Z",
+      "pinned": true
     }
   ],
   "logs": [
@@ -2001,6 +2001,16 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-10-01T14:45:06.154Z"
+        },
+        {
+          "name": "Caramelised Biscuit Shake",
+          "calories": 153,
+          "protein": 30,
+          "carbs": 4,
+          "fat": 2,
+          "servings": 1,
+          "id": "4dad854b-742c-4501-92e5-4d3ef43058e3",
+          "loggedAt": "2026-10-01T14:46:37.974Z"
         }
       ]
     }
