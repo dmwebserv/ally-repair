@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T11:55:04.615Z",
+  "exportedAt": "2026-10-01T11:55:15.112Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -128,8 +128,8 @@
       "carbs": 16,
       "fat": 3.5,
       "servings": 1,
-      "useCount": 7,
-      "lastUsedAt": "2026-09-30T15:17:52.664Z",
+      "useCount": 8,
+      "lastUsedAt": "2026-10-01T11:55:04.989Z",
       "pinned": true
     },
     {
@@ -272,8 +272,8 @@
       "carbs": 16.4,
       "fat": 4.6,
       "servings": 1,
-      "useCount": 10,
-      "lastUsedAt": "2026-09-29T10:44:15.968Z",
+      "useCount": 11,
+      "lastUsedAt": "2026-10-01T11:55:07.203Z",
       "pinned": true
     },
     {
@@ -606,8 +606,8 @@
       "carbs": 28.5,
       "fat": 0.4,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-28T13:49:49.596Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-10-01T11:55:11.111Z",
       "pinned": true
     },
     {
@@ -1961,6 +1961,36 @@
           "servings": 1,
           "id": "06a69ffe-b0ad-441f-ba06-29e2ea966fdd",
           "loggedAt": "2026-10-01T11:55:00.612Z"
+        },
+        {
+          "id": "08e26648-1777-4c88-afc6-49051f326739",
+          "name": "X-tone protein bar salted caramel flavour",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.5,
+          "servings": 1,
+          "loggedAt": "2026-10-01T11:55:04.989Z"
+        },
+        {
+          "id": "ec181273-f73a-4122-8d61-18fa0cde4fe7",
+          "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-10-01T11:55:07.203Z"
+        },
+        {
+          "id": "596dae27-41d5-49a5-8dbb-6bd46af2af10",
+          "name": "Large Banana",
+          "calories": 111,
+          "protein": 1.4,
+          "carbs": 28.5,
+          "fat": 0.4,
+          "servings": 1,
+          "loggedAt": "2026-10-01T11:55:11.111Z"
         }
       ]
     }
