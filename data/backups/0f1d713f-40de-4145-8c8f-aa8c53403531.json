@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-02T10:25:42.569Z",
+  "exportedAt": "2026-10-02T10:29:10.224Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -272,8 +272,8 @@
       "carbs": 16.4,
       "fat": 4.6,
       "servings": 1,
-      "useCount": 11,
-      "lastUsedAt": "2026-10-01T11:55:07.203Z",
+      "useCount": 12,
+      "lastUsedAt": "2026-10-02T10:29:06.325Z",
       "pinned": true
     },
     {
@@ -2052,7 +2052,7 @@
       "date": "2026-10-02",
       "entries": [
         {
-          "name": "nutrition bar",
+          "name": "White Chocolate Berry Flapjack",
           "calories": 205,
           "protein": 15,
           "carbs": 24,
@@ -2060,6 +2060,16 @@
           "servings": 1,
           "id": "8e8cdc1a-b762-4a2c-b4c6-d21e2835cbf1",
           "loggedAt": "2026-10-02T10:25:38.567Z"
+        },
+        {
+          "id": "f99ba75e-d778-497e-88d3-fc570604dd01",
+          "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-10-02T10:29:06.325Z"
         }
       ]
     }
