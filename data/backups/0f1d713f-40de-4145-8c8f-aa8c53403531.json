@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-02T11:08:31.571Z",
+  "exportedAt": "2026-10-02T11:09:37.046Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -184,12 +184,12 @@
       "id": "a12eae0f-aae1-457c-aafd-7d809e7db30e",
       "name": "PROTEIN EGG SNACK POT",
       "calories": 114,
-      "protein": 11,
+      "protein": 11.8,
       "carbs": 0,
-      "fat": 7.7,
+      "fat": 8.2,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-04T12:14:58.608Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-10-02T11:09:33.044Z",
       "pinned": false
     },
     {
@@ -2092,6 +2092,16 @@
           "servings": 1,
           "id": "5e2254c9-f7e3-423e-9135-0cca1c757d10",
           "loggedAt": "2026-10-02T11:08:27.569Z"
+        },
+        {
+          "name": "PROTEIN EGG SNACK POT",
+          "calories": 114,
+          "protein": 11.8,
+          "carbs": 0,
+          "fat": 8.2,
+          "servings": 1,
+          "id": "709e0a6a-144d-437e-a152-529e5e928d47",
+          "loggedAt": "2026-10-02T11:09:33.044Z"
         }
       ]
     }
