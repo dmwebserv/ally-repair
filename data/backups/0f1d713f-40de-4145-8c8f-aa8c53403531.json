@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-02T11:09:37.046Z",
+  "exportedAt": "2026-10-02T11:13:46.763Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -704,6 +704,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-02T11:08:27.569Z",
+      "pinned": false
+    },
+    {
+      "id": "d4f26b1c-879b-4884-8c15-c2597d733df4",
+      "name": "Firecracker Chicken",
+      "calories": 411,
+      "protein": 21.5,
+      "carbs": 48.9,
+      "fat": 13.7,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-02T11:13:42.760Z",
       "pinned": false
     }
   ],
@@ -2102,6 +2114,16 @@
           "servings": 1,
           "id": "709e0a6a-144d-437e-a152-529e5e928d47",
           "loggedAt": "2026-10-02T11:09:33.044Z"
+        },
+        {
+          "name": "Firecracker Chicken",
+          "calories": 411,
+          "protein": 21.5,
+          "carbs": 48.9,
+          "fat": 13.7,
+          "servings": 1,
+          "id": "01100491-bdae-415e-bbbb-3b57c0ebcef6",
+          "loggedAt": "2026-10-02T11:13:42.760Z"
         }
       ]
     }
