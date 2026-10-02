@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-02T11:13:46.763Z",
+  "exportedAt": "2026-10-02T13:05:44.847Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -20,8 +20,8 @@
       "carbs": 7,
       "fat": 0.6,
       "servings": 1,
-      "useCount": 16,
-      "lastUsedAt": "2026-10-01T14:45:06.154Z",
+      "useCount": 17,
+      "lastUsedAt": "2026-10-02T13:05:40.845Z",
       "pinned": true
     },
     {
@@ -2124,6 +2124,16 @@
           "servings": 1,
           "id": "01100491-bdae-415e-bbbb-3b57c0ebcef6",
           "loggedAt": "2026-10-02T11:13:42.760Z"
+        },
+        {
+          "id": "c1300d62-3de4-48b2-b03b-0fda53cd26e3",
+          "name": "Strawberry Protein Yoghurt",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-10-02T13:05:40.845Z"
         }
       ]
     }
