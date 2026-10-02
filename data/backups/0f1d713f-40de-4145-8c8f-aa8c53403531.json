@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-02T10:29:10.224Z",
+  "exportedAt": "2026-10-02T11:08:31.571Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -692,6 +692,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-02T10:25:38.567Z",
+      "pinned": false
+    },
+    {
+      "id": "e40ba59c-ac1f-4873-b123-ed9ff37cb1e5",
+      "name": "Tandoori Style Chicken Breast Chunks",
+      "calories": 104,
+      "protein": 18.5,
+      "carbs": 1.6,
+      "fat": 2.48,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-02T11:08:27.569Z",
       "pinned": false
     }
   ],
@@ -2070,6 +2082,16 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-10-02T10:29:06.325Z"
+        },
+        {
+          "name": "Tandoori Style Chicken Breast Chunks",
+          "calories": 104,
+          "protein": 18.5,
+          "carbs": 1.6,
+          "fat": 2.48,
+          "servings": 1,
+          "id": "5e2254c9-f7e3-423e-9135-0cca1c757d10",
+          "loggedAt": "2026-10-02T11:08:27.569Z"
         }
       ]
     }
