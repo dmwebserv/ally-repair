@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-02T10:24:56.072Z",
+  "exportedAt": "2026-10-02T10:25:07.173Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -2038,18 +2038,7 @@
     },
     {
       "date": "2026-10-02",
-      "entries": [
-        {
-          "name": "Scismix Choc Chip Protein Brownie",
-          "calories": 246,
-          "protein": 20,
-          "carbs": 23.7,
-          "fat": 9.9,
-          "servings": 1,
-          "id": "3ce7466b-8764-4c56-9f28-68f83a4d7244",
-          "loggedAt": "2026-10-02T10:24:52.071Z"
-        }
-      ]
+      "entries": []
     }
   ]
 }
