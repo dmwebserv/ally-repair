@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-02T10:25:07.173Z",
+  "exportedAt": "2026-10-02T10:25:42.569Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -680,6 +680,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-01T18:43:43.394Z",
+      "pinned": false
+    },
+    {
+      "id": "c84cfbeb-c882-4b8b-a538-836ee3fc694e",
+      "name": "nutrition bar",
+      "calories": 205,
+      "protein": 15,
+      "carbs": 24,
+      "fat": 1.7,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-02T10:25:38.567Z",
       "pinned": false
     }
   ],
@@ -2038,7 +2050,18 @@
     },
     {
       "date": "2026-10-02",
-      "entries": []
+      "entries": [
+        {
+          "name": "nutrition bar",
+          "calories": 205,
+          "protein": 15,
+          "carbs": 24,
+          "fat": 1.7,
+          "servings": 1,
+          "id": "8e8cdc1a-b762-4a2c-b4c6-d21e2835cbf1",
+          "loggedAt": "2026-10-02T10:25:38.567Z"
+        }
+      ]
     }
   ]
 }
