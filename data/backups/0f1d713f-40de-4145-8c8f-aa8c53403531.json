@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-02T13:05:44.847Z",
+  "exportedAt": "2026-10-03T07:59:36.808Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -716,6 +716,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-02T11:13:42.760Z",
+      "pinned": false
+    },
+    {
+      "id": "d5bdb04e-1c8c-4524-a1a0-d54b6540d4dc",
+      "name": "WHITE CHOC CHIP PROTEIN BLONDIE",
+      "calories": 259,
+      "protein": 20,
+      "carbs": 27,
+      "fat": 10,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-03T07:59:32.806Z",
       "pinned": false
     }
   ],
@@ -2134,6 +2146,21 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-10-02T13:05:40.845Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "entries": [
+        {
+          "name": "WHITE CHOC CHIP PROTEIN BLONDIE",
+          "calories": 259,
+          "protein": 20,
+          "carbs": 27,
+          "fat": 10,
+          "servings": 1,
+          "id": "2bc42dee-e260-4212-b982-ca7b5747f8ad",
+          "loggedAt": "2026-10-03T07:59:32.806Z"
         }
       ]
     }
