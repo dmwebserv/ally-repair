@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-05T14:13:54.063Z",
+  "exportedAt": "2026-10-05T14:14:38.490Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -51,13 +51,13 @@
     {
       "id": "3294afdc-d50d-405c-8adc-d9e1124101c5",
       "name": "Protein Rice",
-      "calories": 188,
+      "calories": 187,
       "protein": 14.4,
       "carbs": 22.6,
       "fat": 4.5,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-08-28T13:52:55.947Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-10-05T14:14:34.488Z",
       "pinned": false
     },
     {
@@ -2206,6 +2206,16 @@
           "servings": 1,
           "id": "23551b26-428d-4855-8527-e9785786acb0",
           "loggedAt": "2026-10-05T14:13:50.061Z"
+        },
+        {
+          "name": "Protein Rice",
+          "calories": 187,
+          "protein": 14.4,
+          "carbs": 22.6,
+          "fat": 4.5,
+          "servings": 1,
+          "id": "af76e831-d9ce-4eb0-acd6-6b52e5eeffd1",
+          "loggedAt": "2026-10-05T14:14:34.488Z"
         }
       ]
     }
