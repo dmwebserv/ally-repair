@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-05T12:43:55.488Z",
+  "exportedAt": "2026-10-05T13:07:33.601Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -224,8 +224,8 @@
       "carbs": 21.8,
       "fat": 1.8,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-04T12:17:27.904Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-10-05T13:07:29.599Z",
       "pinned": false
     },
     {
@@ -2186,6 +2186,16 @@
           "fat": 9.9,
           "servings": 1,
           "loggedAt": "2026-10-05T11:05:23.169Z"
+        },
+        {
+          "name": "CHOCOLATE FLAVOURED MILKSHAKE",
+          "calories": 206,
+          "protein": 25.7,
+          "carbs": 21.8,
+          "fat": 1.8,
+          "servings": 1,
+          "id": "4f3ec166-b87b-47e4-9144-6852c1fe11f0",
+          "loggedAt": "2026-10-05T13:07:29.599Z"
         }
       ]
     }
