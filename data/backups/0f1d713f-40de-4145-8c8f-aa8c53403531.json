@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-03T07:59:36.808Z",
+  "exportedAt": "2026-10-05T11:05:27.172Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -272,8 +272,8 @@
       "carbs": 16.4,
       "fat": 4.6,
       "servings": 1,
-      "useCount": 12,
-      "lastUsedAt": "2026-10-02T10:29:06.325Z",
+      "useCount": 13,
+      "lastUsedAt": "2026-10-05T11:05:20.975Z",
       "pinned": true
     },
     {
@@ -438,8 +438,8 @@
       "carbs": 23.7,
       "fat": 9.9,
       "servings": 1,
-      "useCount": 5,
-      "lastUsedAt": "2026-10-02T10:24:52.071Z",
+      "useCount": 6,
+      "lastUsedAt": "2026-10-05T11:05:23.169Z",
       "pinned": true
     },
     {
@@ -2161,6 +2161,31 @@
           "servings": 1,
           "id": "2bc42dee-e260-4212-b982-ca7b5747f8ad",
           "loggedAt": "2026-10-03T07:59:32.806Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "entries": [
+        {
+          "id": "f75c9081-7f43-455e-ac11-5dba3250e8b3",
+          "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-10-05T11:05:20.975Z"
+        },
+        {
+          "id": "07960a1d-8b8c-468b-ac76-a5d1c98c5f25",
+          "name": "Scismix Choc Chip Protein Brownie",
+          "calories": 246,
+          "protein": 20,
+          "carbs": 23.7,
+          "fat": 9.9,
+          "servings": 1,
+          "loggedAt": "2026-10-05T11:05:23.169Z"
         }
       ]
     }
