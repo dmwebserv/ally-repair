@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-05T11:05:27.172Z",
+  "exportedAt": "2026-10-05T12:43:55.488Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -14,7 +14,7 @@
   "favorites": [
     {
       "id": "a854122b-26e2-43c3-92ee-7bdcc94c3c8d",
-      "name": "Strawberry Protein Yoghurt",
+      "name": "Strawb Pro Yog",
       "calories": 139,
       "protein": 25,
       "carbs": 7,
@@ -122,7 +122,7 @@
     },
     {
       "id": "7686f466-2140-45cc-bf64-851611d076bc",
-      "name": "X-tone protein bar salted caramel flavour",
+      "name": "Salted Caramel Pro",
       "calories": 142,
       "protein": 15,
       "carbs": 16,
@@ -266,7 +266,7 @@
     },
     {
       "id": "ab6798bd-92fb-4adf-9c9c-5bfab09e9064",
-      "name": "MILK CHOCOLATE CEREAL BALLS PROTEIN VANILLA",
+      "name": "Choc Cereal Yog",
       "calories": 229,
       "protein": 30.1,
       "carbs": 16.4,
@@ -432,7 +432,7 @@
     },
     {
       "id": "608a8545-bafc-4710-9764-9fa278bf3bbe",
-      "name": "Scismix Choc Chip Protein Brownie",
+      "name": "Choc Chip Brownie Pro",
       "calories": 246,
       "protein": 20,
       "carbs": 23.7,
@@ -656,7 +656,7 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-01T11:55:00.612Z",
-      "pinned": false
+      "pinned": true
     },
     {
       "id": "8ede125b-3ae3-4c51-9821-90533ed177e8",
