@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-06T13:02:16.807Z",
+  "exportedAt": "2026-10-06T13:02:33.182Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -752,6 +752,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-06T13:01:49.108Z",
+      "pinned": false
+    },
+    {
+      "id": "6c8f9f13-5817-4a21-af7a-75a13f857675",
+      "name": "Protein Shake",
+      "calories": 221,
+      "protein": 35,
+      "carbs": 17.5,
+      "fat": 0.99,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-06T13:02:29.178Z",
       "pinned": false
     }
   ],
@@ -2285,6 +2297,16 @@
           "fat": 7.65,
           "servings": 1,
           "loggedAt": "2026-10-06T13:02:12.805Z"
+        },
+        {
+          "name": "Protein Shake",
+          "calories": 221,
+          "protein": 35,
+          "carbs": 17.5,
+          "fat": 0.99,
+          "servings": 1,
+          "id": "9d488d85-0e3d-425b-b262-cad217b98094",
+          "loggedAt": "2026-10-06T13:02:29.178Z"
         }
       ]
     }
