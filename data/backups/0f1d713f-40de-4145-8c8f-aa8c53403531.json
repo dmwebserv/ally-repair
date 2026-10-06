@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-06T13:02:33.182Z",
+  "exportedAt": "2026-10-06T14:36:03.488Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -764,6 +764,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-06T13:02:29.178Z",
+      "pinned": false
+    },
+    {
+      "id": "984a6198-0241-4214-8ba4-b0fd64055e21",
+      "name": "Area Strawberry Yoghurt",
+      "calories": 144,
+      "protein": 20,
+      "carbs": 13.2,
+      "fat": 0.4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-06T14:36:00.082Z",
       "pinned": false
     }
   ],
@@ -2307,6 +2319,16 @@
           "servings": 1,
           "id": "9d488d85-0e3d-425b-b262-cad217b98094",
           "loggedAt": "2026-10-06T13:02:29.178Z"
+        },
+        {
+          "name": "Area Strawberry Yoghurt",
+          "calories": 144,
+          "protein": 20,
+          "carbs": 13.2,
+          "fat": 0.4,
+          "servings": 1,
+          "id": "83fc1788-379c-4a52-98c8-12785f96e40f",
+          "loggedAt": "2026-10-06T14:36:00.082Z"
         }
       ]
     }
