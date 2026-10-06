@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-06T08:08:29.948Z",
+  "exportedAt": "2026-10-06T13:01:53.111Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -740,6 +740,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-06T08:08:26.471Z",
+      "pinned": false
+    },
+    {
+      "id": "11c82a86-7214-47bd-91c6-5f44f7756258",
+      "name": "Coronation Chicken Sandwich",
+      "calories": 439,
+      "protein": 19,
+      "carbs": 45,
+      "fat": 20,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-06T13:01:49.108Z",
       "pinned": false
     }
   ],
@@ -2253,6 +2265,16 @@
           "servings": 1,
           "id": "903db9d3-f074-421f-b2b5-9b116b05ee2e",
           "loggedAt": "2026-10-06T08:08:26.471Z"
+        },
+        {
+          "name": "Coronation Chicken Sandwich",
+          "calories": 439,
+          "protein": 19,
+          "carbs": 45,
+          "fat": 20,
+          "servings": 1,
+          "id": "07e841ae-26cb-4bdb-9621-a565229753c5",
+          "loggedAt": "2026-10-06T13:01:49.108Z"
         }
       ]
     }
