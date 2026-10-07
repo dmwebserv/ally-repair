@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-06T14:36:03.488Z",
+  "exportedAt": "2026-10-07T09:00:17.264Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -248,8 +248,8 @@
       "carbs": 1.44,
       "fat": 7.65,
       "servings": 1,
-      "useCount": 5,
-      "lastUsedAt": "2026-10-06T13:02:12.805Z",
+      "useCount": 6,
+      "lastUsedAt": "2026-10-07T09:00:13.262Z",
       "pinned": true
     },
     {
@@ -2329,6 +2329,21 @@
           "servings": 1,
           "id": "83fc1788-379c-4a52-98c8-12785f96e40f",
           "loggedAt": "2026-10-06T14:36:00.082Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "entries": [
+        {
+          "id": "475d9f78-f019-4031-8543-38cdf26f95a7",
+          "name": "EGG PROTEIN POT",
+          "calories": 121,
+          "protein": 11.3,
+          "carbs": 1.44,
+          "fat": 7.65,
+          "servings": 1,
+          "loggedAt": "2026-10-07T09:00:13.262Z"
         }
       ]
     }
