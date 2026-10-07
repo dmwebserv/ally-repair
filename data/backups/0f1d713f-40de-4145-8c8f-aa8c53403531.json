@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-07T09:00:26.924Z",
+  "exportedAt": "2026-10-07T11:51:34.368Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -776,6 +776,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-06T14:36:00.082Z",
+      "pinned": false
+    },
+    {
+      "id": "9a85c448-e2d5-4886-88d1-ca1889d957dd",
+      "name": "Korean style chicken dragon rolls",
+      "calories": 319,
+      "protein": 7.52,
+      "carbs": 43.2,
+      "fat": 12.4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-07T11:51:30.365Z",
       "pinned": false
     }
   ],
@@ -2354,6 +2366,16 @@
           "servings": 1,
           "id": "8cdb8d89-081a-4ba5-ba01-cc85f3549161",
           "loggedAt": "2026-10-07T09:00:22.922Z"
+        },
+        {
+          "name": "Korean style chicken dragon rolls",
+          "calories": 319,
+          "protein": 7.52,
+          "carbs": 43.2,
+          "fat": 12.4,
+          "servings": 1,
+          "id": "d317acb4-b4e4-455a-bee6-ebc221c33e1b",
+          "loggedAt": "2026-10-07T11:51:30.365Z"
         }
       ]
     }
