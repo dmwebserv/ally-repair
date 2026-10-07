@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-07T11:51:34.368Z",
+  "exportedAt": "2026-10-07T11:53:21.579Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -788,6 +788,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-07T11:51:30.365Z",
+      "pinned": false
+    },
+    {
+      "id": "8741e698-c0be-4cf7-a8b8-61aea86b1719",
+      "name": "High protein pudding",
+      "calories": 162,
+      "protein": 20,
+      "carbs": 12.8,
+      "fat": 3.2,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-07T11:53:17.576Z",
       "pinned": false
     }
   ],
@@ -2376,6 +2388,16 @@
           "servings": 1,
           "id": "d317acb4-b4e4-455a-bee6-ebc221c33e1b",
           "loggedAt": "2026-10-07T11:51:30.365Z"
+        },
+        {
+          "name": "High protein pudding",
+          "calories": 162,
+          "protein": 20,
+          "carbs": 12.8,
+          "fat": 3.2,
+          "servings": 1,
+          "id": "985b8305-c10c-4797-9330-49a843878e35",
+          "loggedAt": "2026-10-07T11:53:17.576Z"
         }
       ]
     }
