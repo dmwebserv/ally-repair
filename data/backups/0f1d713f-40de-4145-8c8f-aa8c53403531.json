@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-08T08:19:45.057Z",
+  "exportedAt": "2026-10-08T08:19:55.005Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -738,8 +738,8 @@
       "carbs": 19.2,
       "fat": 12,
       "servings": 1,
-      "useCount": 2,
-      "lastUsedAt": "2026-10-07T09:00:22.922Z",
+      "useCount": 3,
+      "lastUsedAt": "2026-10-08T08:19:50.997Z",
       "pinned": false
     },
     {
@@ -2423,6 +2423,16 @@
           "fat": 0.4,
           "servings": 1,
           "loggedAt": "2026-10-08T08:19:41.055Z"
+        },
+        {
+          "name": "Grenade High Protein Low Sugar salted peanut",
+          "calories": 242,
+          "protein": 19.8,
+          "carbs": 19.2,
+          "fat": 12,
+          "servings": 1,
+          "id": "4d218b30-225e-4268-abdf-b12b216abbe6",
+          "loggedAt": "2026-10-08T08:19:50.997Z"
         }
       ]
     }
