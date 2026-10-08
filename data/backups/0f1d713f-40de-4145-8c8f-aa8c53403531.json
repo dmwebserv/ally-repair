@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-08T08:19:55.005Z",
+  "exportedAt": "2026-10-08T12:19:31.772Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -800,6 +800,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-07T11:53:17.576Z",
+      "pinned": false
+    },
+    {
+      "id": "b32f33cf-2a13-44ba-bdf4-f50178f97de2",
+      "name": "Southern Style Chicken Bites",
+      "calories": 124,
+      "protein": 8.55,
+      "carbs": 1.89,
+      "fat": 6.3,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-08T12:19:27.765Z",
       "pinned": false
     }
   ],
@@ -2433,6 +2445,16 @@
           "servings": 1,
           "id": "4d218b30-225e-4268-abdf-b12b216abbe6",
           "loggedAt": "2026-10-08T08:19:50.997Z"
+        },
+        {
+          "name": "Southern Style Chicken Bites",
+          "calories": 124,
+          "protein": 8.55,
+          "carbs": 1.89,
+          "fat": 6.3,
+          "servings": 1,
+          "id": "5b8092ed-7a58-40cd-9cb5-32f1905c9f1e",
+          "loggedAt": "2026-10-08T12:19:27.765Z"
         }
       ]
     }
