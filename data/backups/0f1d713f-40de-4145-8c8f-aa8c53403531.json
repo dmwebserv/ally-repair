@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-08T12:19:31.772Z",
+  "exportedAt": "2026-10-08T12:20:05.688Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -812,6 +812,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-08T12:19:27.765Z",
+      "pinned": false
+    },
+    {
+      "id": "f76060c3-3d50-4326-bb0c-d37911b8221d",
+      "name": "Chicken Salad Sandwich",
+      "calories": 350,
+      "protein": 21.9,
+      "carbs": 47.8,
+      "fat": 7,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-08T12:20:01.686Z",
       "pinned": false
     }
   ],
@@ -2455,6 +2467,16 @@
           "servings": 1,
           "id": "5b8092ed-7a58-40cd-9cb5-32f1905c9f1e",
           "loggedAt": "2026-10-08T12:19:27.765Z"
+        },
+        {
+          "name": "Chicken Salad Sandwich",
+          "calories": 350,
+          "protein": 21.9,
+          "carbs": 47.8,
+          "fat": 7,
+          "servings": 1,
+          "id": "6fe1157a-662c-417d-a1d9-92c578ccabdb",
+          "loggedAt": "2026-10-08T12:20:01.686Z"
         }
       ]
     }
