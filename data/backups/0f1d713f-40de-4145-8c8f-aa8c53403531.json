@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-08T12:20:16.409Z",
+  "exportedAt": "2026-10-08T12:33:10.920Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -666,8 +666,8 @@
       "carbs": 4,
       "fat": 2,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-10-01T14:46:37.974Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-10-08T12:33:06.918Z",
       "pinned": true
     },
     {
@@ -2487,6 +2487,16 @@
           "fat": 7.65,
           "servings": 1,
           "loggedAt": "2026-10-08T12:20:12.407Z"
+        },
+        {
+          "id": "4fc66c03-7aa1-4617-8945-6b54283e82a6",
+          "name": "Caramelised Biscuit Shake",
+          "calories": 153,
+          "protein": 30,
+          "carbs": 4,
+          "fat": 2,
+          "servings": 1,
+          "loggedAt": "2026-10-08T12:33:06.918Z"
         }
       ]
     }
