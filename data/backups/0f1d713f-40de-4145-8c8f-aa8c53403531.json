@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-09T12:19:55.233Z",
+  "exportedAt": "2026-10-09T12:20:06.599Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -2509,16 +2509,6 @@
           "fat": 2,
           "servings": 1,
           "loggedAt": "2026-10-08T12:33:06.918Z"
-        },
-        {
-          "name": "Chicken bacon and sweetcorn pasta",
-          "calories": 524,
-          "protein": 20.6,
-          "carbs": 57.9,
-          "fat": 22.3,
-          "servings": 1,
-          "id": "a1e5f2e7-ca05-46be-a873-838ccb13d557",
-          "loggedAt": "2026-10-09T12:19:51.231Z"
         }
       ]
     },
