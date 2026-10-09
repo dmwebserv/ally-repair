@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-09T13:25:24.905Z",
+  "exportedAt": "2026-10-09T13:25:31.879Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -20,8 +20,8 @@
       "carbs": 7,
       "fat": 0.6,
       "servings": 1,
-      "useCount": 17,
-      "lastUsedAt": "2026-10-02T13:05:40.845Z",
+      "useCount": 18,
+      "lastUsedAt": "2026-10-09T13:25:27.877Z",
       "pinned": true
     },
     {
@@ -2544,6 +2544,16 @@
           "servings": 1,
           "id": "6fe448f1-95e8-46e4-ad07-11159f9e6730",
           "loggedAt": "2026-10-09T13:25:20.903Z"
+        },
+        {
+          "id": "b35becc8-71d2-4996-bd38-63f683522401",
+          "name": "Strawb Pro Yog",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-10-09T13:25:27.877Z"
         }
       ]
     }
