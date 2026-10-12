@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-09T13:25:31.879Z",
+  "exportedAt": "2026-10-12T08:33:09.931Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -342,8 +342,8 @@
       "carbs": 17.5,
       "fat": 4.86,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-09T07:44:36.998Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-10-12T08:33:05.927Z",
       "pinned": false
     },
     {
@@ -2554,6 +2554,21 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-10-09T13:25:27.877Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "entries": [
+        {
+          "name": "White chocolate cereal balls",
+          "calories": 235,
+          "protein": 30.1,
+          "carbs": 17.5,
+          "fat": 4.86,
+          "servings": 1,
+          "id": "6c424354-b7c8-4e72-8ab8-219f524feceb",
+          "loggedAt": "2026-10-12T08:33:05.927Z"
         }
       ]
     }
