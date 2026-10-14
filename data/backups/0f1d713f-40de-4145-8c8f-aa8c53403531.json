@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-13T13:38:03.261Z",
+  "exportedAt": "2026-10-14T12:10:38.227Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -848,6 +848,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-12T13:52:59.045Z",
+      "pinned": false
+    },
+    {
+      "id": "5bc23671-bc73-45b4-af6d-b17ec1e0fc52",
+      "name": "Chicken Tikka Bites",
+      "calories": 93,
+      "protein": 9.1,
+      "carbs": 2.3,
+      "fat": 5.2,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-14T12:10:35.322Z",
       "pinned": false
     }
   ],
@@ -2646,6 +2658,21 @@
           "fat": 10.7,
           "servings": 1,
           "loggedAt": "2026-10-13T13:37:59.259Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "entries": [
+        {
+          "name": "Chicken Tikka Bites",
+          "calories": 93,
+          "protein": 9.1,
+          "carbs": 2.3,
+          "fat": 5.2,
+          "servings": 1,
+          "id": "4f433a87-b249-458d-92e3-0fe3687c91b9",
+          "loggedAt": "2026-10-14T12:10:35.322Z"
         }
       ]
     }
