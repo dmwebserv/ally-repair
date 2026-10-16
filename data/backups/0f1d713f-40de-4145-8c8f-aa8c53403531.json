@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-16T12:44:24.322Z",
+  "exportedAt": "2026-10-16T12:44:57.762Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -860,6 +860,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-14T12:10:35.322Z",
+      "pinned": false
+    },
+    {
+      "id": "cf278af9-5182-46a0-b7fa-c3b6ca30ddda",
+      "name": "Slice of Bread",
+      "calories": 119,
+      "protein": 4,
+      "carbs": 23.9,
+      "fat": 0.4,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-16T12:44:53.760Z",
       "pinned": false
     }
   ],
@@ -2698,6 +2710,16 @@
           "servings": 1,
           "id": "b434a9dd-ccd0-4c30-80da-460d0276402d",
           "loggedAt": "2026-10-16T12:44:20.315Z"
+        },
+        {
+          "name": "Slice of Bread",
+          "calories": 119,
+          "protein": 4,
+          "carbs": 23.9,
+          "fat": 0.4,
+          "servings": 1,
+          "id": "e1508d9b-33f7-44fd-95c4-b2f40fc0765c",
+          "loggedAt": "2026-10-16T12:44:53.760Z"
         }
       ]
     }
