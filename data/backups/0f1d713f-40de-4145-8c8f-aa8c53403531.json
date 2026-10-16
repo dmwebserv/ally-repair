@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-16T12:43:40.935Z",
+  "exportedAt": "2026-10-16T12:44:24.322Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -2688,6 +2688,16 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-10-16T12:43:36.932Z"
+        },
+        {
+          "name": "",
+          "calories": 554,
+          "protein": 34,
+          "carbs": 42,
+          "fat": 16.6,
+          "servings": 1,
+          "id": "b434a9dd-ccd0-4c30-80da-460d0276402d",
+          "loggedAt": "2026-10-16T12:44:20.315Z"
         }
       ]
     }
