@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-14T12:10:38.227Z",
+  "exportedAt": "2026-10-16T12:43:40.935Z",
   "profile": {
     "id": "0f1d713f-40de-4145-8c8f-aa8c53403531",
     "name": "Danny iPhone"
@@ -272,8 +272,8 @@
       "carbs": 16.4,
       "fat": 4.6,
       "servings": 1,
-      "useCount": 14,
-      "lastUsedAt": "2026-10-13T13:37:51.800Z",
+      "useCount": 15,
+      "lastUsedAt": "2026-10-16T12:43:36.932Z",
       "pinned": true
     },
     {
@@ -2673,6 +2673,21 @@
           "servings": 1,
           "id": "4f433a87-b249-458d-92e3-0fe3687c91b9",
           "loggedAt": "2026-10-14T12:10:35.322Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "entries": [
+        {
+          "id": "38703ab1-7c87-4986-ad41-a5cd83bea9f8",
+          "name": "Choc Cereal Yog",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-10-16T12:43:36.932Z"
         }
       ]
     }
