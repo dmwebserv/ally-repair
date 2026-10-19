@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-19T15:22:30.342Z",
+  "exportedAt": "2026-10-19T15:22:45.216Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -2222,7 +2222,8 @@
           "id": "5fd6547b-594b-4c80-9cda-ce69ef1f3f6f",
           "loggedAt": "2026-10-01T18:43:43.394Z"
         }
-      ]
+      ],
+      "isGymDay": false
     },
     {
       "date": "2026-10-02",
