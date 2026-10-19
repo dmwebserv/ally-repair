@@ -16,6 +16,7 @@ via `localStorage`.
 - Month-view calendar with per-day totals vs goal — tap any day to jump back to it
 - No account, no cost — data lives on your device, with optional cloud backup
   (see below)
+- Installable app with an offline app shell; barcode lookup still needs an internet connection
 
 ## Running locally
 

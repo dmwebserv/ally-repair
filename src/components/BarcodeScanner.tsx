@@ -11,6 +11,8 @@ interface Props {
 export default function BarcodeScanner({ onDetected, onClose }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [error, setError] = useState<string | null>(null);
+  const detectedRef = useRef(onDetected);
+  useEffect(() => { detectedRef.current = onDetected; }, [onDetected]);
 
   useEffect(() => {
     let controls: IScannerControls | undefined;
@@ -19,12 +21,12 @@ export default function BarcodeScanner({ onDetected, onClose }: Props) {
 
     reader
       .decodeFromConstraints(
-        { video: { facingMode: 'environment' } },
+        { video: { facingMode: { ideal: 'environment' }, width: { ideal: 1280 }, height: { ideal: 720 } } },
         videoRef.current ?? undefined,
         (result, _err, frameControls) => {
           if (cancelled || !result) return;
           frameControls.stop();
-          onDetected(result.getText());
+          detectedRef.current(result.getText());
         },
       )
       .then((c) => {
@@ -32,6 +34,14 @@ export default function BarcodeScanner({ onDetected, onClose }: Props) {
           c.stop();
         } else {
           controls = c;
+          const video = videoRef.current;
+          const track = video?.srcObject instanceof MediaStream ? video.srcObject.getVideoTracks()[0] : undefined;
+          if (track) {
+            const capabilities = track.getCapabilities() as MediaTrackCapabilities & { focusMode?: string[] };
+            if (capabilities.focusMode?.includes('continuous')) {
+              void track.applyConstraints({ advanced: [{ focusMode: 'continuous' } as MediaTrackConstraintSet] }).catch(() => {});
+            }
+          }
         }
       })
       .catch(() => {
@@ -42,7 +52,7 @@ export default function BarcodeScanner({ onDetected, onClose }: Props) {
       cancelled = true;
       controls?.stop();
     };
-  }, [onDetected]);
+  }, []);
 
   return (
     <div className="scanner-overlay">

@@ -7,6 +7,11 @@ export interface FoodEntry {
   fat?: number;
   servings: number;
   loggedAt: string;
+  meal?: 'breakfast' | 'lunch' | 'dinner' | 'snack';
+  note?: string;
+  barcode?: string;
+  grams?: number;
+  per100g?: boolean;
 }
 
 export interface DayLog {
@@ -51,4 +56,14 @@ export interface FoodStat {
   useCount: number;
   lastUsedAt: string;
   pinned: boolean;
+  barcode?: string;
+  note?: string;
+  grams?: number;
+  per100g?: boolean;
+}
+
+export interface MealTemplate {
+  id: string;
+  name: string;
+  entries: FoodEntry[];
 }
