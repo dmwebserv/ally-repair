@@ -8,11 +8,13 @@ interface Props {
   onEdit: (entry: FoodEntry) => void;
   onDuplicate: (entry: FoodEntry) => void;
   onMove: (entry: FoodEntry, date: string) => void;
+  onAddToToday: (entry: FoodEntry) => void;
+  isViewingToday: boolean;
 }
 
 const SWIPE_THRESHOLD = 72;
 
-function FoodEntryRow({ entry, onRemove, onEdit, onDuplicate, onMove }: { entry: FoodEntry; onRemove: (e: FoodEntry) => void; onEdit: (e: FoodEntry) => void; onDuplicate: (e: FoodEntry) => void; onMove: (e: FoodEntry, date: string) => void }) {
+function FoodEntryRow({ entry, onRemove, onEdit, onDuplicate, onMove, onAddToToday, isViewingToday }: { entry: FoodEntry; onRemove: (e: FoodEntry) => void; onEdit: (e: FoodEntry) => void; onDuplicate: (e: FoodEntry) => void; onMove: (e: FoodEntry, date: string) => void; onAddToToday: (e: FoodEntry) => void; isViewingToday: boolean }) {
   const [dragX, setDragXState] = useState(0);
   const [dragging, setDraggingState] = useState(false);
   const startX = useRef(0);
@@ -93,6 +95,7 @@ function FoodEntryRow({ entry, onRemove, onEdit, onDuplicate, onMove }: { entry:
           </span>
         </div>
         <div className="food-entry-actions">
+          {!isViewingToday && <button type="button" className="entry-action add-today-action" onClick={(e) => { e.stopPropagation(); onAddToToday(entry); }}>Add to today</button>}
           <button type="button" className="entry-action" onClick={(e) => { e.stopPropagation(); onDuplicate(entry); }}>Duplicate</button>
           <button type="button" className="entry-action" onClick={(e) => { e.stopPropagation(); const target = window.prompt('Move to date (YYYY-MM-DD):'); if (target) onMove(entry, target); }}>Move</button>
         </div>
@@ -112,7 +115,7 @@ function FoodEntryRow({ entry, onRemove, onEdit, onDuplicate, onMove }: { entry:
   );
 }
 
-export default function FoodLog({ entries, onRemove, onEdit, onDuplicate, onMove }: Props) {
+export default function FoodLog({ entries, onRemove, onEdit, onDuplicate, onMove, onAddToToday, isViewingToday }: Props) {
   const [mealFilter, setMealFilter] = useState('all');
   const [timeSort, setTimeSort] = useState(false);
   const visible = useMemo(() => {
@@ -129,7 +132,7 @@ export default function FoodLog({ entries, onRemove, onEdit, onDuplicate, onMove
         <label>Meal filter <select value={mealFilter} onChange={(e) => setMealFilter(e.target.value)}>{meals.map((meal) => <option key={meal} value={meal}>{meal === 'all' ? 'All meals' : meal === 'unassigned' ? 'No meal' : meal[0].toUpperCase() + meal.slice(1)}</option>)}</select></label>
         <button type="button" className="link-btn" onClick={() => setTimeSort((sort) => !sort)}>{timeSort ? 'Recent order' : 'Sort by time'}</button>
       </div>
-      {visible.length === 0 ? <div className="empty-state"><p>No foods in this meal yet.</p></div> : <ul className="food-log">{visible.map((entry) => <FoodEntryRow key={entry.id} entry={entry} onRemove={onRemove} onEdit={onEdit} onDuplicate={onDuplicate} onMove={onMove} />)}</ul>}
+      {visible.length === 0 ? <div className="empty-state"><p>No foods in this meal yet.</p></div> : <ul className="food-log">{visible.map((entry) => <FoodEntryRow key={entry.id} entry={entry} onRemove={onRemove} onEdit={onEdit} onDuplicate={onDuplicate} onMove={onMove} onAddToToday={onAddToToday} isViewingToday={isViewingToday} />)}</ul>}
       <div className="meal-summary-grid">
         {(['breakfast', 'lunch', 'dinner', 'snack'] as const).map((meal) => {
           const group = entries.filter((entry) => entry.meal === meal);

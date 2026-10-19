@@ -20,12 +20,12 @@ function getWorker(): Promise<Worker> {
   return workerPromise;
 }
 
-async function recognizeText(image: File | Blob, onProgress?: (pct: number) => void): Promise<string> {
+async function recognizeText(image: File | Blob, onProgress?: (pct: number) => void): Promise<{ text: string; confidence: number | null }> {
   const worker = await getWorker();
   currentProgressHandler = onProgress;
   try {
     const { data } = await worker.recognize(image, { rotateAuto: true }, { text: true });
-    return data.text ?? '';
+    return { text: data.text ?? '', confidence: typeof data.confidence === 'number' ? data.confidence : null };
   } finally {
     currentProgressHandler = undefined;
   }
@@ -99,6 +99,7 @@ export interface ScanStatus {
 export interface ScanResult {
   parsed: ParsedNutrition;
   rawText: string;
+  confidence: number | null;
 }
 
 const ROTATIONS = [0, 90, 270, 180];
@@ -107,16 +108,16 @@ export async function scanNutritionLabel(
   file: File | Blob,
   onStatus?: (s: ScanStatus) => void,
 ): Promise<ScanResult> {
-  let last: ScanResult = { parsed: {}, rawText: '' };
+  let last: ScanResult = { parsed: {}, rawText: '', confidence: null };
 
   for (let i = 0; i < ROTATIONS.length; i++) {
     const rotation = ROTATIONS[i];
     const image = await prepareImage(file, rotation);
-    const text = await recognizeText(image, (pct) =>
+    const recognized = await recognizeText(image, (pct) =>
       onStatus?.({ attempt: i + 1, totalAttempts: ROTATIONS.length, pct }),
     );
-    const parsed = parseNutritionLabel(text);
-    last = { parsed, rawText: text };
+    const parsed = parseNutritionLabel(recognized.text);
+    last = { parsed, rawText: recognized.text, confidence: recognized.confidence };
     if (parsed.calories !== undefined) return last;
   }
 

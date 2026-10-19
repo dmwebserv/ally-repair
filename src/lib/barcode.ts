@@ -76,3 +76,29 @@ export async function lookupBarcode(code: string): Promise<BarcodeResult | null>
     perHundredGrams: !hasServing,
   };
 }
+
+
+export interface CatalogFood extends Omit<BarcodeResult, 'name'> {
+  code: string | null;
+  name: string;
+}
+
+/** Search Open Food Facts by product text; only called after the user chooses the online tab. */
+export async function searchOpenFoodFacts(query: string, signal?: AbortSignal): Promise<CatalogFood[]> {
+  const url = new URL('https://world.openfoodfacts.org/api/v2/search');
+  url.searchParams.set('search_terms', query);
+  url.searchParams.set('fields', 'code,product_name,nutriments');
+  url.searchParams.set('page_size', '15');
+  const response = await fetch(url, { signal, headers: { Accept: 'application/json' } });
+  if (!response.ok) throw new Error(`Search unavailable (${response.status})`);
+  const data = await response.json() as { products?: Array<{ code?: string; product_name?: string; nutriments?: OffNutriments }> };
+  return (data.products ?? []).flatMap((product) => {
+    const n = product.nutriments ?? {};
+    const calories = n['energy-kcal_100g'];
+    const protein = n.proteins_100g;
+    const carbs = n.carbohydrates_100g;
+    const fat = n.fat_100g;
+    if (!product.product_name || (calories === undefined && protein === undefined && carbs === undefined && fat === undefined)) return [];
+    return [{ code: product.code || null, name: product.product_name, parsed: { calories, protein, carbs, fat }, perHundredGrams: true }];
+  });
+}

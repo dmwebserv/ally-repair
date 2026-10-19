@@ -34,6 +34,12 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
   const [scanning, setScanning] = useState(false);
   const [scanStatus, setScanStatus] = useState<ScanStatus | null>(null);
   const [scanError, setScanError] = useState<string | null>(null);
+  const [scanConfidence, setScanConfidence] = useState<number | null>(null);
+  const [rawOcrText, setRawOcrText] = useState('');
+  const [cropInset, setCropInset] = useState(0);
+  const [sourceFile, setSourceFile] = useState<File | null>(null);
+  const [missingOcrFields, setMissingOcrFields] = useState<string[]>([]);
+  const previewUrlRef = useRef<string | null>(null);
   const [estimated, setEstimated] = useState(false);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [barcodeMode, setBarcodeMode] = useState(false);
@@ -53,6 +59,11 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
       return () => cancelAnimationFrame(id);
     }
   }, [open]);
+
+
+  useEffect(() => () => {
+    if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
+  }, []);
 
   useEffect(() => {
     if (!editingEntry) return;
@@ -80,10 +91,17 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
   }, [editingEntry]);
 
   const reset = () => {
+    if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
+    previewUrlRef.current = null;
     setForm(emptyForm);
     setImagePreview(null);
     setBarcodeNote(null);
     setScanError(null);
+    setScanConfidence(null);
+    setRawOcrText('');
+    setCropInset(0);
+    setSourceFile(null);
+    setMissingOcrFields([]);
     setScanStatus(null);
     setEstimated(false);
     setFavorite(false);
@@ -135,7 +153,9 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
     if (!file) return;
     reset();
     setOpen(true);
-    setImagePreview(URL.createObjectURL(file));
+    setSourceFile(file);
+    previewUrlRef.current = URL.createObjectURL(file);
+    setImagePreview(previewUrlRef.current);
     setScanning(true);
 
     if (AI_SCAN_ENABLED) {
@@ -151,7 +171,10 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
       } catch {
         setScanError('AI scan failed, trying on-device scan…');
         try {
-          const { parsed } = await scanNutritionLabel(file, setScanStatus);
+          const { parsed, confidence, rawText } = await scanNutritionLabel(file, setScanStatus);
+          setScanConfidence(confidence);
+          setRawOcrText(rawText);
+          setMissingOcrFields(['calories','protein','carbs','fat'].filter((key) => parsed[key as keyof typeof parsed] === undefined));
           if (!parsed.calories && !parsed.protein && !parsed.carbs && !parsed.fat) {
             setScanError("Couldn't read this label. You can still fill it in below.");
           } else {
@@ -169,7 +192,10 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
     }
 
     try {
-      const { parsed } = await scanNutritionLabel(file, setScanStatus);
+      const { parsed, confidence, rawText } = await scanNutritionLabel(file, setScanStatus);
+      setScanConfidence(confidence);
+      setRawOcrText(rawText);
+      setMissingOcrFields(['calories','protein','carbs','fat'].filter((key) => parsed[key as keyof typeof parsed] === undefined));
       if (!parsed.calories && !parsed.protein && !parsed.carbs && !parsed.fat) {
         setScanError("Couldn't read this label. You can still fill it in below.");
       }
@@ -180,6 +206,21 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
     } finally {
       setScanning(false);
     }
+  };
+
+  const scanCroppedImage = async () => {
+    if (!sourceFile || cropInset === 0) return;
+    const bitmap = await createImageBitmap(sourceFile);
+    const insetX = Math.round(bitmap.width * cropInset / 100);
+    const insetY = Math.round(bitmap.height * cropInset / 100);
+    const width = Math.max(1, bitmap.width - insetX * 2);
+    const height = Math.max(1, bitmap.height - insetY * 2);
+    const canvas = document.createElement('canvas'); canvas.width = width; canvas.height = height;
+    const context = canvas.getContext('2d');
+    if (!context) { bitmap.close(); return; }
+    context.drawImage(bitmap, insetX, insetY, width, height, 0, 0, width, height); bitmap.close();
+    const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/jpeg', .92));
+    if (blob) await handleFile(new File([blob], sourceFile.name || 'nutrition-label.jpg', { type: 'image/jpeg' }));
   };
 
   const handleBarcode = async (code: string) => {
@@ -304,7 +345,7 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
             <div className="sheet-scroll">
               {(imagePreview || barcodeNote) && (
                 <div className="photo-mode">
-                  {imagePreview && <img src={imagePreview} alt="Food" className="photo-preview" />}
+                  {imagePreview && <img src={imagePreview} alt="Nutrition label preview" className="photo-preview" style={{ clipPath: cropInset ? `inset(${cropInset}%)` : undefined }} />}
                   {barcodeNote && !imagePreview && <p className="scan-success">{barcodeNote}</p>}
                   {scanning && (
                     <div className="scan-status">
@@ -325,6 +366,10 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
                   {!scanning && !scanError && !estimated && imagePreview && (
                     <p className="scan-success">Found it — check the numbers below.</p>
                   )}
+                  {!scanning && imagePreview && scanConfidence !== null && <p className="scan-confidence">Text recognition confidence: {Math.round(scanConfidence)}%. Please verify each number against the label.</p>}
+                  {!scanning && missingOcrFields.length > 0 && <p className="scan-missing">Not detected: {missingOcrFields.join(', ')}. Check the label and fill in any missing values.</p>}
+                  {!scanning && rawOcrText && <details className="ocr-details"><summary>View recognized label text</summary><pre>{rawOcrText}</pre></details>}
+                  {!scanning && imagePreview && <div className="crop-tools"><label>Crop edges <input type="range" min="0" max="35" step="1" value={cropInset} onChange={(e) => setCropInset(Number(e.target.value))} /></label><span>{cropInset ? `Trim ${cropInset}% from each edge` : 'Use if the label fills only part of the photo'}</span><button type="button" className="entry-action" disabled={!cropInset} onClick={() => void scanCroppedImage()}>Crop & scan again</button></div>}
                 </div>
               )}
 

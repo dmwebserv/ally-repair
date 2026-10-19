@@ -10,6 +10,8 @@ import FoodLog from './components/FoodLog';
 import GoalSetting from './components/GoalSetting';
 import WeekSummary from './components/WeekSummary';
 import MealTemplates from './components/MealTemplates';
+import FoodSearch from './components/FoodSearch';
+import type { CatalogFood } from './lib/barcode';
 import { IconCloudDown, IconDumbbell } from './components/icons';
 import { importBackup } from './lib/backup';
 import { CLOUD_SYNC_ENABLED, pullLegacyBackup, pushBackup } from './lib/cloudSync';
@@ -175,6 +177,26 @@ function App() {
     setRefreshKey((k) => k + 1);
     copies.forEach(recordFoodUse);
     scheduleSync();
+  };
+
+  const handleAddToToday = (entry: FoodEntry) => {
+    const today = todayKey();
+    const copy = { ...entry, id: crypto.randomUUID(), loggedAt: new Date().toISOString() };
+    const updated = addEntry(today, copy);
+    if (date === today) setLog(updated);
+    setRefreshKey((k) => k + 1);
+    recordFoodUse(copy);
+    scheduleSync();
+  };
+
+  const handleAddCatalogFood = (food: CatalogFood) => {
+    const entry: FoodEntry = {
+      id: crypto.randomUUID(), name: food.name, calories: food.parsed.calories ?? 0,
+      protein: food.parsed.protein, carbs: food.parsed.carbs, fat: food.parsed.fat,
+      servings: 1, grams: 100, per100g: true, barcode: food.code ?? undefined,
+      loggedAt: new Date().toISOString(),
+    };
+    handleAddToToday(entry);
   };
 
   const handleQuickAdd = (entry: FoodEntry) => {
@@ -367,6 +389,7 @@ function App() {
       </div>
 
       <FavoritesRow refreshKey={refreshKey} onQuickAdd={handleQuickAdd} />
+      <FoodSearch refreshKey={refreshKey} onAddHistory={handleAddToToday} onAddCatalog={handleAddCatalogFood} />
 
       <AddFoodPanel
         onAdd={handleAdd}
@@ -378,7 +401,7 @@ function App() {
 
       <section className="log-section">
         <div className="log-title-row"><h2 className="section-title">Food log</h2><button type="button" className="link-btn" onClick={handleCopyYesterday}>Copy yesterday</button></div>
-        <FoodLog entries={log.entries} onRemove={(entry) => handleDelete(entry)} onEdit={setEditingEntry} onDuplicate={handleDuplicate} onMove={handleMove} />
+        <FoodLog entries={log.entries} onRemove={(entry) => handleDelete(entry)} onEdit={setEditingEntry} onDuplicate={handleDuplicate} onMove={handleMove} onAddToToday={handleAddToToday} isViewingToday={date === todayKey()} />
       </section>
 
       <MealTemplates entries={log.entries} onApply={(entries) => {
