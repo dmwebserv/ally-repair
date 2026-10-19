@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-19T15:23:04.990Z",
+  "exportedAt": "2026-10-19T15:23:16.834Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -593,8 +593,8 @@
       "carbs": 28.5,
       "fat": 0.4,
       "servings": 1,
-      "useCount": 5,
-      "lastUsedAt": "2026-10-13T13:37:45.144Z",
+      "useCount": 6,
+      "lastUsedAt": "2026-10-19T15:23:12.832Z",
       "pinned": true
     },
     {
@@ -653,8 +653,8 @@
       "carbs": 39.9,
       "fat": 10.7,
       "servings": 1,
-      "useCount": 3,
-      "lastUsedAt": "2026-10-13T13:37:59.259Z",
+      "useCount": 5,
+      "lastUsedAt": "2026-10-19T15:23:10.236Z",
       "pinned": true
     },
     {
@@ -2730,6 +2730,41 @@
           "servings": 1,
           "id": "71fb10cd-4d52-4d30-b6ef-b570da7ddd15",
           "loggedAt": "2026-10-16T12:45:14.081Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "entries": [
+        {
+          "id": "f539b481-1924-409a-8ffe-d9f6a9b5ffd6",
+          "name": "Katsu Noodles",
+          "calories": 415,
+          "protein": 35.3,
+          "carbs": 39.9,
+          "fat": 10.7,
+          "servings": 1,
+          "loggedAt": "2026-10-19T15:23:07.191Z"
+        },
+        {
+          "id": "942611c4-e8e9-4c5e-84c3-1b33200ced1c",
+          "name": "Katsu Noodles",
+          "calories": 415,
+          "protein": 35.3,
+          "carbs": 39.9,
+          "fat": 10.7,
+          "servings": 1,
+          "loggedAt": "2026-10-19T15:23:10.236Z"
+        },
+        {
+          "id": "8ead29ff-adf8-4e33-bea4-dfb96c473de2",
+          "name": "Large Banana",
+          "calories": 111,
+          "protein": 1.4,
+          "carbs": 28.5,
+          "fat": 0.4,
+          "servings": 1,
+          "loggedAt": "2026-10-19T15:23:12.832Z"
         }
       ]
     }
