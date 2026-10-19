@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { THEME_PRESETS, getTheme, setTheme } from '../lib/theme';
+import { THEME_PRESETS, getTheme, setTheme, getAppearanceMode, setAppearanceMode, type AppearanceMode } from '../lib/theme';
 import type { UserSettings } from '../lib/types';
 import { IconPencil, IconX } from './icons';
 
@@ -27,6 +27,7 @@ export default function GoalSetting({ settings, onSave }: Props) {
   const [gymCarbsGoal, setGymCarbsGoal] = useState(toStr(settings.gymCarbsGoal));
   const [gymFatGoal, setGymFatGoal] = useState(toStr(settings.gymFatGoal));
   const [theme, setThemeId] = useState(getTheme());
+  const [appearance, setAppearance] = useState<AppearanceMode>(getAppearanceMode());
 
   const openSheet = () => {
     setCalorieGoal(String(settings.calorieGoal));
@@ -38,6 +39,7 @@ export default function GoalSetting({ settings, onSave }: Props) {
     setGymCarbsGoal(toStr(settings.gymCarbsGoal));
     setGymFatGoal(toStr(settings.gymFatGoal));
     setThemeId(getTheme());
+    setAppearance(getAppearanceMode());
     setOpen(true);
   };
 
@@ -184,6 +186,12 @@ export default function GoalSetting({ settings, onSave }: Props) {
               <div className="goals-divider">
                 <span>Appearance</span>
                 <span className="goals-divider-hint">this device only — never backed up</span>
+              </div>
+              <div className="theme-row">
+                <span className="theme-row-label">Appearance</span>
+                <select value={appearance} onChange={(e) => { const mode = e.target.value as AppearanceMode; setAppearance(mode); setAppearanceMode(mode); }} aria-label="Appearance mode">
+                  <option value="system">Use device setting</option><option value="light">Light</option><option value="dark">Dark</option>
+                </select>
               </div>
               <div className="theme-row">
                 <span className="theme-row-label">App colour</span>

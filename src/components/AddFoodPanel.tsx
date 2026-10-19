@@ -3,7 +3,7 @@ import type { FoodEntry } from '../lib/types';
 import { scanNutritionLabel, type ScanStatus } from '../lib/ocr';
 import { AI_SCAN_ENABLED, scanWithAI } from '../lib/aiScan';
 import { lookupBarcode } from '../lib/barcode';
-import { pinByEntry } from '../lib/favorites';
+import { findFoodByBarcode, pinByEntry } from '../lib/favorites';
 import { IconBarcode, IconCamera, IconKeyboard, IconTrash, IconX } from './icons';
 
 const BarcodeScanner = lazy(() => import('./BarcodeScanner'));
@@ -23,6 +23,8 @@ const emptyForm = {
   carbs: '',
   fat: '',
   servings: '1',
+  grams: '',
+  note: '',
 };
 
 export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDeleteEdit, onEditDone }: Props) {
@@ -37,7 +39,11 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
   const [barcodeMode, setBarcodeMode] = useState(false);
   const [barcodeNote, setBarcodeNote] = useState<string | null>(null);
   const [favorite, setFavorite] = useState(false);
+  const [meal, setMeal] = useState('');
+  const [pendingBarcode, setPendingBarcode] = useState('');
+  const [perHundredGrams, setPerHundredGrams] = useState(false);
   const [editing, setEditing] = useState<FoodEntry | null>(null);
+  const [dirty, setDirty] = useState(false);
   const nameInputRef = useRef<HTMLInputElement>(null);
   const photoInputRef = useRef<HTMLInputElement>(null);
 
@@ -57,13 +63,19 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
       carbs: editingEntry.carbs !== undefined ? String(editingEntry.carbs) : '',
       fat: editingEntry.fat !== undefined ? String(editingEntry.fat) : '',
       servings: String(editingEntry.servings || 1),
+      grams: editingEntry.grams !== undefined ? String(editingEntry.grams) : '',
+      note: editingEntry.note ?? '',
     });
     setImagePreview(null);
     setBarcodeNote(null);
     setScanError(null);
     setEstimated(false);
     setFavorite(false);
+    setMeal(editingEntry.meal ?? '');
+    setPendingBarcode(editingEntry.barcode ?? '');
+    setPerHundredGrams(editingEntry.per100g ?? false);
     setEditing(editingEntry);
+    setDirty(false);
     setOpen(true);
   }, [editingEntry]);
 
@@ -75,9 +87,14 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
     setScanStatus(null);
     setEstimated(false);
     setFavorite(false);
+    setMeal('');
+    setPendingBarcode('');
+    setPerHundredGrams(false);
+    setDirty(false);
   };
 
   const close = () => {
+    if (dirty && !window.confirm('Discard these unsaved food details?')) return;
     setVisible(false);
     setTimeout(() => {
       setOpen(false);
@@ -91,6 +108,7 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
 
   const openManual = () => {
     reset();
+    setDirty(false);
     setOpen(true);
     setTimeout(() => nameInputRef.current?.focus(), 260);
   };
@@ -129,6 +147,7 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
         }
         setEstimated(isEstimated);
         applyParsed(parsed, name);
+        setDirty(true);
       } catch {
         setScanError('AI scan failed, trying on-device scan…');
         try {
@@ -139,6 +158,7 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
             setScanError(null);
           }
           applyParsed(parsed);
+          setDirty(true);
         } catch {
           setScanError('Scan failed. You can still enter the values manually below.');
         }
@@ -154,6 +174,7 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
         setScanError("Couldn't read this label. You can still fill it in below.");
       }
       applyParsed(parsed);
+      setDirty(true);
     } catch {
       setScanError('Scan failed. You can still enter the values manually below.');
     } finally {
@@ -167,13 +188,27 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
     setOpen(true);
     setScanning(true);
     setBarcodeNote(`Barcode ${code}`);
+    setPendingBarcode(code);
+    const saved = findFoodByBarcode(code);
+    if (saved) {
+      applyParsed(saved, saved.name);
+      setPerHundredGrams(saved.per100g ?? false);
+      setForm((f) => ({ ...f, servings: String(saved.servings || 1), grams: saved.grams !== undefined ? String(saved.grams) : '' }));
+      setBarcodeNote(`Saved product found: ${saved.name}`);
+      setDirty(true);
+      setScanning(false);
+      return;
+    }
     try {
       const result = await lookupBarcode(code);
       if (!result) {
         setScanError('Product not found. You can still enter it manually below.');
       } else {
         applyParsed(result.parsed, result.name);
+        setDirty(true);
+        setPerHundredGrams(result.perHundredGrams);
         if (result.perHundredGrams) {
+          setForm((f) => ({ ...f, grams: '100' }));
           setScanError('Only per-100g values were available — check servings before saving.');
         }
       }
@@ -195,8 +230,14 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
       carbs: form.carbs ? parseFloat(form.carbs) : undefined,
       fat: form.fat ? parseFloat(form.fat) : undefined,
       servings: form.servings ? parseFloat(form.servings) || 1 : 1,
+      grams: form.grams ? parseFloat(form.grams) : undefined,
+      note: form.note.trim() || undefined,
+      barcode: pendingBarcode || undefined,
+      per100g: perHundredGrams || undefined,
+      meal: meal ? meal as FoodEntry['meal'] : undefined,
     };
 
+    setDirty(false);
     if (editing) {
       const entry: FoodEntry = { ...base, id: editing.id, loggedAt: editing.loggedAt };
       if (favorite) pinByEntry(entry);
@@ -211,6 +252,7 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
   const handleDelete = () => {
     if (!editing) return;
     onDeleteEdit(editing);
+    setDirty(false);
     close();
   };
 
@@ -286,7 +328,7 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
                 </div>
               )}
 
-              <form className="food-form" onSubmit={submit} id="food-form">
+              <form className="food-form" onSubmit={submit} onChange={() => setDirty(true)} id="food-form">
                 <label>
                   Food name
                   <input
@@ -355,6 +397,17 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
                     />
                   </label>
                 </div>
+                <label>Portion (g{perHundredGrams ? ' · values per 100 g' : ' · optional'})
+                  <input type="number" inputMode="decimal" step="any" min={0} placeholder="e.g. 150" value={form.grams} onChange={(e) => setForm((f) => ({ ...f, grams: e.target.value }))} />
+                </label>
+                <label>Meal (optional)
+                  <select value={meal} onChange={(e) => setMeal(e.target.value)}>
+                    <option value="">No meal</option><option value="breakfast">Breakfast</option><option value="lunch">Lunch</option><option value="dinner">Dinner</option><option value="snack">Snack</option>
+                  </select>
+                </label>
+                <label>Notes (optional)
+                  <textarea rows={2} value={form.note} onChange={(e) => setForm((f) => ({ ...f, note: e.target.value }))} placeholder="Add a note" />
+                </label>
                 <label className="favorite-toggle">
                   <input type="checkbox" checked={favorite} onChange={(e) => setFavorite(e.target.checked)} />
                   Save as favorite for quick-add
@@ -374,7 +427,7 @@ export default function AddFoodPanel({ onAdd, editingEntry, onSaveEdit, onDelete
                 </button>
               )}
               <button type="submit" form="food-form" className="save-btn">
-                {editing ? 'Save changes' : 'Add to today'}
+                {editing ? 'Save changes' : 'Add food'}
               </button>
             </div>
           </div>

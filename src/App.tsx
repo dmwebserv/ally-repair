@@ -9,13 +9,14 @@ import FavoritesRow from './components/FavoritesRow';
 import FoodLog from './components/FoodLog';
 import GoalSetting from './components/GoalSetting';
 import WeekSummary from './components/WeekSummary';
+import MealTemplates from './components/MealTemplates';
 import { IconCloudDown, IconDumbbell } from './components/icons';
 import { importBackup } from './lib/backup';
 import { CLOUD_SYNC_ENABLED, pullLegacyBackup, pushBackup } from './lib/cloudSync';
-import { todayKey } from './lib/date';
+import { addDays, todayKey } from './lib/date';
 import { pinByEntry, recordFoodUse } from './lib/favorites';
 import { clearLegacyMergeFlag, ensureProfile, type DeviceProfile } from './lib/profile';
-import { applyTheme, getTheme } from './lib/theme';
+import { applyTheme, getTheme, applyAppearanceMode, getAppearanceMode } from './lib/theme';
 import {
   addEntry,
   dayTotals,
@@ -24,6 +25,7 @@ import {
   getSettings,
   removeEntry,
   saveSettings,
+  saveDayLog,
   setGymDay,
   updateEntry,
 } from './lib/storage';
@@ -52,6 +54,7 @@ function App() {
   const [calendarOpen, setCalendarOpen] = useState(false);
   const [profile, setProfile] = useState<DeviceProfile>(() => ensureProfile());
   const [syncStatus, setSyncStatus] = useState<SyncStatus>('idle');
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
   const toastTimeout = useRef<number | null>(null);
   const syncTimeout = useRef<number | null>(null);
   const dateRef = useRef(date);
@@ -62,12 +65,20 @@ function App() {
     setLog(getDayLog(date));
   }, [date]);
 
+  useEffect(() => {
+    const online = () => setIsOnline(true);
+    const offline = () => setIsOnline(false);
+    window.addEventListener('online', online); window.addEventListener('offline', offline);
+    return () => { window.removeEventListener('online', online); window.removeEventListener('offline', offline); };
+  }, []);
+
   // Per-device accent colour: apply on mount and keep the theme-color meta
   // tinted correctly when the OS colour scheme flips.
   useEffect(() => {
     applyTheme(getTheme());
+    applyAppearanceMode(getAppearanceMode());
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    const onSchemeChange = () => applyTheme(getTheme());
+    const onSchemeChange = () => { applyTheme(getTheme()); applyAppearanceMode(getAppearanceMode()); };
     mq.addEventListener('change', onSchemeChange);
     return () => mq.removeEventListener('change', onSchemeChange);
   }, []);
@@ -152,11 +163,50 @@ function App() {
     scheduleSync();
   };
 
+  const handleCopyYesterday = () => {
+    const previous = getDayLog(addDays(date, -1));
+    if (!previous.entries.length) return;
+    if (!window.confirm(`Copy ${previous.entries.length} food${previous.entries.length === 1 ? '' : 's'} from the previous day?`)) return;
+    const updated = getDayLog(date);
+    const copies = previous.entries.map((entry) => ({ ...entry, id: crypto.randomUUID(), loggedAt: new Date().toISOString() }));
+    const next = { ...updated, entries: [...updated.entries, ...copies] };
+    saveDayLog(next);
+    setLog(next);
+    setRefreshKey((k) => k + 1);
+    copies.forEach(recordFoodUse);
+    scheduleSync();
+  };
+
   const handleQuickAdd = (entry: FoodEntry) => {
     const updated = addEntry(date, entry);
     setLog(updated);
     setRefreshKey((k) => k + 1);
     recordFoodUse(entry);
+    scheduleSync();
+  };
+
+  const handleDuplicate = (entry: FoodEntry) => {
+    const copy = { ...entry, id: crypto.randomUUID(), loggedAt: new Date().toISOString() };
+    const updated = addEntry(date, copy);
+    setLog(updated);
+    setRefreshKey((k) => k + 1);
+    recordFoodUse(copy);
+    scheduleSync();
+  };
+
+  const handleMove = (entry: FoodEntry, targetDate: string) => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(targetDate)) { window.alert('Please enter a date as YYYY-MM-DD.'); return; }
+    const parsed = new Date(`${targetDate}T12:00:00`);
+    if (Number.isNaN(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== targetDate) { window.alert('That date is not valid.'); return; }
+    if (targetDate === date) return;
+    const source = getDayLog(date);
+    const moved = source.entries.find((item) => item.id === entry.id);
+    if (!moved) return;
+    saveDayLog({ ...source, entries: source.entries.filter((item) => item.id !== entry.id) });
+    const destination = getDayLog(targetDate);
+    saveDayLog({ ...destination, entries: [...destination.entries, moved] });
+    setLog(getDayLog(date));
+    setRefreshKey((k) => k + 1);
     scheduleSync();
   };
 
@@ -262,6 +312,8 @@ function App() {
         />
       )}
 
+      {!isOnline && <div className="offline-banner" role="status">Offline — logs stay on this device; barcode lookup and cloud backup need internet.</div>}
+
       <DateNav date={date} onChange={setDate} onOpenCalendar={() => setCalendarOpen(true)} />
 
       <button
@@ -279,9 +331,9 @@ function App() {
         <div className="macro-pill">
           <div className="macro-pill-top">
             <span className="macro-dot protein" />
-            <span className="macro-value">{Math.round(totals.protein)}g</span>
+            <span className="macro-value">{goals.proteinGoal ? `${Math.max(0, Math.round(goals.proteinGoal - totals.protein))}g left` : `${Math.round(totals.protein)}g`}</span>
           </div>
-          <span className="macro-key">protein{goals.proteinGoal ? ` / ${goals.proteinGoal}g` : ''}</span>
+          <span className="macro-key">{goals.proteinGoal ? `${Math.round(totals.protein)}g eaten${totals.protein > goals.proteinGoal ? ` · ${Math.round(totals.protein-goals.proteinGoal)}g over` : ''}` : 'protein eaten · no goal'}</span>
           {macroPct(totals.protein, goals.proteinGoal) !== null && (
             <div className="macro-pill-track">
               <div className="macro-pill-fill protein" style={{ width: `${macroPct(totals.protein, goals.proteinGoal)}%` }} />
@@ -291,9 +343,9 @@ function App() {
         <div className="macro-pill">
           <div className="macro-pill-top">
             <span className="macro-dot carbs" />
-            <span className="macro-value">{Math.round(totals.carbs)}g</span>
+            <span className="macro-value">{goals.carbsGoal ? `${Math.max(0, Math.round(goals.carbsGoal - totals.carbs))}g left` : `${Math.round(totals.carbs)}g`}</span>
           </div>
-          <span className="macro-key">carbs{goals.carbsGoal ? ` / ${goals.carbsGoal}g` : ''}</span>
+          <span className="macro-key">{goals.carbsGoal ? `${Math.round(totals.carbs)}g eaten${totals.carbs > goals.carbsGoal ? ` · ${Math.round(totals.carbs-goals.carbsGoal)}g over` : ''}` : 'carbs eaten · no goal'}</span>
           {macroPct(totals.carbs, goals.carbsGoal) !== null && (
             <div className="macro-pill-track">
               <div className="macro-pill-fill carbs" style={{ width: `${macroPct(totals.carbs, goals.carbsGoal)}%` }} />
@@ -303,9 +355,9 @@ function App() {
         <div className="macro-pill">
           <div className="macro-pill-top">
             <span className="macro-dot fat" />
-            <span className="macro-value">{Math.round(totals.fat)}g</span>
+            <span className="macro-value">{goals.fatGoal ? `${Math.max(0, Math.round(goals.fatGoal - totals.fat))}g left` : `${Math.round(totals.fat)}g`}</span>
           </div>
-          <span className="macro-key">fat{goals.fatGoal ? ` / ${goals.fatGoal}g` : ''}</span>
+          <span className="macro-key">{goals.fatGoal ? `${Math.round(totals.fat)}g eaten${totals.fat > goals.fatGoal ? ` · ${Math.round(totals.fat-goals.fatGoal)}g over` : ''}` : 'fat eaten · no goal'}</span>
           {macroPct(totals.fat, goals.fatGoal) !== null && (
             <div className="macro-pill-track">
               <div className="macro-pill-fill fat" style={{ width: `${macroPct(totals.fat, goals.fatGoal)}%` }} />
@@ -325,9 +377,15 @@ function App() {
       />
 
       <section className="log-section">
-        <h2 className="section-title">Today's log</h2>
-        <FoodLog entries={log.entries} onRemove={(entry) => handleDelete(entry)} onEdit={setEditingEntry} />
+        <div className="log-title-row"><h2 className="section-title">Food log</h2><button type="button" className="link-btn" onClick={handleCopyYesterday}>Copy yesterday</button></div>
+        <FoodLog entries={log.entries} onRemove={(entry) => handleDelete(entry)} onEdit={setEditingEntry} onDuplicate={handleDuplicate} onMove={handleMove} />
       </section>
+
+      <MealTemplates entries={log.entries} onApply={(entries) => {
+        const copies = entries.map((entry) => ({ ...entry, id: crypto.randomUUID(), loggedAt: new Date().toISOString() }));
+        const updated = { ...getDayLog(date), entries: [...getDayLog(date).entries, ...copies] };
+        saveDayLog(updated); setLog(updated); setRefreshKey((k) => k + 1); copies.forEach(recordFoodUse); scheduleSync();
+      }} />
 
       <WeekSummary settings={settings} refreshKey={refreshKey} />
 

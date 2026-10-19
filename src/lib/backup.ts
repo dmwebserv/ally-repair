@@ -1,7 +1,8 @@
 import { getSettings, listDayLogs, LOG_PREFIX, saveDayLog } from './storage';
 import { ensureProfile } from './profile';
 import { getFoodStats, mergeFoodStats } from './favorites';
-import type { DayLog, FoodStat, UserSettings } from './types';
+import { getMealTemplates, mergeMealTemplates } from './mealTemplates';
+import type { DayLog, FoodStat, MealTemplate, UserSettings } from './types';
 
 export interface BackupData {
   exportedAt: string;
@@ -10,6 +11,7 @@ export interface BackupData {
   settings: UserSettings;
   favorites: FoodStat[];
   logs: DayLog[];
+  mealTemplates?: MealTemplate[];
 }
 
 export function buildBackup(): BackupData {
@@ -20,6 +22,7 @@ export function buildBackup(): BackupData {
     settings: getSettings(),
     favorites: getFoodStats(),
     logs: listDayLogs(),
+    mealTemplates: getMealTemplates(),
   };
 }
 
@@ -78,8 +81,10 @@ export function importBackup(json: string): ImportResult {
     }
   }
 
+  const foodStatsBefore = JSON.stringify(getFoodStats());
   const favoritesAdded = Array.isArray(data.favorites) ? mergeFoodStats(data.favorites) : 0;
-  if (favoritesAdded > 0) anyChanged = true;
+  if (favoritesAdded > 0 || JSON.stringify(getFoodStats()) !== foodStatsBefore) anyChanged = true;
+  if (Array.isArray(data.mealTemplates) && mergeMealTemplates(data.mealTemplates) > 0) anyChanged = true;
 
   return { entriesAdded, daysAffected, favoritesAdded, changed: anyChanged };
 }

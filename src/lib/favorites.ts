@@ -22,6 +22,16 @@ function normalizeName(name: string): string {
   return name.trim().toLowerCase();
 }
 
+function normalizeBarcode(code: string): string {
+  const trimmed = code.trim();
+  return /^0\d{12}$/.test(trimmed) ? trimmed.slice(1) : trimmed;
+}
+
+export function findFoodByBarcode(code: string): FoodStat | undefined {
+  const key = normalizeBarcode(code);
+  return getFoodStats().find((food) => food.barcode && normalizeBarcode(food.barcode) === key);
+}
+
 /** Call whenever a food is logged, so frequency-based suggestions stay current. */
 export function recordFoodUse(entry: FoodEntry): void {
   const name = entry.name.trim();
@@ -36,6 +46,9 @@ export function recordFoodUse(entry: FoodEntry): void {
     existing.carbs = entry.carbs;
     existing.fat = entry.fat;
     existing.servings = entry.servings;
+    if (entry.barcode) existing.barcode = entry.barcode;
+    if (entry.grams !== undefined) existing.grams = entry.grams;
+    if (entry.per100g !== undefined) existing.per100g = entry.per100g;
     existing.useCount += 1;
     existing.lastUsedAt = entry.loggedAt;
   } else {
@@ -47,6 +60,10 @@ export function recordFoodUse(entry: FoodEntry): void {
       carbs: entry.carbs,
       fat: entry.fat,
       servings: entry.servings,
+      barcode: entry.barcode,
+      grams: entry.grams,
+      per100g: entry.per100g,
+      note: entry.note,
       useCount: 1,
       lastUsedAt: entry.loggedAt,
       pinned: false,
@@ -93,6 +110,10 @@ export function pinByEntry(entry: FoodEntry): void {
       carbs: entry.carbs,
       fat: entry.fat,
       servings: entry.servings,
+      barcode: entry.barcode,
+      grams: entry.grams,
+      per100g: entry.per100g,
+      note: entry.note,
       useCount: 0,
       lastUsedAt: entry.loggedAt,
       pinned: true,
@@ -101,13 +122,18 @@ export function pinByEntry(entry: FoodEntry): void {
   saveFoodStats(stats);
 }
 
-/** Merges in stats from an imported backup, keeping existing ones untouched on name conflicts. */
+/** Merges saved foods from backups without overwriting local edits; fill missing barcode metadata. */
 export function mergeFoodStats(incoming: FoodStat[]): number {
   const stats = getFoodStats();
-  const existingNames = new Set(stats.map((s) => normalizeName(s.name)));
-  const toAdd = incoming.filter((s) => !existingNames.has(normalizeName(s.name)));
-  if (toAdd.length > 0) saveFoodStats([...stats, ...toAdd]);
-  return toAdd.length;
+  let changed = false;
+  const merged = [...stats];
+  for (const item of incoming) {
+    const found = merged.find((s) => normalizeName(s.name) === normalizeName(item.name));
+    if (!found) { merged.push(item); changed = true; }
+    else if (item.barcode && !found.barcode) { found.barcode = item.barcode; changed = true; }
+  }
+  if (changed) saveFoodStats(merged);
+  return merged.length - stats.length;
 }
 
 export function addManualFavorite(input: Omit<FoodStat, 'id' | 'useCount' | 'lastUsedAt' | 'pinned'>): FoodStat[] {
@@ -142,6 +168,10 @@ export function toFoodEntry(stat: FoodStat): FoodEntry {
     carbs: stat.carbs,
     fat: stat.fat,
     servings: stat.servings,
+    barcode: stat.barcode,
+    grams: stat.grams,
+    per100g: stat.per100g,
+    note: stat.note,
     loggedAt: new Date().toISOString(),
   };
 }

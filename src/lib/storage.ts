@@ -118,7 +118,7 @@ export function effectiveGoals(settings: UserSettings, isGymDay?: boolean): Effe
 export function dayTotals(log: DayLog) {
   return log.entries.reduce(
     (acc, e) => {
-      const mult = e.servings || 1;
+      const mult = (e.servings || 1) * (e.per100g && e.grams !== undefined ? e.grams / 100 : 1);
       acc.calories += e.calories * mult;
       acc.protein += (e.protein ?? 0) * mult;
       acc.carbs += (e.carbs ?? 0) * mult;

@@ -46,7 +46,8 @@ export function applyTheme(id: string): void {
   else root.setAttribute('data-theme', id);
 
   const preset = getPreset(id);
-  const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const mode = getAppearanceMode();
+  const dark = mode === 'dark' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? preset.dark : preset.light);
 }
 
@@ -59,4 +60,23 @@ export function setTheme(id: string): void {
     // Private mode etc. — still apply for this session.
   }
   applyTheme(id);
+}
+
+export type AppearanceMode = 'system' | 'light' | 'dark';
+export const APPEARANCE_KEY = 'nutrilog:appearance';
+export function getAppearanceMode(): AppearanceMode {
+  const stored = localStorage.getItem(APPEARANCE_KEY);
+  return stored === 'light' || stored === 'dark' ? stored : 'system';
+}
+export function setAppearanceMode(mode: AppearanceMode): void {
+  try { localStorage.setItem(APPEARANCE_KEY, mode); } catch { /* use current session */ }
+  applyAppearanceMode(mode);
+}
+export function applyAppearanceMode(mode: AppearanceMode = getAppearanceMode()): void {
+  const root = document.documentElement;
+  if (mode === 'system') root.removeAttribute('data-mode');
+  else root.setAttribute('data-mode', mode);
+  const dark = mode === 'dark' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const preset = getPreset(getTheme());
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? preset.dark : preset.light);
 }
