@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-21T12:21:01.045Z",
+  "exportedAt": "2026-10-21T12:21:22.904Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -317,8 +317,8 @@
       "carbs": 45,
       "fat": 20,
       "servings": 1,
-      "useCount": 3,
-      "lastUsedAt": "2026-09-30T12:35:30.014Z",
+      "useCount": 4,
+      "lastUsedAt": "2026-10-21T12:21:18.902Z",
       "pinned": false
     },
     {
@@ -2802,6 +2802,16 @@
           "servings": 1,
           "id": "7f28a92e-7fa7-4858-bba5-f50a61aa8b67",
           "loggedAt": "2026-10-21T12:20:43.686Z"
+        },
+        {
+          "id": "9b137445-7eec-4d42-ba50-9135f9aa01d7",
+          "name": "CORONATION CHICKEN WHITE BREAD",
+          "calories": 439,
+          "protein": 19,
+          "carbs": 45,
+          "fat": 20,
+          "servings": 1,
+          "loggedAt": "2026-10-21T12:21:18.902Z"
         }
       ]
     }
