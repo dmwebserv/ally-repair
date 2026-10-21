@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-21T12:22:46.005Z",
+  "exportedAt": "2026-10-21T18:39:40.230Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -883,6 +883,19 @@
       "servings": 1,
       "useCount": 2,
       "lastUsedAt": "2026-10-21T12:20:47.096Z",
+      "pinned": false
+    },
+    {
+      "id": "bbbcd9d5-e256-4aee-af22-55fbf456bee4",
+      "name": "chicken katsu curry with rice",
+      "calories": 698,
+      "protein": 21.5,
+      "carbs": 95,
+      "fat": 26.9,
+      "servings": 1,
+      "barcode": "5056297000006",
+      "useCount": 1,
+      "lastUsedAt": "2026-10-21T18:39:35.092Z",
       "pinned": false
     }
   ],
@@ -2822,6 +2835,17 @@
           "fat": 1.1,
           "servings": 1,
           "loggedAt": "2026-10-21T12:22:42.003Z"
+        },
+        {
+          "name": "chicken katsu curry with rice",
+          "calories": 698,
+          "protein": 21.5,
+          "carbs": 95,
+          "fat": 26.9,
+          "servings": 1,
+          "barcode": "5056297000006",
+          "id": "d39b4922-123c-4ca6-9090-8b1a3142c1e2",
+          "loggedAt": "2026-10-21T18:39:35.092Z"
         }
       ]
     }
