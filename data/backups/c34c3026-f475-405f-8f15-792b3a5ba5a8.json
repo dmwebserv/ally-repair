@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-21T12:21:22.904Z",
+  "exportedAt": "2026-10-21T12:22:46.005Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -103,8 +103,8 @@
       "carbs": 17,
       "fat": 1.1,
       "servings": 1,
-      "useCount": 2,
-      "lastUsedAt": "2026-09-09T12:07:21.583Z",
+      "useCount": 3,
+      "lastUsedAt": "2026-10-21T12:22:42.003Z",
       "pinned": true
     },
     {
@@ -2812,6 +2812,16 @@
           "fat": 20,
           "servings": 1,
           "loggedAt": "2026-10-21T12:21:18.902Z"
+        },
+        {
+          "id": "8cf02e81-99b3-4f53-9f0e-ba1eee2445af",
+          "name": "Chocolate Protein Shake",
+          "calories": 222,
+          "protein": 35,
+          "carbs": 17,
+          "fat": 1.1,
+          "servings": 1,
+          "loggedAt": "2026-10-21T12:22:42.003Z"
         }
       ]
     }
