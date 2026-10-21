@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-21T20:14:21.270Z",
+  "exportedAt": "2026-10-21T20:14:40.765Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -896,6 +896,19 @@
       "barcode": "5056297000006",
       "useCount": 1,
       "lastUsedAt": "2026-10-21T18:39:35.092Z",
+      "pinned": false
+    },
+    {
+      "id": "23b47736-c304-426f-b911-0d6168718aa6",
+      "name": "Yogurt Vanilla Flavour",
+      "calories": 145,
+      "protein": 20.4,
+      "carbs": 12.4,
+      "fat": 0.84,
+      "servings": 1,
+      "barcode": "4025500311445",
+      "useCount": 1,
+      "lastUsedAt": "2026-10-21T20:14:35.088Z",
       "pinned": false
     }
   ],
@@ -2846,6 +2859,17 @@
           "barcode": "5056297000006",
           "id": "d39b4922-123c-4ca6-9090-8b1a3142c1e2",
           "loggedAt": "2026-10-21T18:39:35.092Z"
+        },
+        {
+          "name": "Yogurt Vanilla Flavour",
+          "calories": 145,
+          "protein": 20.4,
+          "carbs": 12.4,
+          "fat": 0.84,
+          "servings": 1,
+          "barcode": "4025500311445",
+          "id": "9a9dc3a9-af2c-4969-bf3f-604607f44281",
+          "loggedAt": "2026-10-21T20:14:35.088Z"
         }
       ]
     }
