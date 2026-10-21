@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-21T12:19:37.205Z",
+  "exportedAt": "2026-10-21T12:20:51.097Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -871,6 +871,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-16T12:44:53.760Z",
+      "pinned": false
+    },
+    {
+      "id": "165435a1-a931-4627-b58a-2e7ee8455d5f",
+      "name": "Tikka Chicken",
+      "calories": 230.4,
+      "protein": 46.8,
+      "carbs": 4.5,
+      "fat": 2.16,
+      "servings": 1,
+      "useCount": 2,
+      "lastUsedAt": "2026-10-21T12:20:47.096Z",
       "pinned": false
     }
   ],
@@ -2780,6 +2792,26 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-10-21T12:19:33.203Z"
+        },
+        {
+          "name": "Tikka Chicken",
+          "calories": 230.4,
+          "protein": 46.8,
+          "carbs": 4.5,
+          "fat": 2.16,
+          "servings": 1,
+          "id": "7f28a92e-7fa7-4858-bba5-f50a61aa8b67",
+          "loggedAt": "2026-10-21T12:20:43.686Z"
+        },
+        {
+          "name": "Tikka Chicken",
+          "calories": 230.4,
+          "protein": 46.8,
+          "carbs": 4.5,
+          "fat": 2.16,
+          "servings": 1,
+          "id": "da1cd55c-7d47-4a93-8c5f-c99a4eb8c09d",
+          "loggedAt": "2026-10-21T12:20:47.096Z"
         }
       ]
     }
