@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-22T11:13:30.900Z",
+  "exportedAt": "2026-10-22T12:33:14.971Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -473,9 +473,10 @@
       "carbs": 44.2,
       "fat": 6.8,
       "servings": 1,
-      "useCount": 2,
-      "lastUsedAt": "2026-09-22T14:56:25.263Z",
-      "pinned": false
+      "useCount": 3,
+      "lastUsedAt": "2026-10-22T12:33:08.025Z",
+      "pinned": false,
+      "barcode": "03054130"
     },
     {
       "id": "ccd82b80-ee36-4ea0-8d7e-d6e661129cd1",
@@ -2919,6 +2920,17 @@
           "barcode": "10820339",
           "id": "f75fd661-53d3-43cb-9b0e-00eb0997c7db",
           "loggedAt": "2026-10-22T11:13:24.857Z"
+        },
+        {
+          "name": "Chicken & Sweetcorn",
+          "calories": 326,
+          "protein": 20.4,
+          "carbs": 44.2,
+          "fat": 6.8,
+          "servings": 1,
+          "barcode": "03054130",
+          "id": "7762615f-f20c-42ec-9cc5-c12f6314be9f",
+          "loggedAt": "2026-10-22T12:33:08.025Z"
         }
       ]
     }
