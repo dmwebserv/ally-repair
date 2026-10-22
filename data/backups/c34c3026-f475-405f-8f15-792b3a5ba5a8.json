@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-22T12:33:14.971Z",
+  "exportedAt": "2026-10-22T12:33:23.607Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -923,6 +923,19 @@
       "barcode": "10820339",
       "useCount": 1,
       "lastUsedAt": "2026-10-22T11:13:24.857Z",
+      "pinned": false
+    },
+    {
+      "id": "2e062eb3-acfc-4df1-bbe0-242d408f73fb",
+      "name": "White Choc Protein Shake",
+      "calories": 181,
+      "protein": 30,
+      "carbs": 14,
+      "fat": 0.5,
+      "servings": 1,
+      "barcode": "5060317323822",
+      "useCount": 1,
+      "lastUsedAt": "2026-10-22T12:33:18.580Z",
       "pinned": false
     }
   ],
@@ -2931,6 +2944,17 @@
           "barcode": "03054130",
           "id": "7762615f-f20c-42ec-9cc5-c12f6314be9f",
           "loggedAt": "2026-10-22T12:33:08.025Z"
+        },
+        {
+          "name": "White Choc Protein Shake",
+          "calories": 181,
+          "protein": 30,
+          "carbs": 14,
+          "fat": 0.5,
+          "servings": 1,
+          "barcode": "5060317323822",
+          "id": "e7131011-1f1c-48ca-8bda-5de3a1592602",
+          "loggedAt": "2026-10-22T12:33:18.580Z"
         }
       ]
     }
