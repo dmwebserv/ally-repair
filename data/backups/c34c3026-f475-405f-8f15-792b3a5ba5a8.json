@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-22T12:33:31.781Z",
+  "exportedAt": "2026-10-23T09:49:14.455Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -907,10 +907,10 @@
       "protein": 20.4,
       "carbs": 12.4,
       "fat": 0.84,
-      "servings": 1,
+      "servings": 2,
       "barcode": "4025500311445",
-      "useCount": 1,
-      "lastUsedAt": "2026-10-21T20:14:35.088Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-10-23T09:49:09.425Z",
       "pinned": false
     },
     {
@@ -2967,6 +2967,22 @@
           "barcode": "03340936",
           "id": "bea1537e-597d-4005-9f88-4952883f8ccd",
           "loggedAt": "2026-10-22T12:33:26.753Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "entries": [
+        {
+          "name": "Yogurt Vanilla Flavour",
+          "calories": 145,
+          "protein": 20.4,
+          "carbs": 12.4,
+          "fat": 0.84,
+          "servings": 2,
+          "barcode": "4025500311445",
+          "id": "62aae557-936e-48d0-a237-82893cd5aa19",
+          "loggedAt": "2026-10-23T09:49:09.425Z"
         }
       ]
     }
