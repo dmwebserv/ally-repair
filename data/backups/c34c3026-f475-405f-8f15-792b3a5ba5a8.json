@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-23T12:46:58.073Z",
+  "exportedAt": "2026-10-23T12:47:33.702Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -937,6 +937,19 @@
       "barcode": "5060317323822",
       "useCount": 1,
       "lastUsedAt": "2026-10-22T12:33:18.580Z",
+      "pinned": false
+    },
+    {
+      "id": "d07d02da-f084-45e3-a98d-04d339a51258",
+      "name": "Christmas Wrap",
+      "calories": 608,
+      "protein": 23.1,
+      "carbs": 60.3,
+      "fat": 29.7,
+      "servings": 1,
+      "barcode": "5010525356624",
+      "useCount": 1,
+      "lastUsedAt": "2026-10-23T12:47:28.654Z",
       "pinned": false
     }
   ],
@@ -3005,6 +3018,17 @@
           "servings": 1,
           "barcode": "03340936",
           "loggedAt": "2026-10-23T12:46:54.065Z"
+        },
+        {
+          "name": "Christmas Wrap",
+          "calories": 608,
+          "protein": 23.1,
+          "carbs": 60.3,
+          "fat": 29.7,
+          "servings": 1,
+          "barcode": "5010525356624",
+          "id": "52284219-161b-41e4-a48e-1c1a5e8a1b98",
+          "loggedAt": "2026-10-23T12:47:28.654Z"
         }
       ]
     }
