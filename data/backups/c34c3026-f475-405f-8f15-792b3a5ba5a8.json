@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-23T12:47:33.702Z",
+  "exportedAt": "2026-10-23T12:53:44.929Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -950,6 +950,19 @@
       "barcode": "5010525356624",
       "useCount": 1,
       "lastUsedAt": "2026-10-23T12:47:28.654Z",
+      "pinned": false
+    },
+    {
+      "id": "e953f356-b648-477b-a94d-7254ed4ca15a",
+      "name": "258 PROTEIN müller X MYPROTEIN SHAKE CHOCOLATE FLA",
+      "calories": 186,
+      "protein": 25,
+      "carbs": 19,
+      "fat": 0.8,
+      "servings": 1,
+      "barcode": "4025500297107",
+      "useCount": 1,
+      "lastUsedAt": "2026-10-23T12:53:39.734Z",
       "pinned": false
     }
   ],
@@ -3029,6 +3042,17 @@
           "barcode": "5010525356624",
           "id": "52284219-161b-41e4-a48e-1c1a5e8a1b98",
           "loggedAt": "2026-10-23T12:47:28.654Z"
+        },
+        {
+          "name": "258 PROTEIN müller X MYPROTEIN SHAKE CHOCOLATE FLA",
+          "calories": 186,
+          "protein": 25,
+          "carbs": 19,
+          "fat": 0.8,
+          "servings": 1,
+          "barcode": "4025500297107",
+          "id": "8fc43d61-4840-4e4c-9eb6-3ed9eb3c6620",
+          "loggedAt": "2026-10-23T12:53:39.734Z"
         }
       ]
     }
