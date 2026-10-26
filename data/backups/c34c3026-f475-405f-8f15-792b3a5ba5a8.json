@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-26T13:53:20.570Z",
+  "exportedAt": "2026-10-26T13:53:24.879Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -247,8 +247,8 @@
       "carbs": 1.44,
       "fat": 7.65,
       "servings": 1,
-      "useCount": 10,
-      "lastUsedAt": "2026-10-23T12:46:54.065Z",
+      "useCount": 11,
+      "lastUsedAt": "2026-10-26T13:53:20.877Z",
       "pinned": true,
       "barcode": "03340936"
     },
@@ -3070,6 +3070,17 @@
           "barcode": "5054402849366",
           "id": "8064d5d8-ad4e-47ee-92e2-e2423d90cb3b",
           "loggedAt": "2026-10-26T13:53:09.072Z"
+        },
+        {
+          "id": "521aea9b-8ca4-4d89-a949-22d91f726a28",
+          "name": "EGG PROTEIN POT",
+          "calories": 121,
+          "protein": 11.3,
+          "carbs": 1.44,
+          "fat": 7.65,
+          "servings": 1,
+          "barcode": "03340936",
+          "loggedAt": "2026-10-26T13:53:20.877Z"
         }
       ]
     }
