@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-26T20:41:44.251Z",
+  "exportedAt": "2026-10-26T20:42:16.977Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -194,13 +194,13 @@
     {
       "id": "3add06f5-a9f7-434a-87c5-c13d2a795b4d",
       "name": "Roasted Chicken Breast Chunks",
-      "calories": 48.8,
+      "calories": 101,
       "protein": 23.2,
       "carbs": 0.8,
       "fat": 0.4,
       "servings": 1,
-      "useCount": 2,
-      "lastUsedAt": "2026-10-26T20:41:38.953Z",
+      "useCount": 3,
+      "lastUsedAt": "2026-10-26T20:42:12.577Z",
       "pinned": false,
       "barcode": "4061461647353"
     },
@@ -3114,6 +3114,17 @@
           "barcode": "4061461647353",
           "id": "0fa783ea-2154-477b-9d01-89d24ff7377e",
           "loggedAt": "2026-10-26T20:41:38.953Z"
+        },
+        {
+          "name": "Roasted Chicken Breast Chunks",
+          "calories": 101,
+          "protein": 23.2,
+          "carbs": 0.8,
+          "fat": 0.4,
+          "servings": 1,
+          "barcode": "4061461647353",
+          "id": "c2451365-8b42-44fd-8f7f-6e52e53f7a88",
+          "loggedAt": "2026-10-26T20:42:12.577Z"
         }
       ]
     }
