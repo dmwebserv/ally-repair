@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-26T20:53:08.089Z",
+  "exportedAt": "2026-10-26T20:54:03.487Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -990,6 +990,18 @@
       "servings": 2,
       "useCount": 1,
       "lastUsedAt": "2026-10-26T20:52:45.285Z",
+      "pinned": false
+    },
+    {
+      "id": "a0ffb453-5b0e-47f1-8ea6-958d38b9f7c9",
+      "name": "Canned Beans",
+      "calories": 168,
+      "protein": 10,
+      "carbs": 32.1,
+      "fat": 0.7,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-26T20:53:59.291Z",
       "pinned": false
     }
   ],
@@ -3171,6 +3183,16 @@
           "servings": 2,
           "id": "f4ca8c19-7949-451b-8835-1aa30bde1c0e",
           "loggedAt": "2026-10-26T20:52:45.285Z"
+        },
+        {
+          "name": "Canned Beans",
+          "calories": 168,
+          "protein": 10,
+          "carbs": 32.1,
+          "fat": 0.7,
+          "servings": 1,
+          "id": "1d8deb42-146d-4a9a-8aa0-678276be822d",
+          "loggedAt": "2026-10-26T20:53:59.291Z"
         }
       ]
     }
