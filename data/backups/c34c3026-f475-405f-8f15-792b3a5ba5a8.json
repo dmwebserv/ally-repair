@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-26T20:48:58.720Z",
+  "exportedAt": "2026-10-26T20:52:50.528Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -978,6 +978,18 @@
       "barcode": "4061459436792",
       "useCount": 1,
       "lastUsedAt": "2026-10-26T20:48:53.699Z",
+      "pinned": false
+    },
+    {
+      "id": "11696801-fb1a-49f2-961f-2b7f06933d33",
+      "name": "Seeds Snack",
+      "calories": 113,
+      "protein": 4.1,
+      "carbs": 19.5,
+      "fat": 2,
+      "servings": 2,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-26T20:52:45.285Z",
       "pinned": false
     }
   ],
@@ -3149,6 +3161,16 @@
           "barcode": "4061459436792",
           "id": "e43b5e81-67d0-4fa6-8be1-d835dd9482c6",
           "loggedAt": "2026-10-26T20:48:53.699Z"
+        },
+        {
+          "name": "Seeds Snack",
+          "calories": 113,
+          "protein": 4.1,
+          "carbs": 19.5,
+          "fat": 2,
+          "servings": 2,
+          "id": "f4ca8c19-7949-451b-8835-1aa30bde1c0e",
+          "loggedAt": "2026-10-26T20:52:45.285Z"
         }
       ]
     }
