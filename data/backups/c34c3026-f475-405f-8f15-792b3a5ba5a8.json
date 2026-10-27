@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-26T20:54:03.487Z",
+  "exportedAt": "2026-10-27T09:38:24.107Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -273,8 +273,8 @@
       "carbs": 16.4,
       "fat": 4.6,
       "servings": 1,
-      "useCount": 18,
-      "lastUsedAt": "2026-10-26T13:53:33.896Z",
+      "useCount": 19,
+      "lastUsedAt": "2026-10-27T09:38:20.105Z",
       "pinned": true
     },
     {
@@ -3193,6 +3193,21 @@
           "servings": 1,
           "id": "1d8deb42-146d-4a9a-8aa0-678276be822d",
           "loggedAt": "2026-10-26T20:53:59.291Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "entries": [
+        {
+          "id": "d95c6c68-e28c-4cfa-be08-d4c9a0edb071",
+          "name": "Choc Cereal Yog",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-10-27T09:38:20.105Z"
         }
       ]
     }
