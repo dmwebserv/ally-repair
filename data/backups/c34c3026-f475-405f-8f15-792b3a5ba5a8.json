@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-27T09:38:24.107Z",
+  "exportedAt": "2026-10-27T09:38:50.591Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1002,6 +1002,18 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-26T20:53:59.291Z",
+      "pinned": false
+    },
+    {
+      "id": "abaa338e-1d36-463a-a84e-c233906237e5",
+      "name": "Cheese A Peel",
+      "calories": 62,
+      "protein": 5.3,
+      "carbs": 0.5,
+      "fat": 4.3,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-27T09:38:45.544Z",
       "pinned": false
     }
   ],
@@ -3208,6 +3220,16 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-10-27T09:38:20.105Z"
+        },
+        {
+          "name": "Cheese A Peel",
+          "calories": 62,
+          "protein": 5.3,
+          "carbs": 0.5,
+          "fat": 4.3,
+          "servings": 1,
+          "id": "eb894353-b47f-41fb-8e3b-516ff942974e",
+          "loggedAt": "2026-10-27T09:38:45.544Z"
         }
       ]
     }
