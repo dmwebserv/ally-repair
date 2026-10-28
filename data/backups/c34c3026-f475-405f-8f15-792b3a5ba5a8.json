@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-28T10:16:40.747Z",
+  "exportedAt": "2026-10-28T13:44:42.222Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1027,6 +1027,19 @@
       "barcode": "4025500311384",
       "useCount": 1,
       "lastUsedAt": "2026-10-28T08:27:31.874Z",
+      "pinned": false
+    },
+    {
+      "id": "67710ecc-d4c5-42cf-a4c4-0546e53fd5c2",
+      "name": "Grenade High Protein Oreo",
+      "calories": 136,
+      "protein": 12,
+      "carbs": 12,
+      "fat": 6,
+      "servings": 1,
+      "barcode": "5060811384084",
+      "useCount": 1,
+      "lastUsedAt": "2026-10-28T13:44:37.242Z",
       "pinned": false
     }
   ],
@@ -3299,6 +3312,17 @@
           "fat": 4.3,
           "servings": 1,
           "loggedAt": "2026-10-28T10:16:36.743Z"
+        },
+        {
+          "name": "Grenade High Protein Oreo",
+          "calories": 136,
+          "protein": 12,
+          "carbs": 12,
+          "fat": 6,
+          "servings": 1,
+          "barcode": "5060811384084",
+          "id": "99a36ddc-1439-440e-b8ae-414697a5d01e",
+          "loggedAt": "2026-10-28T13:44:37.242Z"
         }
       ]
     }
