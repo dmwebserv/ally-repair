@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-27T14:10:36.019Z",
+  "exportedAt": "2026-10-28T08:27:36.840Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1014,6 +1014,19 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-27T09:38:45.544Z",
+      "pinned": false
+    },
+    {
+      "id": "640648f4-02cb-4b7d-a4c7-c3fdfec549de",
+      "name": "Myprotein Strawberry Yogurt",
+      "calories": 143,
+      "protein": 20.2,
+      "carbs": 12,
+      "fat": 0.84,
+      "servings": 1,
+      "barcode": "4025500311384",
+      "useCount": 1,
+      "lastUsedAt": "2026-10-28T08:27:31.874Z",
       "pinned": false
     }
   ],
@@ -3260,6 +3273,22 @@
           "fat": 1.1,
           "servings": 1,
           "loggedAt": "2026-10-27T14:10:32.018Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "entries": [
+        {
+          "name": "Myprotein Strawberry Yogurt",
+          "calories": 143,
+          "protein": 20.2,
+          "carbs": 12,
+          "fat": 0.84,
+          "servings": 1,
+          "barcode": "4025500311384",
+          "id": "39e11296-9a6f-42e2-8473-dc2d7ce7b6c0",
+          "loggedAt": "2026-10-28T08:27:31.874Z"
         }
       ]
     }
