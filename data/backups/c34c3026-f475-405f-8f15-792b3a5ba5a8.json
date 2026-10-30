@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-30T13:02:41.191Z",
+  "exportedAt": "2026-10-30T13:03:38.352Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1040,6 +1040,19 @@
       "barcode": "5060811384084",
       "useCount": 1,
       "lastUsedAt": "2026-10-28T13:44:37.242Z",
+      "pinned": false
+    },
+    {
+      "id": "44207ed2-f3ef-472d-90e6-d172d2638d7b",
+      "name": "Cooked Chicken Breast Slices",
+      "calories": 92,
+      "protein": 19.4,
+      "carbs": 0.88,
+      "fat": 1.12,
+      "servings": 3,
+      "barcode": "4088600553153",
+      "useCount": 1,
+      "lastUsedAt": "2026-10-30T13:03:33.323Z",
       "pinned": false
     }
   ],
@@ -3417,6 +3430,17 @@
           "servings": 1,
           "barcode": "4025500311384",
           "loggedAt": "2026-10-30T13:02:37.189Z"
+        },
+        {
+          "name": "Cooked Chicken Breast Slices",
+          "calories": 92,
+          "protein": 19.4,
+          "carbs": 0.88,
+          "fat": 1.12,
+          "servings": 3,
+          "barcode": "4088600553153",
+          "id": "a4fda354-3741-4e48-a938-a608f12d8c05",
+          "loggedAt": "2026-10-30T13:03:33.323Z"
         }
       ]
     }
