@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-30T13:03:38.352Z",
+  "exportedAt": "2026-10-30T13:05:00.068Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1053,6 +1053,18 @@
       "barcode": "4088600553153",
       "useCount": 1,
       "lastUsedAt": "2026-10-30T13:03:33.323Z",
+      "pinned": false
+    },
+    {
+      "id": "24b03af7-fad0-46c3-93c8-81e7c4d42cb0",
+      "name": "Sweetcorn",
+      "calories": 70,
+      "protein": 2,
+      "carbs": 12,
+      "fat": 2,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-30T13:04:55.070Z",
       "pinned": false
     }
   ],
@@ -3441,6 +3453,16 @@
           "barcode": "4088600553153",
           "id": "a4fda354-3741-4e48-a938-a608f12d8c05",
           "loggedAt": "2026-10-30T13:03:33.323Z"
+        },
+        {
+          "name": "Sweetcorn",
+          "calories": 70,
+          "protein": 2,
+          "carbs": 12,
+          "fat": 2,
+          "servings": 1,
+          "id": "075d1686-c38a-4758-b3ea-1642cfe8ceef",
+          "loggedAt": "2026-10-30T13:04:55.070Z"
         }
       ]
     }
