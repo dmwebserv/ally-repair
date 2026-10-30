@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-30T13:05:00.068Z",
+  "exportedAt": "2026-10-30T13:05:10.054Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1065,6 +1065,15 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-30T13:04:55.070Z",
+      "pinned": false
+    },
+    {
+      "id": "dc9892e3-c418-4c25-95e3-fd20f2df8d69",
+      "name": "Mayo",
+      "calories": 80,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-10-30T13:05:05.322Z",
       "pinned": false
     }
   ],
@@ -3463,6 +3472,13 @@
           "servings": 1,
           "id": "075d1686-c38a-4758-b3ea-1642cfe8ceef",
           "loggedAt": "2026-10-30T13:04:55.070Z"
+        },
+        {
+          "name": "Mayo",
+          "calories": 80,
+          "servings": 1,
+          "id": "9df011cf-3427-4dab-9023-8b1b4f4e65ee",
+          "loggedAt": "2026-10-30T13:05:05.322Z"
         }
       ]
     }
