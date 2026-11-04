@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-04T12:35:09.287Z",
+  "exportedAt": "2026-11-04T12:35:32.994Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1074,6 +1074,19 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-10-30T13:05:05.322Z",
+      "pinned": false
+    },
+    {
+      "id": "e16a1765-99f1-440f-84eb-ea01c1488a70",
+      "name": "High Protein Bar",
+      "calories": 153,
+      "protein": 16,
+      "carbs": 14,
+      "fat": 5.1,
+      "servings": 1,
+      "barcode": "10820360",
+      "useCount": 1,
+      "lastUsedAt": "2026-11-04T12:35:27.943Z",
       "pinned": false
     }
   ],
@@ -3494,6 +3507,17 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-11-04T12:35:05.286Z"
+        },
+        {
+          "name": "High Protein Bar",
+          "calories": 153,
+          "protein": 16,
+          "carbs": 14,
+          "fat": 5.1,
+          "servings": 1,
+          "barcode": "10820360",
+          "id": "f6ea95b7-0044-4920-97f1-b29ef285fb9f",
+          "loggedAt": "2026-11-04T12:35:27.943Z"
         }
       ]
     }
