@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-04T13:22:37.641Z",
+  "exportedAt": "2026-11-04T13:48:19.058Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1088,6 +1088,19 @@
       "barcode": "10820360",
       "useCount": 1,
       "lastUsedAt": "2026-11-04T12:35:27.943Z",
+      "pinned": false
+    },
+    {
+      "id": "2cdb70f3-1c1a-44f9-9d6b-029c80bf18c8",
+      "name": "CHICKEN BACON & LETTUCE",
+      "calories": 421,
+      "protein": 28.7,
+      "carbs": 45,
+      "fat": 13.3,
+      "servings": 1,
+      "barcode": "03038536",
+      "useCount": 1,
+      "lastUsedAt": "2026-11-04T13:48:13.983Z",
       "pinned": false
     }
   ],
@@ -3530,6 +3543,17 @@
           "barcode": "5000342000275",
           "id": "0a2afa1f-d0cd-47b1-9a49-5c36e611cf51",
           "loggedAt": "2026-11-04T13:22:32.609Z"
+        },
+        {
+          "name": "CHICKEN BACON & LETTUCE",
+          "calories": 421,
+          "protein": 28.7,
+          "carbs": 45,
+          "fat": 13.3,
+          "servings": 1,
+          "barcode": "03038536",
+          "id": "d4e611a7-2b02-4c85-adce-73736132e38f",
+          "loggedAt": "2026-11-04T13:48:13.983Z"
         }
       ]
     }
