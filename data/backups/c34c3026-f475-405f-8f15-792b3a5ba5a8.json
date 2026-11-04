@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-04T13:48:19.058Z",
+  "exportedAt": "2026-11-04T14:04:43.874Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -489,9 +489,10 @@
       "carbs": 16.5,
       "fat": 0.99,
       "servings": 1,
-      "useCount": 3,
-      "lastUsedAt": "2026-09-29T13:51:34.753Z",
-      "pinned": false
+      "useCount": 4,
+      "lastUsedAt": "2026-11-04T14:04:37.641Z",
+      "pinned": false,
+      "barcode": "5060075672774"
     },
     {
       "id": "0027a8c8-273c-443c-923e-7b6a02e0f5b2",
@@ -3554,6 +3555,17 @@
           "barcode": "03038536",
           "id": "d4e611a7-2b02-4c85-adce-73736132e38f",
           "loggedAt": "2026-11-04T13:48:13.983Z"
+        },
+        {
+          "name": "For Goodness Shakes Protein Chocolate",
+          "calories": 218,
+          "protein": 35,
+          "carbs": 16.5,
+          "fat": 0.99,
+          "servings": 1,
+          "barcode": "5060075672774",
+          "id": "f065277f-8140-493c-914a-ca46775a7b01",
+          "loggedAt": "2026-11-04T14:04:37.641Z"
         }
       ]
     }
