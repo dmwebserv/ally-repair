@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-04T12:35:32.994Z",
+  "exportedAt": "2026-11-04T13:22:37.641Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -134,14 +134,15 @@
     {
       "id": "40c559be-725a-4b99-9ed1-bd5a091dcb7e",
       "name": "Slow Roasted Chicken Bites",
-      "calories": 95,
-      "protein": 9,
-      "carbs": 2.5,
-      "fat": 6,
+      "calories": 76,
+      "protein": 8.4,
+      "carbs": 1.5,
+      "fat": 0.7,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-09-03T11:48:31.860Z",
-      "pinned": false
+      "useCount": 2,
+      "lastUsedAt": "2026-11-04T13:22:32.609Z",
+      "pinned": false,
+      "barcode": "5000342000275"
     },
     {
       "id": "b2b6e2d5-bf92-4479-8cb2-53c8d87714bb",
@@ -3518,6 +3519,17 @@
           "barcode": "10820360",
           "id": "f6ea95b7-0044-4920-97f1-b29ef285fb9f",
           "loggedAt": "2026-11-04T12:35:27.943Z"
+        },
+        {
+          "name": "Slow Roasted Chicken Bites",
+          "calories": 76,
+          "protein": 8.4,
+          "carbs": 1.5,
+          "fat": 0.7,
+          "servings": 1,
+          "barcode": "5000342000275",
+          "id": "0a2afa1f-d0cd-47b1-9a49-5c36e611cf51",
+          "loggedAt": "2026-11-04T13:22:32.609Z"
         }
       ]
     }
