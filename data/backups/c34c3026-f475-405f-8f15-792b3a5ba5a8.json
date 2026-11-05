@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-05T13:27:55.208Z",
+  "exportedAt": "2026-11-05T13:28:02.045Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -926,8 +926,8 @@
       "fat": 3.5,
       "servings": 1,
       "barcode": "10820339",
-      "useCount": 4,
-      "lastUsedAt": "2026-10-30T13:02:12.521Z",
+      "useCount": 5,
+      "lastUsedAt": "2026-11-05T13:27:58.043Z",
       "pinned": false
     },
     {
@@ -3581,6 +3581,17 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-11-05T13:27:51.206Z"
+        },
+        {
+          "id": "62642001-658b-4609-8f36-5154b48d261e",
+          "name": "Milk Chocolate Jaffa Orange Protein Bar",
+          "calories": 140,
+          "protein": 15,
+          "carbs": 15,
+          "fat": 3.5,
+          "servings": 1,
+          "barcode": "10820339",
+          "loggedAt": "2026-11-05T13:27:58.043Z"
         }
       ]
     }
