@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-05T13:28:02.045Z",
+  "exportedAt": "2026-11-06T15:03:59.131Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -103,8 +103,8 @@
       "carbs": 17,
       "fat": 1.1,
       "servings": 1,
-      "useCount": 4,
-      "lastUsedAt": "2026-10-27T14:10:32.018Z",
+      "useCount": 5,
+      "lastUsedAt": "2026-11-06T15:03:55.129Z",
       "pinned": true
     },
     {
@@ -274,8 +274,8 @@
       "carbs": 16.4,
       "fat": 4.6,
       "servings": 1,
-      "useCount": 23,
-      "lastUsedAt": "2026-11-05T13:27:51.206Z",
+      "useCount": 24,
+      "lastUsedAt": "2026-11-06T15:03:51.025Z",
       "pinned": true
     },
     {
@@ -659,8 +659,8 @@
       "carbs": 39.9,
       "fat": 10.7,
       "servings": 1,
-      "useCount": 7,
-      "lastUsedAt": "2026-10-29T16:26:57.642Z",
+      "useCount": 8,
+      "lastUsedAt": "2026-11-06T15:03:52.100Z",
       "pinned": true
     },
     {
@@ -3592,6 +3592,41 @@
           "servings": 1,
           "barcode": "10820339",
           "loggedAt": "2026-11-05T13:27:58.043Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "entries": [
+        {
+          "id": "7b65db53-fb9f-43b1-b843-abeab75a7350",
+          "name": "Choc Cereal Yog",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-11-06T15:03:51.025Z"
+        },
+        {
+          "id": "8c0b72be-8664-4181-926d-d8419157bfcb",
+          "name": "Katsu Noodles",
+          "calories": 415,
+          "protein": 35.3,
+          "carbs": 39.9,
+          "fat": 10.7,
+          "servings": 1,
+          "loggedAt": "2026-11-06T15:03:52.100Z"
+        },
+        {
+          "id": "b9456294-d8a8-42aa-aabc-78651172a16a",
+          "name": "Chocolate Protein Shake",
+          "calories": 222,
+          "protein": 35,
+          "carbs": 17,
+          "fat": 1.1,
+          "servings": 1,
+          "loggedAt": "2026-11-06T15:03:55.129Z"
         }
       ]
     }
