@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-09T13:31:26.297Z",
+  "exportedAt": "2026-11-09T19:28:32.692Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -599,8 +599,8 @@
       "carbs": 28.5,
       "fat": 0.4,
       "servings": 1,
-      "useCount": 9,
-      "lastUsedAt": "2026-10-29T16:27:00.487Z",
+      "useCount": 10,
+      "lastUsedAt": "2026-11-09T19:28:28.689Z",
       "pinned": true
     },
     {
@@ -3688,6 +3688,16 @@
           "barcode": "4061461647353",
           "id": "67489d19-2b64-485c-b9b2-50ce37c8e244",
           "loggedAt": "2026-11-09T13:31:21.168Z"
+        },
+        {
+          "id": "2ae40478-14eb-4dd7-8712-e33e1879bb99",
+          "name": "Large Banana",
+          "calories": 111,
+          "protein": 1.4,
+          "carbs": 28.5,
+          "fat": 0.4,
+          "servings": 1,
+          "loggedAt": "2026-11-09T19:28:28.689Z"
         }
       ]
     }
