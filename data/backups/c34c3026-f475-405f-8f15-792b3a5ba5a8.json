@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-09T11:13:18.028Z",
+  "exportedAt": "2026-11-09T13:31:15.502Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1102,6 +1102,19 @@
       "barcode": "03038536",
       "useCount": 1,
       "lastUsedAt": "2026-11-04T13:48:13.983Z",
+      "pinned": false
+    },
+    {
+      "id": "492dbdb8-8121-4745-a0ee-99a0f129bf90",
+      "name": "Chicken & Sweet corn with Seasoned Mayo - Eat Go",
+      "calories": 356,
+      "protein": 22,
+      "carbs": 47.6,
+      "fat": 7.6,
+      "servings": 1,
+      "barcode": "4088600179698",
+      "useCount": 2,
+      "lastUsedAt": "2026-11-09T13:31:11.500Z",
       "pinned": false
     }
   ],
@@ -3642,6 +3655,28 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-11-09T11:13:14.026Z"
+        },
+        {
+          "name": "Chicken & Sweet corn with Seasoned Mayo - Eat Go",
+          "calories": 356,
+          "protein": 22,
+          "carbs": 47.6,
+          "fat": 7.6,
+          "servings": 1,
+          "barcode": "4088600179698",
+          "id": "22f6c84b-670a-44df-b123-b534ff712b30",
+          "loggedAt": "2026-11-09T13:31:07.584Z"
+        },
+        {
+          "name": "Chicken & Sweet corn with Seasoned Mayo - Eat Go",
+          "calories": 356,
+          "protein": 22,
+          "carbs": 47.6,
+          "fat": 7.6,
+          "servings": 1,
+          "barcode": "4088600179698",
+          "id": "04367ed0-2a7f-48ac-bac6-2916da22c3da",
+          "loggedAt": "2026-11-09T13:31:11.500Z"
         }
       ]
     }
