@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-10T13:15:39.262Z",
+  "exportedAt": "2026-11-10T13:16:20.314Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1129,6 +1129,19 @@
       "barcode": "4088600040905",
       "useCount": 1,
       "lastUsedAt": "2026-11-10T13:15:34.030Z",
+      "pinned": false
+    },
+    {
+      "id": "1ddd5e29-b7c8-4d99-9c78-9162c0f87bc5",
+      "name": "Soft Thick White Toastie",
+      "calories": 118,
+      "protein": 4.05,
+      "carbs": 23.9,
+      "fat": 0.35,
+      "servings": 2,
+      "barcode": "4088600253305",
+      "useCount": 1,
+      "lastUsedAt": "2026-11-10T13:16:13.987Z",
       "pinned": false
     }
   ],
@@ -3749,6 +3762,17 @@
           "barcode": "4088600040905",
           "id": "f9ad4cb5-b4bb-44c6-a767-c84dcfa71a58",
           "loggedAt": "2026-11-10T13:15:34.030Z"
+        },
+        {
+          "name": "Soft Thick White Toastie",
+          "calories": 118,
+          "protein": 4.05,
+          "carbs": 23.9,
+          "fat": 0.35,
+          "servings": 2,
+          "barcode": "4088600253305",
+          "id": "540fe847-2364-4ab5-a968-f42f3a3047b7",
+          "loggedAt": "2026-11-10T13:16:13.987Z"
         }
       ]
     }
