@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-10T13:15:27.782Z",
+  "exportedAt": "2026-11-10T13:15:39.262Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1116,6 +1116,19 @@
       "barcode": "4088600179698",
       "useCount": 2,
       "lastUsedAt": "2026-11-09T13:31:11.500Z",
+      "pinned": false
+    },
+    {
+      "id": "bcdc3371-7fd4-41f4-97f2-fba107bb3edb",
+      "name": "British Cooked Chicken",
+      "calories": 12.9,
+      "protein": 2.23,
+      "carbs": 0.253,
+      "fat": 0.319,
+      "servings": 10,
+      "barcode": "4088600040905",
+      "useCount": 1,
+      "lastUsedAt": "2026-11-10T13:15:34.030Z",
       "pinned": false
     }
   ],
@@ -3725,6 +3738,17 @@
           "fat": 0.6,
           "servings": 1,
           "loggedAt": "2026-11-10T13:15:23.781Z"
+        },
+        {
+          "name": "British Cooked Chicken",
+          "calories": 12.9,
+          "protein": 2.23,
+          "carbs": 0.253,
+          "fat": 0.319,
+          "servings": 10,
+          "barcode": "4088600040905",
+          "id": "f9ad4cb5-b4bb-44c6-a767-c84dcfa71a58",
+          "loggedAt": "2026-11-10T13:15:34.030Z"
         }
       ]
     }
