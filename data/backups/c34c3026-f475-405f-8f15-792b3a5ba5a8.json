@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-10T13:18:25.977Z",
+  "exportedAt": "2026-11-10T13:18:41.584Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -183,13 +183,13 @@
     {
       "id": "a12eae0f-aae1-457c-aafd-7d809e7db30e",
       "name": "PROTEIN EGG SNACK POT",
-      "calories": 143,
-      "protein": 14.1,
+      "calories": 114,
+      "protein": 11,
       "carbs": 0,
-      "fat": 9.6,
+      "fat": 8.8,
       "servings": 1,
-      "useCount": 3,
-      "lastUsedAt": "2026-11-10T13:18:20.196Z",
+      "useCount": 4,
+      "lastUsedAt": "2026-11-10T13:18:36.488Z",
       "pinned": false,
       "barcode": "4069365353837"
     },
@@ -3808,6 +3808,17 @@
           "barcode": "4069365353837",
           "id": "6669e535-86bd-4779-bac3-9e16e5e44999",
           "loggedAt": "2026-11-10T13:18:20.196Z"
+        },
+        {
+          "name": "PROTEIN EGG SNACK POT",
+          "calories": 114,
+          "protein": 11,
+          "carbs": 0,
+          "fat": 8.8,
+          "servings": 1,
+          "barcode": "4069365353837",
+          "id": "921508b8-1685-4047-8200-a3d22e775835",
+          "loggedAt": "2026-11-10T13:18:36.488Z"
         }
       ]
     }
