@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-10T13:16:52.149Z",
+  "exportedAt": "2026-11-10T13:17:27.450Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1073,11 +1073,14 @@
     {
       "id": "dc9892e3-c418-4c25-95e3-fd20f2df8d69",
       "name": "Mayo",
-      "calories": 80,
+      "calories": 75,
       "servings": 1,
-      "useCount": 1,
-      "lastUsedAt": "2026-10-30T13:05:05.322Z",
-      "pinned": false
+      "useCount": 2,
+      "lastUsedAt": "2026-11-10T13:17:22.583Z",
+      "pinned": false,
+      "protein": 0,
+      "carbs": 1.6,
+      "fat": 7.6
     },
     {
       "id": "e16a1765-99f1-440f-84eb-ea01c1488a70",
@@ -3783,6 +3786,16 @@
           "servings": 1,
           "id": "2c007d58-3a89-4ec4-850b-8172c369713e",
           "loggedAt": "2026-11-10T13:16:46.872Z"
+        },
+        {
+          "name": "Mayo",
+          "calories": 75,
+          "protein": 0,
+          "carbs": 1.6,
+          "fat": 7.6,
+          "servings": 1,
+          "id": "ebaedc53-f3ca-4e82-ac33-4f8a66ec8b04",
+          "loggedAt": "2026-11-10T13:17:22.583Z"
         }
       ]
     }
