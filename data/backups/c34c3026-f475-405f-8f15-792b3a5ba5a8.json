@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-10T13:18:41.584Z",
+  "exportedAt": "2026-11-10T13:56:10.345Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -980,8 +980,8 @@
       "fat": 1.2,
       "servings": 1,
       "barcode": "4061459436792",
-      "useCount": 1,
-      "lastUsedAt": "2026-10-26T20:48:53.699Z",
+      "useCount": 2,
+      "lastUsedAt": "2026-11-10T13:56:05.410Z",
       "pinned": false
     },
     {
@@ -3819,6 +3819,17 @@
           "barcode": "4069365353837",
           "id": "921508b8-1685-4047-8200-a3d22e775835",
           "loggedAt": "2026-11-10T13:18:36.488Z"
+        },
+        {
+          "name": "Protein Salted Caramel Flavour Milkshake",
+          "calories": 199,
+          "protein": 25.5,
+          "carbs": 21.5,
+          "fat": 1.2,
+          "servings": 1,
+          "barcode": "4061459436792",
+          "id": "fb802bcd-3a22-4305-94af-1a47e4d41307",
+          "loggedAt": "2026-11-10T13:56:05.410Z"
         }
       ]
     }
