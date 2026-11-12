@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-12T13:22:27.699Z",
+  "exportedAt": "2026-11-12T13:23:10.786Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1159,6 +1159,19 @@
       "barcode": "4088600188850",
       "useCount": 1,
       "lastUsedAt": "2026-11-10T15:00:30.602Z",
+      "pinned": false
+    },
+    {
+      "id": "fdd783d9-c7b2-4594-a3b3-a1be428a02d4",
+      "name": "Snackin' Chicken Southern Fried Flavour Bites",
+      "calories": 164,
+      "protein": 17.6,
+      "carbs": 0.9,
+      "fat": 9.6,
+      "servings": 1,
+      "barcode": "4088600286662",
+      "useCount": 1,
+      "lastUsedAt": "2026-11-12T13:23:05.260Z",
       "pinned": false
     }
   ],
@@ -3880,6 +3893,17 @@
           "servings": 1,
           "barcode": "03340936",
           "loggedAt": "2026-11-12T13:22:23.696Z"
+        },
+        {
+          "name": "Snackin' Chicken Southern Fried Flavour Bites",
+          "calories": 164,
+          "protein": 17.6,
+          "carbs": 0.9,
+          "fat": 9.6,
+          "servings": 1,
+          "barcode": "4088600286662",
+          "id": "63294fae-1e26-4c9b-a75d-0d0c71071e10",
+          "loggedAt": "2026-11-12T13:23:05.260Z"
         }
       ]
     }
