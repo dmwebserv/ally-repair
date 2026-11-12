@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-10T15:00:36.341Z",
+  "exportedAt": "2026-11-12T13:22:27.699Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -251,8 +251,8 @@
       "carbs": 1.44,
       "fat": 7.65,
       "servings": 1,
-      "useCount": 11,
-      "lastUsedAt": "2026-10-26T13:53:20.877Z",
+      "useCount": 12,
+      "lastUsedAt": "2026-11-12T13:22:23.696Z",
       "pinned": true,
       "barcode": "03340936"
     },
@@ -661,8 +661,8 @@
       "carbs": 39.9,
       "fat": 10.7,
       "servings": 1,
-      "useCount": 8,
-      "lastUsedAt": "2026-11-06T15:03:52.100Z",
+      "useCount": 9,
+      "lastUsedAt": "2026-11-12T13:22:20.224Z",
       "pinned": true
     },
     {
@@ -3854,6 +3854,32 @@
           "barcode": "4088600188850",
           "id": "9912b8a6-ba6d-40d9-828c-51722de7ecf0",
           "loggedAt": "2026-11-10T15:00:30.602Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "entries": [
+        {
+          "id": "675f37ab-2a3e-4f1c-855e-ec24849ed3c7",
+          "name": "Katsu Noodles",
+          "calories": 415,
+          "protein": 35.3,
+          "carbs": 39.9,
+          "fat": 10.7,
+          "servings": 1,
+          "loggedAt": "2026-11-12T13:22:20.224Z"
+        },
+        {
+          "id": "47d1d88f-55de-435a-b533-25d2d29d7ea7",
+          "name": "EGG PROTEIN POT",
+          "calories": 121,
+          "protein": 11.3,
+          "carbs": 1.44,
+          "fat": 7.65,
+          "servings": 1,
+          "barcode": "03340936",
+          "loggedAt": "2026-11-12T13:22:23.696Z"
         }
       ]
     }
