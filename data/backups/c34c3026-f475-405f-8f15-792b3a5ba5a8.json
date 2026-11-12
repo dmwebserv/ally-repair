@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-12T13:23:10.786Z",
+  "exportedAt": "2026-11-12T14:51:26.640Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -673,8 +673,8 @@
       "carbs": 4,
       "fat": 2,
       "servings": 1,
-      "useCount": 3,
-      "lastUsedAt": "2026-10-13T13:37:43.865Z",
+      "useCount": 4,
+      "lastUsedAt": "2026-11-12T14:51:22.775Z",
       "pinned": true
     },
     {
@@ -3904,6 +3904,16 @@
           "barcode": "4088600286662",
           "id": "63294fae-1e26-4c9b-a75d-0d0c71071e10",
           "loggedAt": "2026-11-12T13:23:05.260Z"
+        },
+        {
+          "id": "928dcbef-0c19-4386-93aa-b10f2fabd984",
+          "name": "Caramelised Biscuit Shake",
+          "calories": 153,
+          "protein": 30,
+          "carbs": 4,
+          "fat": 2,
+          "servings": 1,
+          "loggedAt": "2026-11-12T14:51:22.775Z"
         }
       ]
     }
