@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-12T14:51:26.640Z",
+  "exportedAt": "2026-11-13T13:00:41.872Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1172,6 +1172,19 @@
       "barcode": "4088600286662",
       "useCount": 1,
       "lastUsedAt": "2026-11-12T13:23:05.260Z",
+      "pinned": false
+    },
+    {
+      "id": "be295f69-1ef8-4d6c-b97d-e8fc72eee084",
+      "name": "Cheestring",
+      "calories": 61,
+      "protein": 4.6,
+      "carbs": 0.5,
+      "fat": 4.5,
+      "servings": 2,
+      "barcode": "50187560",
+      "useCount": 1,
+      "lastUsedAt": "2026-11-13T13:00:36.699Z",
       "pinned": false
     }
   ],
@@ -3914,6 +3927,22 @@
           "fat": 2,
           "servings": 1,
           "loggedAt": "2026-11-12T14:51:22.775Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "entries": [
+        {
+          "name": "Cheestring",
+          "calories": 61,
+          "protein": 4.6,
+          "carbs": 0.5,
+          "fat": 4.5,
+          "servings": 2,
+          "barcode": "50187560",
+          "id": "34519208-a96b-4b29-aa6e-9ba367b955a3",
+          "loggedAt": "2026-11-13T13:00:36.699Z"
         }
       ]
     }
