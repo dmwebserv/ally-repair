@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-13T13:00:41.872Z",
+  "exportedAt": "2026-11-13T13:00:54.826Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -504,8 +504,8 @@
       "carbs": 39.5,
       "fat": 12.5,
       "servings": 1,
-      "useCount": 4,
-      "lastUsedAt": "2026-10-28T13:44:59.166Z",
+      "useCount": 5,
+      "lastUsedAt": "2026-11-13T13:00:49.412Z",
       "pinned": false,
       "barcode": "5054402849366"
     },
@@ -3943,6 +3943,17 @@
           "barcode": "50187560",
           "id": "34519208-a96b-4b29-aa6e-9ba367b955a3",
           "loggedAt": "2026-11-13T13:00:36.699Z"
+        },
+        {
+          "name": "CHICKEN & BACON CAESAR SALAD",
+          "calories": 371,
+          "protein": 24.4,
+          "carbs": 39.5,
+          "fat": 12.5,
+          "servings": 1,
+          "barcode": "5054402849366",
+          "id": "238e3453-f000-4253-96d9-d78d4701d726",
+          "loggedAt": "2026-11-13T13:00:49.412Z"
         }
       ]
     }
