@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-16T16:01:04.849Z",
+  "exportedAt": "2026-11-16T16:01:34.402Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1185,6 +1185,18 @@
       "barcode": "50187560",
       "useCount": 1,
       "lastUsedAt": "2026-11-13T13:00:36.699Z",
+      "pinned": false
+    },
+    {
+      "id": "40e413f0-296a-40fb-a015-bac9b923720e",
+      "name": "Protein Shake (Gym)",
+      "calories": 214,
+      "protein": 28,
+      "carbs": 12.7,
+      "fat": 5.2,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-11-16T16:01:29.004Z",
       "pinned": false
     }
   ],
@@ -3969,6 +3981,16 @@
           "fat": 20,
           "servings": 1,
           "loggedAt": "2026-11-16T16:01:00.846Z"
+        },
+        {
+          "name": "Protein Shake (Gym)",
+          "calories": 214,
+          "protein": 28,
+          "carbs": 12.7,
+          "fat": 5.2,
+          "servings": 1,
+          "id": "f5f8c457-92db-4311-854d-1d19cddfb767",
+          "loggedAt": "2026-11-16T16:01:29.004Z"
         }
       ]
     }
