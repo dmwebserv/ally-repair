@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-17T14:59:07.476Z",
+  "exportedAt": "2026-11-17T14:59:21.991Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -4030,16 +4030,6 @@
           "fat": 1.1,
           "servings": 1,
           "loggedAt": "2026-11-17T13:59:33.325Z"
-        },
-        {
-          "id": "5ff4e95f-a065-47d3-a0c4-c786a34637c4",
-          "name": "Salted Caramel Pro",
-          "calories": 142,
-          "protein": 15,
-          "carbs": 16,
-          "fat": 3.5,
-          "servings": 1,
-          "loggedAt": "2026-11-17T13:59:36.423Z"
         },
         {
           "name": "Salt & Pepper Chicken Teriyaki Sushi",
