@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-17T13:59:40.425Z",
+  "exportedAt": "2026-11-17T13:59:51.731Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1197,6 +1197,19 @@
       "servings": 1,
       "useCount": 1,
       "lastUsedAt": "2026-11-16T16:01:29.004Z",
+      "pinned": false
+    },
+    {
+      "id": "f3422e4a-0777-4a2d-a2d6-9ffefcc18350",
+      "name": "Salt & Pepper Chicken Teriyaki Sushi",
+      "calories": 195,
+      "protein": 5.5,
+      "carbs": 34.5,
+      "fat": 3.6,
+      "servings": 1,
+      "barcode": "4069366205784",
+      "useCount": 1,
+      "lastUsedAt": "2026-11-17T13:59:46.637Z",
       "pinned": false
     }
   ],
@@ -4027,6 +4040,17 @@
           "fat": 3.5,
           "servings": 1,
           "loggedAt": "2026-11-17T13:59:36.423Z"
+        },
+        {
+          "name": "Salt & Pepper Chicken Teriyaki Sushi",
+          "calories": 195,
+          "protein": 5.5,
+          "carbs": 34.5,
+          "fat": 3.6,
+          "servings": 1,
+          "barcode": "4069366205784",
+          "id": "94bf1b86-e56c-43d7-a4a8-cbfa2cb807cb",
+          "loggedAt": "2026-11-17T13:59:46.637Z"
         }
       ]
     }
