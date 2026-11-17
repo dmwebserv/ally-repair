@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-16T16:01:34.402Z",
+  "exportedAt": "2026-11-17T13:59:40.425Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -103,8 +103,8 @@
       "carbs": 17,
       "fat": 1.1,
       "servings": 1,
-      "useCount": 5,
-      "lastUsedAt": "2026-11-06T15:03:55.129Z",
+      "useCount": 6,
+      "lastUsedAt": "2026-11-17T13:59:33.325Z",
       "pinned": true
     },
     {
@@ -127,8 +127,8 @@
       "carbs": 16,
       "fat": 3.5,
       "servings": 1,
-      "useCount": 8,
-      "lastUsedAt": "2026-10-01T11:55:04.989Z",
+      "useCount": 9,
+      "lastUsedAt": "2026-11-17T13:59:36.423Z",
       "pinned": true
     },
     {
@@ -251,8 +251,8 @@
       "carbs": 1.44,
       "fat": 7.65,
       "servings": 1,
-      "useCount": 12,
-      "lastUsedAt": "2026-11-12T13:22:23.696Z",
+      "useCount": 13,
+      "lastUsedAt": "2026-11-17T13:59:29.850Z",
       "pinned": true,
       "barcode": "03340936"
     },
@@ -3991,6 +3991,42 @@
           "servings": 1,
           "id": "f5f8c457-92db-4311-854d-1d19cddfb767",
           "loggedAt": "2026-11-16T16:01:29.004Z"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "entries": [
+        {
+          "id": "2cadb926-ce92-4380-bac7-6a7528173d35",
+          "name": "EGG PROTEIN POT",
+          "calories": 121,
+          "protein": 11.3,
+          "carbs": 1.44,
+          "fat": 7.65,
+          "servings": 1,
+          "barcode": "03340936",
+          "loggedAt": "2026-11-17T13:59:29.850Z"
+        },
+        {
+          "id": "b4703e1c-d81d-4264-af75-6939fee013ac",
+          "name": "Chocolate Protein Shake",
+          "calories": 222,
+          "protein": 35,
+          "carbs": 17,
+          "fat": 1.1,
+          "servings": 1,
+          "loggedAt": "2026-11-17T13:59:33.325Z"
+        },
+        {
+          "id": "5ff4e95f-a065-47d3-a0c4-c786a34637c4",
+          "name": "Salted Caramel Pro",
+          "calories": 142,
+          "protein": 15,
+          "carbs": 16,
+          "fat": 3.5,
+          "servings": 1,
+          "loggedAt": "2026-11-17T13:59:36.423Z"
         }
       ]
     }
