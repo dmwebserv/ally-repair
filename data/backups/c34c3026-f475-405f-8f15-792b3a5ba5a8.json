@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-19T15:26:45.737Z",
+  "exportedAt": "2026-11-19T15:26:53.865Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -276,8 +276,8 @@
       "carbs": 16.4,
       "fat": 4.6,
       "servings": 1,
-      "useCount": 24,
-      "lastUsedAt": "2026-11-06T15:03:51.025Z",
+      "useCount": 25,
+      "lastUsedAt": "2026-11-19T15:26:49.863Z",
       "pinned": true
     },
     {
@@ -661,8 +661,8 @@
       "carbs": 39.9,
       "fat": 10.7,
       "servings": 1,
-      "useCount": 9,
-      "lastUsedAt": "2026-11-12T13:22:20.224Z",
+      "useCount": 10,
+      "lastUsedAt": "2026-11-19T15:26:48.148Z",
       "pinned": true
     },
     {
@@ -4089,6 +4089,26 @@
           "barcode": "5060811384084",
           "id": "98d623fd-9104-4eb2-893c-5ffc0cb4b9d6",
           "loggedAt": "2026-11-19T15:26:40.570Z"
+        },
+        {
+          "id": "b74fedc1-cd46-4612-ac81-3194657f4946",
+          "name": "Katsu Noodles",
+          "calories": 415,
+          "protein": 35.3,
+          "carbs": 39.9,
+          "fat": 10.7,
+          "servings": 1,
+          "loggedAt": "2026-11-19T15:26:48.148Z"
+        },
+        {
+          "id": "580563b2-f87b-4aa1-b9a9-a39509860868",
+          "name": "Choc Cereal Yog",
+          "calories": 229,
+          "protein": 30.1,
+          "carbs": 16.4,
+          "fat": 4.6,
+          "servings": 1,
+          "loggedAt": "2026-11-19T15:26:49.863Z"
         }
       ]
     }
