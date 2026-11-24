@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-24T15:50:06.228Z",
+  "exportedAt": "2026-11-24T15:50:23.821Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -19,8 +19,8 @@
       "carbs": 7,
       "fat": 0.6,
       "servings": 1,
-      "useCount": 21,
-      "lastUsedAt": "2026-11-17T14:59:03.474Z",
+      "useCount": 22,
+      "lastUsedAt": "2026-11-24T15:50:19.819Z",
       "pinned": true
     },
     {
@@ -4145,6 +4145,16 @@
           "servings": 1,
           "barcode": "4061461647353",
           "loggedAt": "2026-11-24T15:50:02.226Z"
+        },
+        {
+          "id": "e838ac6d-d84c-4bdf-9da6-4c2ca9509805",
+          "name": "Strawb Pro Yog",
+          "calories": 139,
+          "protein": 25,
+          "carbs": 7,
+          "fat": 0.6,
+          "servings": 1,
+          "loggedAt": "2026-11-24T15:50:19.819Z"
         }
       ]
     }
