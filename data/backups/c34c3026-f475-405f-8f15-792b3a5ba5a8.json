@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-25T14:25:47.711Z",
+  "exportedAt": "2026-11-25T14:26:32.476Z",
   "profile": {
     "id": "c34c3026-f475-405f-8f15-792b3a5ba5a8",
     "name": "My log"
@@ -1210,6 +1210,18 @@
       "barcode": "4069366205784",
       "useCount": 1,
       "lastUsedAt": "2026-11-17T13:59:46.637Z",
+      "pinned": false
+    },
+    {
+      "id": "7ac1d474-8c0f-4a0f-bf1d-a7117b47d9b8",
+      "name": "Half Mac & Cheese",
+      "calories": 383,
+      "protein": 15,
+      "carbs": 10,
+      "fat": 17.6,
+      "servings": 1,
+      "useCount": 1,
+      "lastUsedAt": "2026-11-25T14:26:27.481Z",
       "pinned": false
     }
   ],
@@ -4181,6 +4193,16 @@
           "fat": 4.6,
           "servings": 1,
           "loggedAt": "2026-11-25T14:25:43.709Z"
+        },
+        {
+          "name": "Half Mac & Cheese",
+          "calories": 383,
+          "protein": 15,
+          "carbs": 10,
+          "fat": 17.6,
+          "servings": 1,
+          "id": "5ecc22bb-cce1-4bba-ae6d-642ae7ed6497",
+          "loggedAt": "2026-11-25T14:26:27.481Z"
         }
       ]
     }
